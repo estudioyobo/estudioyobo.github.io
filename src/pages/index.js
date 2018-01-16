@@ -1,6 +1,9 @@
 import React from "react";
 import Link from "gatsby-link";
 import Button from "../components/Button";
+import PortfolioItem from "../components/PortfolioItem";
+
+import portfolio from "../config/portfolio";
 
 import "./index.css";
 import AOS from "aos/dist/aos.js";
@@ -33,12 +36,12 @@ const IndexPage = () => (
     </div>
 
     <div className="home-grid">
-      {[0, 1, 2, 3, 4, 5, 6, 7, 8].map(i => (
-        <img
-          data-aos="fade-up"
-          className="home-grid--img"
-          src={`http://lorempixel.com/400/400/abstract/${i}`}
+      {portfolio.map((portfolio, i) => (
+        <PortfolioItem
           key={i}
+          {...portfolio}
+          data-aos="fade-up"
+          wrapClass="home-grid--img"
         />
       ))}
     </div>

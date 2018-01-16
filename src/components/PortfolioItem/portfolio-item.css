@@ -1,0 +1,44 @@
+.portfolio--item {
+  position: relative;
+  padding: 0.6rem;
+}
+.portfolio--item img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+.portfolio--item:hover .portfolio--info {
+  opacity: 1;
+  transform: scale(1.01);
+}
+
+.portfolio--item:hover img {
+  transform: scale(1.01);
+}
+
+.portfolio--info {
+  position: absolute;
+  left: 0.6rem;
+  bottom: 0.6rem;
+  right: 0.6rem;
+  top: 5rem;
+  display: flex;
+  padding: 0 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: linear-gradient(
+    to top,
+    rgba(51, 51, 51, 0.7) 0%,
+    rgba(231, 56, 39, 0) 100%
+  );
+
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.portfolio--info h3 {
+  color: #f3f4f0;
+}
+.portfolio--info h4 {
+  color: #f3f4f0;
+}
