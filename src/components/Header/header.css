@@ -1,7 +1,7 @@
 .header {
   display: flex;
   justify-content: space-between;
-  margin: 30px auto;
+  margin: 30px auto 100px;
   max-width: 960px;
 }
 
@@ -17,11 +17,19 @@
   color: #333;
   text-decoration: none;
   cursor: pointer;
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.header-nav--element:hover,
+.header-nave--element__active {
+  font-weight: 500;
+  border-bottom: solid 4px white;
 }
 
 .header-menu--hamburger input {
   display: block;
-  width: 40px;
+  width: 20px;
   height: 32px;
   position: absolute;
   top: -7px;
@@ -37,8 +45,8 @@
 
 .hamburger span {
   display: block;
-  width: 33px;
-  height: 4px;
+  width: 20px;
+  height: 2px;
   margin-bottom: 5px;
   position: relative;
 
@@ -63,7 +71,7 @@
 
 .header-menu--hamburger input:checked ~ .hamburger > span {
   opacity: 1;
-  transform: rotate(45deg) translate(1px, -2px);
+  transform: rotate(45deg) translate(2px, 2px);
   background: #232323;
 }
 
@@ -79,7 +87,7 @@
  * Ohyeah and the last one should go the other direction
  */
 .header-menu--hamburger input:checked ~ .hamburger > span:nth-last-child(1) {
-  transform: rotate(-45deg) translate(-2px, 0px);
+  transform: rotate(-45deg) translate(-2px, -2px);
 }
 
 .header-menu--hamburger {

@@ -21,16 +21,26 @@ const Header = () => (
       <div className="header-menu--hamburger">
         <input type="checkbox" />
         <div className="header-menu">
-          <Link to="/" className="header-nav--element">
+          <Link
+            to="/"
+            className="header-nav--element"
+            exact
+            activeClassName="header-nave--element__active"
+          >
             HOME
           </Link>
-          <Link to="/about" className="header-nav--element">
-            ¿YOBO?
-          </Link>
-          <Link to="/services" className="header-nav--element">
+          <Link
+            to="/services"
+            className="header-nav--element"
+            activeClassName="header-nave--element__active"
+          >
             SERVICIOS
           </Link>
-          <Link to="/contact" className="header-nav--element">
+          <Link
+            to="/contact"
+            className="header-nav--element"
+            activeClassName="header-nave--element__active"
+          >
             CONTACTO
           </Link>
         </div>
