@@ -1,0 +1,60 @@
+{
+  "assetsByChunkName": {
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-ed26821c045c903cd68e.js",
+      "component---src-pages-index-js-ed26821c045c903cd68e.js.map"
+    ],
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-bd66e54cb3585bd58032.js",
+      "component---src-pages-contact-js-bd66e54cb3585bd58032.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-3a6708af77502d0ea5b8.js",
+      "component---src-layouts-index-js-3a6708af77502d0ea5b8.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-8da47b06d63a2b43b4a2.js",
+      "build-js-styles.css",
+      "commons-8da47b06d63a2b43b4a2.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "app": [
+      "app-632a739bfd59129bb030.js",
+      "build-js-styles.css",
+      "app-632a739bfd59129bb030.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---services": [
+      "path---services-a0e39f21c11f6a62c5ab.js",
+      "path---services-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-services-js": [
+      "component---src-pages-services-js-efdd2d080382f5a9aa7d.js",
+      "component---src-pages-services-js-efdd2d080382f5a9aa7d.js.map"
+    ]
+  }
+}
