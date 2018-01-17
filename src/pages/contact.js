@@ -15,7 +15,9 @@ class Contact extends Component {
     g.setAttribute("type", "text/javascript");
     g.setAttribute(
       "src",
-      "https://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=myMap"
+      `https://maps.google.com/maps/api/js?libraries=places&sensor=false&callback=myMap&key=${
+        mapConfig.apiKey
+      }`
     );
     document.getElementById("map").appendChild(g);
   }

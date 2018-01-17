@@ -18,6 +18,11 @@ const portfolio = [
     title: "Proyecto 4",
     category: "Ilustraciones",
     image: "http://lorempixel.com/400/400/abstract/4"
+  },
+  {
+    title: "Proyecto 5",
+    category: "Videos",
+    image: "http://lorempixel.com/400/400/abstract/6"
   }
 ];
 

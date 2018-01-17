@@ -6,10 +6,14 @@ import PortfolioItem from "../components/PortfolioItem";
 import portfolio from "../config/portfolio";
 
 import "./index.css";
-import AOS from "aos/dist/aos.js";
-import "aos/dist/aos.css";
 
-AOS.init();
+// if (typeof window !== "undefined") {
+//   import AOS from "aos/dist/aos.js";
+
+//   AOS.init();
+// }
+
+import "aos/dist/aos.css";
 
 const IndexPage = () => (
   <div className="home">
