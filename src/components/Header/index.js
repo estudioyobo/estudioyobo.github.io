@@ -1,22 +1,22 @@
 import React from "react";
 import Link from "gatsby-link";
 
+import logo from "../../../assets/images/logo.svg";
+
 import "./header.css";
 
 const Header = () => (
   <header className="header">
-    <div className="header-logo">
-      <Link
-        to="/"
-        style={{
-          color: "#333",
-          fontFamily: "Montserrat SemiBold",
-          textDecoration: "none"
-        }}
-      >
-        YOBO
-      </Link>
-    </div>
+    <Link
+      to="/"
+      style={{
+        color: "#333",
+        fontFamily: "Montserrat SemiBold",
+        textDecoration: "none"
+      }}
+    >
+      <img src={logo} alt="Yobo logo" className="header-logo" />
+    </Link>
     <nav className="header-nav">
       <div className="header-menu--hamburger">
         <input type="checkbox" />
