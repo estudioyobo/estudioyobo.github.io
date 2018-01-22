@@ -7,11 +7,11 @@ import portfolio from "../config/portfolio";
 
 import "./index.css";
 
-// if (typeof window !== "undefined") {
-//   import AOS from "aos/dist/aos.js";
-
-//   AOS.init();
-// }
+if (typeof window !== "undefined") {
+  var AOS = require("aos/dist/aos.js");
+  console.log("AOS");
+  AOS.init();
+}
 
 import "aos/dist/aos.css";
 

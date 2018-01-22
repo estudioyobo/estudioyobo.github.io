@@ -8,7 +8,7 @@ const Service = ({ title, description, list, image }) => (
       <h2 className="service--title">{title}</h2>
       <p className="service--description">{description}</p>
       <ul className="service--list">
-        {list.map((item, i) => <li>{item}</li>)}
+        {list.map((item, i) => <li key={i}>{item}</li>)}
       </ul>
     </div>
     {image && <img className="service--image" src={image} alt="" />}
