@@ -4,7 +4,7 @@ const services = [
     description:
       "Dedicamos tiempo y esfuerzo para que tu marca quede perfecta, tanto si es nueva o deseas un rediseño.",
     list: ["Naming", "Logotipo", "Branding", "Manuales de estilo"],
-    image: "http://lorempixel.com/600/400/abstract/1"
+    image: "/images/proyecto-yownes.jpg"
   },
   {
     title: "Comunicación gráfica",
