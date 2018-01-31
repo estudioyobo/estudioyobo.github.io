@@ -22,3 +22,8 @@ h1 {
 .hero h1 {
   margin-bottom: 3rem;
 }
+
+.hero--description p {
+  margin-bottom: 3rem;
+  line-height: 1.8em;
+}

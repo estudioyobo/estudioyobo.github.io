@@ -22,11 +22,9 @@ const IndexPage = () => (
       <div className="hero--description">
         <p>
           Estudio de diseño gráfico ubicado en Elche especializado en identidad
-          corporativa, comunicación gráfica e ilustración.
-        </p>
-        <p>
-          ¿Tienes una idea? coméntanosla y le daremos forma para ayudarte a
-          conseguir tus objetivos.
+          corporativa, comunicación gráfica e ilustración. ¿Tienes una idea?
+          coméntanosla y le daremos forma para ayudarte a conseguir tus
+          objetivos.
         </p>
         <Button>
           <Link

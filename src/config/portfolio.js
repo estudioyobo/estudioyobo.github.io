@@ -2,27 +2,27 @@ const portfolio = [
   {
     title: "Proyecto 1",
     category: "Diseño Web",
-    image: "http://lorempixel.com/400/400/abstract/1"
+    image: "/icons/identidad-corporativa.svg"
   },
   {
     title: "Proyecto 2",
     category: "Ilustraciones",
-    image: "http://lorempixel.com/400/400/abstract/2"
+    image: "/icons/identidad-corporativa.svg"
   },
   {
     title: "Proyecto 3",
     category: "Iconos",
-    image: "http://lorempixel.com/400/400/abstract/3"
+    image: "/icons/identidad-corporativa.svg"
   },
   {
     title: "Proyecto 4",
     category: "Ilustraciones",
-    image: "http://lorempixel.com/400/400/abstract/4"
+    image: "/icons/identidad-corporativa.svg"
   },
   {
     title: "Proyecto 5",
     category: "Videos",
-    image: "http://lorempixel.com/400/400/abstract/6"
+    image: "/icons/identidad-corporativa.svg"
   }
 ];
 
