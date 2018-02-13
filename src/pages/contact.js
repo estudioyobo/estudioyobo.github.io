@@ -8,7 +8,7 @@ class Contact extends Component {
   componentDidMount() {
     var script = document.createElement("script");
     script.innerText =
-      "function myMap() { var myLatLng = {lat: 38.265277, lng: -0.704316};var mapOptions = { center: myLatLng, zoom: 17, mapTypeId: google.maps.MapTypeId.HYBRID };var map = new google.maps.Map(document.getElementById('map'), mapOptions);var marker = new google.maps.Marker({position: myLatLng,map: map,title: 'YOBO'});}";
+      "function myMap() { var myLatLng = {lat: 38.265277, lng: -0.704316};var mapOptions = { center: myLatLng, zoom: 17, mapTypeId: google.maps.MapTypeId.ROADMAP };var map = new google.maps.Map(document.getElementById('map'), mapOptions);var marker = new google.maps.Marker({position: myLatLng,map: map,title: 'YOBO'});}";
     document.getElementById("map").appendChild(script);
 
     var g = document.createElement("script");
