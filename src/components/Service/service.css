@@ -9,6 +9,7 @@
 }
 
 .service--content {
+  flex: 1;
 }
 
 .service--title {
@@ -21,8 +22,10 @@
 }
 
 .service--image {
-  width: 50%;
+  flex: 1;
   padding: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 580px) {
