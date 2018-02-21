@@ -1,6 +1,16 @@
+export const categories = {
+  ilustracion: "Ilustración",
+  branding: "Branding",
+  identidad: "Identidad Corporativa",
+  comunicacion: "Comunicación gráfica",
+  packaging: "Packaging",
+  social: "Social media",
+  motion: "Stop motions"
+};
+
 const services = [
   {
-    title: "Identidad corporativa",
+    title: categories.identidad,
     description:
       "Dedicamos tiempo y esfuerzo para que tu marca quede perfecta, tanto si es nueva o deseas un rediseño.",
     list: ["Naming", "Logotipo", "Branding", "Manuales de estilo"],
@@ -8,7 +18,7 @@ const services = [
     color: "/icons/identidad-corporativa-color.svg"
   },
   {
-    title: "Comunicación gráfica",
+    title: categories.comunicacion,
     description:
       "Comunicar tu idea de manera correcta es muy importante para no confundir a tu público. Desarollamos todo tipo de publicidad, desde carteles hasta tarjetas.",
     list: ["Carteles", "Tríticos-Dípticos", "Flyers", "Pegatinas", "Tarjetas"],
@@ -16,7 +26,7 @@ const services = [
     color: "/icons/comunicacion-grafica-color.svg"
   },
   {
-    title: "Ilustración",
+    title: categories.ilustracion,
     description:
       "Realizamos ilustraciones como tal o como apoyo a otros campos del diseño.",
     list: [
@@ -29,7 +39,7 @@ const services = [
     color: "/icons/ilustracion-color.svg"
   },
   {
-    title: "Packaging",
+    title: categories.packaging,
     description:
       "Hacemos que los unboxings sean atractivos desde el principio. Transmitimos la imágen de tu marca de una manera atractiva y divertida.",
     list: ["Etiquetas", "Diseño de packaging", "Bandas o cintas para cajas"],
@@ -37,7 +47,7 @@ const services = [
     color: "/icons/packaging-color.svg"
   },
   {
-    title: "Social Media",
+    title: categories.social,
     description:
       "Tomamos las riendas de las redes sociales tales como Facebook, Twitter o Instagram para ayudarte a llegar al público de una manera graficamente correcta.",
     list: ["Publicaciones en RRSS", "Campañas para RRSS"],
@@ -45,7 +55,7 @@ const services = [
     color: "/icons/social-media-color.svg"
   },
   {
-    title: "Stop motions",
+    title: categories.motion,
     description:
       "Los videos promocionales pueden ser de gran ayuda a la hora de mostrar tu marca o un nuevo producto.",
     list: ["Minivídeos animados"],

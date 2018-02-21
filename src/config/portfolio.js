@@ -1,28 +1,45 @@
+import { categories } from "./services";
+
 const portfolio = [
   {
-    title: "Proyecto 1",
-    category: "Diseño Web",
-    image: "/icons/identidad-corporativa.svg"
+    title: "At Home Renovations",
+    category: categories.identidad,
+    image: "/images/proyecto-at-home-renovations.jpg"
   },
   {
-    title: "Proyecto 2",
-    category: "Ilustraciones",
-    image: "/icons/identidad-corporativa.svg"
+    title: "Invitación Boda",
+    category: `${categories.comunicacion}, ${categories.ilustracion}`,
+    image: "/images/proyecto-invitacion-boda.jpg"
   },
   {
-    title: "Proyecto 3",
-    category: "Iconos",
-    image: "/icons/identidad-corporativa.svg"
+    title: "Inmovilla",
+    category: categories.ilustracion,
+    image: "/images/proyecto-iconos-inmovilla.jpg"
   },
   {
-    title: "Proyecto 4",
-    category: "Ilustraciones",
-    image: "/icons/identidad-corporativa.svg"
+    title: "Yownes",
+    category: `${categories.identidad}, ${categories.branding}`,
+    image: "/images/proyecto-yownes.jpg"
   },
   {
-    title: "Proyecto 5",
-    category: "Videos",
-    image: "/icons/identidad-corporativa.svg"
+    title: "Mandos",
+    category: categories.ilustracion,
+    image: "/images/proyecto-ilustraciones-mandos.jpg"
+  },
+  {
+    title: "KRT Motorsport",
+    category: categories.identidad,
+    image: "/images/proyecto-krt.jpg"
+  },
+  {
+    title: "Reason",
+    category: categories.identidad,
+    image: "/images/proyecto-reason.jpg"
+  },
+  {
+    title: "Usui Reiki Ryoho",
+    category: categories.identidad,
+    image: "/images/proyecto-reyki.jpg"
   }
 ];
 
