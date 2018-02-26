@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 
 import Header from "../components/Header";
+import Footer from "../components/Footer";
 import "./index.css";
+import info from "../config/info";
 
 const TemplateWrapper = ({ children }) => (
   <div>
@@ -25,6 +27,7 @@ const TemplateWrapper = ({ children }) => (
     >
       {children()}
     </div>
+    <Footer {...info} />
   </div>
 );
 

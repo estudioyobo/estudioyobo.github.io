@@ -1,0 +1,28 @@
+footer {
+  background-color: #333;
+  color: #f3f4f0;
+  font-weight: 200;
+  display: flex;
+  padding: 60px;
+}
+
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.social--icon {
+  width: 35px;
+  margin: 0;
+}
+
+.footer-phone span {
+  margin: 0 20px;
+}
