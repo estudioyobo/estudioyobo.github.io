@@ -10,11 +10,6 @@
 
 .portfolio--item:hover .portfolio--info {
   opacity: 1;
-  transform: scale(1.01);
-}
-
-.portfolio--item:hover img {
-  transform: scale(1.01);
 }
 
 .portfolio--info {
@@ -22,22 +17,19 @@
   left: 0.6rem;
   bottom: 0.6rem;
   right: 0.6rem;
-  top: 5rem;
+  height: 40%;
   display: flex;
   padding: 0 1rem;
   flex-direction: column;
   justify-content: flex-end;
-  background: linear-gradient(
-    to top,
-    rgba(51, 51, 51, 0.7) 0%,
-    rgba(231, 56, 39, 0) 100%
-  );
+  background: rgba(51, 51, 51, 0.7);
 
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
 .portfolio--info h3 {
   color: #f3f4f0;
+  margin-bottom: 10px;
 }
 .portfolio--info h4 {
   color: #f3f4f0;

@@ -16,7 +16,7 @@ const Wrapper = styled.div`
 const ColorSVG = ({ wrapperClass, image, color }) => {
   return (
     <Wrapper className={wrapperClass}>
-      <SVG data={color} hover />
+      {/* <SVG data={color} hover /> */}
       <SVG data={image} />
     </Wrapper>
   );
