@@ -1,29 +1,34 @@
 .portfolio--item {
   position: relative;
-  padding: 0.6rem;
+  /* padding: 0.6rem; */
 }
 .portfolio--item img {
   width: 100%;
   height: 100%;
-  transition: all 0.2s ease-in-out;
 }
 
 .portfolio--item:hover .portfolio--info {
+  display: flex;
   opacity: 1;
+}
+
+.portfolio--item:hover img {
+  filter: blur(2px);
 }
 
 .portfolio--info {
   position: absolute;
-  left: 0.6rem;
-  bottom: 0.6rem;
-  right: 0.6rem;
-  height: 40%;
-  display: flex;
+  left: 0rem;
+  bottom: 0rem;
+  right: 0rem;
+  /* height: 40%; */
+  top: 0;
   padding: 0 1rem;
   flex-direction: column;
   justify-content: flex-end;
   background: rgba(51, 51, 51, 0.7);
 
+  display: none;
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }

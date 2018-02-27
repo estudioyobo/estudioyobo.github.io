@@ -11,6 +11,12 @@ h1 {
   width: 33.3%;
 }
 
+/* .home-grid--img::after {
+  display: block;
+  content: "";
+  padding-bottom: 100%;
+} */
+
 .hero {
   padding-bottom: 100px;
   display: flex;

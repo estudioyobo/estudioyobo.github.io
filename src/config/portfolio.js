@@ -2,17 +2,12 @@ import { categories } from "./services";
 
 const portfolio = [
   {
-    title: "At Home Renovations",
-    category: categories.identidad,
-    image: "/images/proyecto-at-home-renovations.jpg"
-  },
-  {
-    title: "Invitación Boda",
+    title: "Invitación Andrés & Sarai",
     category: `${categories.comunicacion}, ${categories.ilustracion}`,
     image: "/images/proyecto-invitacion-boda.jpg"
   },
   {
-    title: "Inmovilla",
+    title: "Iconos Inmovilla",
     category: categories.ilustracion,
     image: "/images/proyecto-iconos-inmovilla.jpg"
   },
@@ -22,7 +17,7 @@ const portfolio = [
     image: "/images/proyecto-yownes.jpg"
   },
   {
-    title: "Mandos",
+    title: "Colección de Mandos",
     category: categories.ilustracion,
     image: "/images/proyecto-ilustraciones-mandos.jpg"
   },
@@ -32,14 +27,19 @@ const portfolio = [
     image: "/images/proyecto-krt.jpg"
   },
   {
-    title: "Reason",
+    title: "Usui Reiki Ryoho",
+    category: categories.identidad,
+    image: "/images/proyecto-reyki.jpg"
+  },
+  {
+    title: "Reason.Build",
     category: categories.identidad,
     image: "/images/proyecto-reason.jpg"
   },
   {
-    title: "Usui Reiki Ryoho",
+    title: "At Home Renovations",
     category: categories.identidad,
-    image: "/images/proyecto-reyki.jpg"
+    image: "/images/proyecto-at-home-renovations.jpg"
   }
 ];
 
