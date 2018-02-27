@@ -6,10 +6,6 @@ export default {
       link: "https://www.facebook.com/estudioyobo/"
     },
     {
-      name: "Twitter",
-      icon: "/icons/tw.svg"
-    },
-    {
       name: "Instagram",
       icon: "/icons/ig.svg"
     },
