@@ -27,7 +27,11 @@ class Contact extends Component {
       <div>
         <h1>CONTACTO</h1>
         <div className="container">
-          <form className="form">
+          <form
+            className="form"
+            action="https://formspree.io/info@estudioyobo.com"
+            method="POST"
+          >
             <div className="form-group">
               <label htmlFor="name">Nombre:</label>
               <input name="name" type="text" />
