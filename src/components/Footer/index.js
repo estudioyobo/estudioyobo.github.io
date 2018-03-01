@@ -14,7 +14,7 @@ const Footer = ({ social, mail, phone }) => {
   return (
     <footer>
       <div className="footer-social">{social.map(e => <Social {...e} />)}</div>
-      <div className="footer-contact">{mail}</div>
+      <div className="footer-contact"><a href={`mailto:${mail}`}>{mail}</a></div>
       <div className="footer-phone">{phone.map(p => <span>{p}</span>)}</div>
     </footer>
   );
