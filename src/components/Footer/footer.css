@@ -32,3 +32,8 @@ footer {
 .footer-contact {
   padding: 20px;
 }
+
+.footer-contact a {
+  color: #f3f4f0;
+  text-decoration: none;
+}
