@@ -9,7 +9,6 @@ import "./index.css";
 
 if (typeof window !== "undefined") {
   var AOS = require("aos/dist/aos.js");
-  console.log("AOS");
   AOS.init();
 }
 
