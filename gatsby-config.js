@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Yobo"
+    title: "Estudio Yobo"
   },
   plugins: [
     "gatsby-plugin-react-helmet",

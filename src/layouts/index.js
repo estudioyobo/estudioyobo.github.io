@@ -7,10 +7,10 @@ import Footer from "../components/Footer";
 import "./index.css";
 import info from "../config/info";
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, data }) => (
   <div>
     <Helmet
-      title="Estudio Yobo"
+      title={data.site.siteMetadata.title}
       meta={[
         { name: "description", content: "Sample" },
         { name: "keywords", content: "sample, something" }
@@ -36,3 +36,13 @@ TemplateWrapper.propTypes = {
 };
 
 export default TemplateWrapper;
+
+export const query = graphql`
+  query LayoutQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`;
