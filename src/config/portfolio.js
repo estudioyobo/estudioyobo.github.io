@@ -17,6 +17,11 @@ const portfolio = [
     image: "/images/proyecto-yownes.jpg"
   },
   {
+    title: "MDC",
+    category: categories.ilustracion,
+    image: "/images/proyecto-MDC.jpg"
+  },
+  {
     title: "Colección de Mandos",
     category: categories.ilustracion,
     image: "/images/proyecto-ilustraciones-mandos.jpg"
@@ -35,11 +40,6 @@ const portfolio = [
     title: "Reason.Build",
     category: categories.identidad,
     image: "/images/proyecto-reason.jpg"
-  },
-  {
-    title: "At Home Renovations",
-    category: categories.identidad,
-    image: "/images/proyecto-at-home-renovations.jpg"
   }
 ];
 
