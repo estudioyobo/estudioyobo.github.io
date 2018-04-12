@@ -1,11 +1,11 @@
 import React from "react";
 import Link from "gatsby-link";
-
-import logo from "../../../assets/images/logo.svg";
+import styled from "styled-components";
 
 import "./header.css";
+import Logo from "../Logo";
 
-const Header = () => (
+const Header = ({ color }) => (
   <header className="header">
     <Link
       to="/"
@@ -15,7 +15,7 @@ const Header = () => (
         textDecoration: "none"
       }}
     >
-      <img src={logo} alt="Yobo logo" className="header-logo" />
+      <Logo color={color} />
     </Link>
     <nav className="header-nav">
       <div className="header-menu--hamburger">
@@ -26,6 +26,7 @@ const Header = () => (
             className="header-nav--element"
             exact
             activeClassName="header-nave--element__active"
+            style={{ color }}
           >
             HOME
           </Link>
@@ -33,6 +34,7 @@ const Header = () => (
             to="/services"
             className="header-nav--element"
             activeClassName="header-nave--element__active"
+            style={{ color }}
           >
             SERVICIOS
           </Link>
@@ -40,15 +42,16 @@ const Header = () => (
             to="/contact"
             className="header-nav--element"
             activeClassName="header-nave--element__active"
+            style={{ color }}
           >
             CONTACTO
           </Link>
         </div>
 
         <div className="hamburger">
-          <span />
-          <span />
-          <span />
+          <span style={{ background: color }} />
+          <span style={{ background: color }} />
+          <span style={{ background: color }} />
         </div>
       </div>
     </nav>

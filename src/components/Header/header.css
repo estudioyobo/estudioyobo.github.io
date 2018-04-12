@@ -5,10 +5,6 @@
   max-width: 960px;
 }
 
-.header-logo {
-  width: 90px;
-}
-
 .header-nav {
   display: flex;
 }
@@ -73,7 +69,6 @@
 .header-menu--hamburger input:checked ~ .hamburger > span {
   opacity: 1;
   transform: rotate(45deg) translate(2px, 2px);
-  background: #232323;
 }
 
 /*
