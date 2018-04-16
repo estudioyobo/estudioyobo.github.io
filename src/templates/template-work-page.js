@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
+import Helmet from "react-helmet";
 
 import "./work-page.css";
 import Header from "../components/Header";
@@ -77,7 +78,8 @@ const TagsSection = ({ slugs, tagNames }) => {
 const WorkTemplate = ({ data }) => {
   const post = data.markdownRemark;
   return (
-    <artice>
+    <article>
+      <Helmet title={`Work | ${post.frontmatter.title}`} />
       <WorkHeader bg={post.frontmatter.cover}>
         <Header color={post.frontmatter.color} />
         <Info color={post.frontmatter.color}>
@@ -107,7 +109,7 @@ const WorkTemplate = ({ data }) => {
       >
         <TextPostBody htmlAst={post.htmlAst} />
       </section>
-    </artice>
+    </article>
   );
 };
 
