@@ -53,24 +53,24 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
         });
       });
 
-      // Create tag pages.
-      let tags = [];
-      result.data.allMarkdownRemark.edges.forEach(edge => {
-        if (_.get(edge, `node.frontmatter.tags`)) {
-          tags = tags.concat(edge.node.frontmatter.tags);
-        }
-      });
-      tags = _.uniq(tags);
-      tags.forEach(tag => {
-        const tagPath = `/tags/${_.kebabCase(tag)}/`;
-        createPage({
-          path: tagPath,
-          component: tagPagesTemplate,
-          context: {
-            tag
-          }
-        });
-      });
+      // // Create tag pages.
+      // let tags = [];
+      // result.data.allMarkdownRemark.edges.forEach(edge => {
+      //   if (_.get(edge, `node.frontmatter.tags`)) {
+      //     tags = tags.concat(edge.node.frontmatter.tags);
+      //   }
+      // });
+      // tags = _.uniq(tags);
+      // tags.forEach(tag => {
+      //   const tagPath = `/tags/${_.kebabCase(tag)}/`;
+      //   createPage({
+      //     path: tagPath,
+      //     component: tagPagesTemplate,
+      //     context: {
+      //       tag
+      //     }
+      //   });
+      // });
 
       resolve();
     });

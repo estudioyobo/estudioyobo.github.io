@@ -1,14 +1,17 @@
 import React from "react";
+import PropTypes from "prop-types";
 import Footer from "../components/Footer/index";
 import info from "../config/info";
-import { Helmet } from "react-helmet";
 
 const TemplateWrapper = ({ children }) => (
   <div>
-    <Helmet title="Work |" />
     {children()}
     <Footer {...info} />
   </div>
 );
+
+TemplateWrapper.propTypes = {
+  children: PropTypes.node
+};
 
 export default TemplateWrapper;
