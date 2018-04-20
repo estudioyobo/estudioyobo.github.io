@@ -57,7 +57,10 @@ export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMarkdownRemark(
+      sort: { fields: [frontmatter___date], order: DESC }
+      filter: { frontmatter: { hide: { ne: true } } }
+    ) {
       edges {
         node {
           fields {

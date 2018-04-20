@@ -28,6 +28,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
                 frontmatter {
                   tags
+                  hide
                 }
               }
             }
@@ -40,18 +41,20 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
 
       // Create blog posts pages.
-      result.data.allMarkdownRemark.edges.forEach(edge => {
-        createPage({
-          path: edge.node.fields.slug, // required
-          component: slash(blogPostTemplate),
-          context: {
-            slug: edge.node.fields.slug,
-            highlight: edge.node.frontmatter.highlight,
-            shadow: edge.node.frontmatter.shadow
-          },
-          layout: "work"
+      result.data.allMarkdownRemark.edges
+        .filter(edge => !edge.node.frontmatter.hide)
+        .forEach(edge => {
+          createPage({
+            path: edge.node.fields.slug, // required
+            component: slash(blogPostTemplate),
+            context: {
+              slug: edge.node.fields.slug,
+              highlight: edge.node.frontmatter.highlight,
+              shadow: edge.node.frontmatter.shadow
+            },
+            layout: "work"
+          });
         });
-      });
 
       // // Create tag pages.
       // let tags = [];
