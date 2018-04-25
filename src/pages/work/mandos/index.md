@@ -15,6 +15,8 @@ Colección de los mandos de Nintendo que marcaron mi infancia interpetados de di
 </hidden>
 <zoom-image src="mandos1.png"></zoom-image>
 
+<divide>
+
 <hidden>
 <img src="mandos2.png">
 </hidden>
@@ -24,3 +26,5 @@ Colección de los mandos de Nintendo que marcaron mi infancia interpetados de di
 <img src="mandos3.png">
 </hidden>
 <zoom-image src="mandos3.png"></zoom-image>
+
+</divide>
