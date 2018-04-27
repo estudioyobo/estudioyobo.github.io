@@ -4,6 +4,7 @@ date: "2018-03-04"
 thumbnail: "/images/proyecto-ilustraciones-mandos.jpg"
 cover: "/images/cover-mandos.jpg"
 color: "#f3f4f0"
+noTitleShadow: false
 tags:
     - Ilustración
 ---

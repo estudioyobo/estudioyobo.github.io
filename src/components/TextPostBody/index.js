@@ -3,7 +3,6 @@ import rehypeReact from "rehype-react";
 
 import ImageZoom from "../ImageZoom";
 import Hidden from "../Hidden";
-import LeftElement from "../LeftElement";
 import Divide from "../Divide";
 
 const renderAst = new rehypeReact({

@@ -4,6 +4,7 @@ date: "2018-03-06"
 thumbnail: "/images/proyecto-yownes.jpg"
 cover: "/images/cover-yownes.jpg"
 color: "#fff"
+noTitleShadow: true
 tags:
     - Identidad Corporativa
     - Branding
@@ -14,12 +15,14 @@ Creación de naming e imagotipo para una empresa propietaria de un servicio onli
 El nombre fué el resultado de jugar y combinar la frase en inglés “Your own e-shop”, tu propia tienda electrónica.
 
 <hidden>
+![](yownes1.jpg)
 <img src="yownes1.jpg" />
 </hidden>
 <zoom-image src="yownes1.jpg" zoomSrc='yownes1.jpg' atl='Nombre'></zoom-image>
 
 <divide>
 <hidden>
+![](yownes2.jpg)
 <img src="yownes2.jpg" />
 </hidden>
 <zoom-image src="yownes2.jpg"  zoomSrc='yownes2.jpg' alt='Imagotipo'></zoom-image>
