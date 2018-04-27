@@ -43,6 +43,7 @@ const customColor = color => {
 
 const Title = styled.h1`
   color: #333;
+  ${({ noShadow }) => (noShadow ? "" : "text-shadow: 4px 2px 8px #000;")};
 `;
 
 const Chevron = styled.svg`
@@ -56,16 +57,43 @@ const Tag = styled.span`
   span {
     color: #333;
     text-decoration: none;
+    ${({ noShadow }) => (noShadow ? "" : "text-shadow: 4px 2px 8px #000;")};
   }
 `;
 
-const TagsSection = ({ slugs, tagNames }) => {
+const Section = styled.section`
+margin: 0 auto;
+  max-width: 960px;
+          padding: 0px 1.0875rem 1.45rem;
+          paddingTop: 0;
+`
+
+const Navigation = styled.div`
+margin: 30px auto 0;
+  max-width: 960px;
+          padding: 0px 1.0875rem 1.45rem;
+          paddingTop: 0;
+display: flex;
+justify-content: space-between;
+a {
+  color: #333;
+  text-decoration: none;
+  font-weight: 200;
+  transition: transform .2s ease-in-out;
+}
+
+a:hover {
+  transform: scale(1.1);
+}
+`
+
+const TagsSection = ({ slugs, tagNames, noShadow }) => {
   let tags;
   if (slugs) {
     tags = slugs.map((tag, i) => {
       const divider = i < slugs.length - 1 && <span>{`, `}</span>;
       return (
-        <Tag key={tag}>
+        <Tag key={tag} noShadow={noShadow}>
           <Link to={tag}>{tagNames[i]}</Link>
           {divider}
         </Tag>
@@ -75,18 +103,21 @@ const TagsSection = ({ slugs, tagNames }) => {
   return <span style={{ fontStyle: "normal", textAlign: `left` }}>{tags}</span>;
 };
 
-const WorkTemplate = ({ data }) => {
+const WorkTemplate = ({ data, pathContext, ...other }) => {
   const post = data.markdownRemark;
+  const { next, prev } = pathContext;
+  const { title, cover, color, noTitleShadow, tags } = post.frontmatter;
   return (
     <article>
-      <Helmet title={`Work | ${post.frontmatter.title}`} />
-      <WorkHeader bg={post.frontmatter.cover}>
-        <Header color={post.frontmatter.color} />
-        <Info color={post.frontmatter.color}>
-          <Title>{post.frontmatter.title}</Title>
+      <Helmet title={`Work | ${title}`} />
+      <WorkHeader bg={cover}>
+        <Header color={color} />
+        <Info color={color}>
+          <Title noShadow={noTitleShadow}>{title}</Title>
           <TagsSection
+            noShadow={noTitleShadow}
             slugs={post.fields.tagSlugs}
-            tagNames={post.frontmatter.tags}
+            tagNames={tags}
           />
           <Chevron
             version="1.1"
@@ -99,16 +130,22 @@ const WorkTemplate = ({ data }) => {
           </Chevron>
         </Info>
       </WorkHeader>
-      <section
-        style={{
-          margin: "0 auto",
-          maxWidth: 960,
-          padding: "0px 1.0875rem 1.45rem",
-          paddingTop: 0
-        }}
-      >
+      <Section>
         <TextPostBody htmlAst={post.htmlAst} />
-      </section>
+      </Section>
+        <Navigation>
+          {prev ?
+            <Link className="link prev" to={`/${prev.fields.slug}`}>
+          &laquo; {prev.frontmatter.title}
+            </Link>
+            : <div />
+          }
+          {next && (
+            <Link className="link next" to={`/${next.fields.slug}`}>
+              {next.frontmatter.title} &raquo;
+            </Link>
+          )}
+        </Navigation>
     </article>
   );
 };
@@ -125,6 +162,7 @@ export const query = graphql`
         tags
         cover
         color
+        noTitleShadow
       }
     }
   }

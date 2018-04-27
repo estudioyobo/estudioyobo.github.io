@@ -20,7 +20,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
     graphql(
       `
         {
-          allMarkdownRemark(limit: 1000) {
+          allMarkdownRemark(limit: 1000, sort: { fields: [frontmatter___date], order: DESC }) {
             edges {
               node {
                 fields {
@@ -28,6 +28,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
                 }
                 frontmatter {
                   tags
+                  title
                   hide
                 }
               }
@@ -41,20 +42,26 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       }
 
       // Create blog posts pages.
-      result.data.allMarkdownRemark.edges
-        .filter(edge => !edge.node.frontmatter.hide)
-        .forEach(edge => {
-          createPage({
-            path: edge.node.fields.slug, // required
-            component: slash(blogPostTemplate),
-            context: {
-              slug: edge.node.fields.slug,
-              highlight: edge.node.frontmatter.highlight,
-              shadow: edge.node.frontmatter.shadow
-            },
-            layout: "work"
-          });
+      const posts = result.data.allMarkdownRemark.edges.filter(
+        edge => !edge.node.frontmatter.hide
+      );
+
+      posts.forEach(({ node }, index) => {
+        const prev = index === 0 ? false : posts[index - 1].node;
+        const next = index === posts.length - 1 ? false : posts[index + 1].node;
+        createPage({
+          path: node.fields.slug, // required
+          component: slash(blogPostTemplate),
+          context: {
+            slug: node.fields.slug,
+            highlight: node.frontmatter.highlight,
+            shadow: node.frontmatter.shadow,
+            prev,
+            next
+          },
+          layout: "work"
         });
+      });
 
       // // Create tag pages.
       // let tags = [];
