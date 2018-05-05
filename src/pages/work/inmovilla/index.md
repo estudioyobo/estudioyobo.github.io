@@ -8,7 +8,8 @@ tags:
     - Ilustración
 ---
 
-Iconos realizados para la inmobiliaria Inmovilla de Elche, que se usan para sus plataformas en redes y para las fichas de propiedad que aparecen en los escaparates físicos que dan a la calle.
+Os presentamos una serie de iconos realizados para la inmobiliaria Inmovilla de Elche. Estos se usan para las plataformas en redes y para las fichas de propiedad que aparecen en los escaparates físicos que dan a la calle.
+
 Estos iconos muestran las características de cada casa para que la gente pueda hacerse una idea.
 
 <hidden>

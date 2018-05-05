@@ -10,9 +10,9 @@ tags:
     - Branding
 ---
 
-Creación de naming e imagotipo para una empresa propietaria de un servicio online que se dedica a facilitar la creación de una tienda móvil, en formato app, gracias a su plataforma.
+Yownes es un proyecto de creación de naming e imagotipo para una empresa propietaria de un servicio online que se dedica a facilitar la creación de una tienda móvil, en formato app, gracias a su plataforma.
 
-El nombre fué el resultado de jugar y combinar la frase en inglés “Your own e-shop”, tu propia tienda electrónica.
+El nombre fue el resultado de jugar y combinar la frase en inglés “Your own e-shop”, tu propia tienda electrónica.
 
 <hidden>
 ![](yownes1.jpg)
@@ -27,6 +27,6 @@ El nombre fué el resultado de jugar y combinar la frase en inglés “Your own 
 </hidden>
 <zoom-image src="yownes2.jpg"  zoomSrc='yownes2.jpg' alt='Imagotipo'></zoom-image>
 
-El imagotipo representa las tres fases del servicio: Vendedor, el punto de abajo, la plataforma de creación, el punto central, y los dos puntos superiores, los clientes nuevos a los que accede. Se jugó con esos puntos y se llegó a un resultado que interpretaba las dos letras iniciales del nombre de la empresa.
+El imagotipo representa las tres fases del servicio: Vendedor, el punto de abajo; la plataforma de creación, el punto central; y los dos puntos superiores, los clientes nuevos a los que accede. Se jugó con esos puntos y se llegó a un resultado que interpretaba las dos letras iniciales del nombre de la empresa.
 
 </divide>

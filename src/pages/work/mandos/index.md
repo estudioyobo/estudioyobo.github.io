@@ -9,7 +9,7 @@ tags:
     - Ilustración
 ---
 
-Colección de los mandos de Nintendo que marcaron mi infancia interpetados de diferentes maneras y estilos. Zombie, Pixel Art y Cyberpunk.
+Colección de los mandos de Nintendo que marcaron nuestra infancia interpetados de diferentes maneras y estilos. Zombie, Pixel Art y Cyberpunk.
 
 <hidden>
 <img src="mandos1.png">

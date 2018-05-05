@@ -8,6 +8,8 @@ tags:
     - Identidad Corporativa
 ---
 
+Este diseño fue creado para el grupo de amantes del motor KRT en elche. Pensamos en algo atrevido y que sugiriese velocidad. Para el color, usamos el rojo, ya que se asocia a los coches deportivos. Nos gustó mucho ver la marca aplicada en diferentes partes de los coches del grupo.
+
 <hidden>
 <img src="krt.png" />
 </hidden>
