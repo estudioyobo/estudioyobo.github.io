@@ -1,6 +1,5 @@
 .service {
   display: flex;
-  height: 50vh;
   align-items: center;
 }
 
@@ -28,8 +27,16 @@
   align-items: center;
 }
 
-@media screen and (max-width: 580px) {
+@media screen and (max-width: 675px) {
   .service {
     flex-direction: column;
+    height: auto;
+  }
+  .service:nth-child(odd) {
+    flex-direction: column;
+  }
+
+  .service--image {
+    width: 80%;
   }
 }

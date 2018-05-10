@@ -128,3 +128,19 @@
   right: 0;
   top: 0;
 }
+
+/* 
+* Media Queries 
+*/
+
+@media (max-width: 960px) {
+  .header {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 440px) {
+  .header-nav--element {
+    display: block !important;
+  }
+}

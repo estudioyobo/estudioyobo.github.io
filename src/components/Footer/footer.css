@@ -38,3 +38,13 @@ footer {
   color: #f3f4f0;
   text-decoration: none;
 }
+
+/*
+* Media Queries
+*/
+
+@media (max-width: 400px) {
+  .footer-phone span {
+    display: block;
+  }
+}

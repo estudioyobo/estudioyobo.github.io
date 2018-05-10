@@ -32,3 +32,19 @@ h1 {
   margin-bottom: 3rem;
   line-height: 1.8em;
 }
+
+/*
+* Media Queries
+*/
+
+@media (max-width: 750px) {
+  .home-grid--img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 440px) {
+  .home-grid--img {
+    width: 100%;
+  }
+}

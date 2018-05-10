@@ -3,7 +3,7 @@
 }
 
 .form {
-  width: 50%;
+  flex: 1;
 }
 
 .form-group {
@@ -11,7 +11,7 @@
 }
 
 .map {
-  width: 100%;
+  flex: 1;
   margin: 2rem 3rem;
 }
 
@@ -33,4 +33,27 @@ input[type="submit"] {
   color: #f3f4f0;
   border-radius: 3px;
   padding: 10px;
+}
+
+/*
+* Media Queries
+*/
+
+@media (max-width: 780px) {
+  .container {
+    flex-direction: column;
+  }
+  .map {
+    height: 300px;
+    flex: none;
+  }
+  .map div {
+    position: relative !important;
+  }
+}
+
+@media (max-width: 440px) {
+  .map {
+    margin: 1rem 0;
+  }
 }
