@@ -17,13 +17,14 @@ const IndexPage = ({ data }) => {
   return (
     <div className="home">
       <div className="hero">
-        <h1>Estudio de diseño y desarrollo Yobo</h1>
+        <h1>Estudio de diseño y desarrollo</h1>
         <div className="hero--description">
           <p>
-            Estudio de diseño gráfico ubicado en Elche especializado en
-            identidad corporativa, comunicación gráfica e ilustración. ¿Tienes
-            una idea? coméntanosla y le daremos forma para ayudarte a conseguir
-            tus objetivos.
+            Estudio de diseño gráfico y desarrollo ubicado en Elche
+            especializado en identidad corporativa, comunicación gráfica e
+            ilustración y desarrollo de aplicaciones web y móvil.{" "}
+            <b>¿Tienes una idea?</b> coméntanosla y le daremos forma para
+            ayudarte a conseguir tus objetivos.
           </p>
           <Button>
             <Link
