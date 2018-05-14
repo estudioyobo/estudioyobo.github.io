@@ -43,7 +43,7 @@ const customColor = color => {
 
 const Title = styled.h1`
   color: #333;
-  ${({ noShadow }) => (noShadow ? "" : "text-shadow: 4px 2px 8px #000;")};
+  ${({ noShadow }) => (noShadow ? "" : "text-shadow: 4px 2px 6px #000;")};
 `;
 
 const Chevron = styled.svg`
@@ -62,30 +62,30 @@ const Tag = styled.span`
 `;
 
 const Section = styled.section`
-margin: 0 auto;
+  margin: 0 auto;
   max-width: 960px;
-          padding: 0px 1.0875rem 1.45rem;
-          paddingTop: 0;
-`
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+`;
 
 const Navigation = styled.div`
-margin: 30px auto 0;
+  margin: 30px auto 0;
   max-width: 960px;
-          padding: 0px 1.0875rem 1.45rem;
-          paddingTop: 0;
-display: flex;
-justify-content: space-between;
-a {
-  color: #333;
-  text-decoration: none;
-  font-weight: 200;
-  transition: transform .2s ease-in-out;
-}
+  padding: 0px 1.0875rem 1.45rem;
+  padding-top: 0;
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 200;
+    transition: transform 0.2s ease-in-out;
+  }
 
-a:hover {
-  transform: scale(1.1);
-}
-`
+  a:hover {
+    transform: scale(1.1);
+  }
+`;
 
 const TagsSection = ({ slugs, tagNames, noShadow }) => {
   let tags;
@@ -111,7 +111,7 @@ const WorkTemplate = ({ data, pathContext, ...other }) => {
     <article>
       <Helmet title={`Work | ${title}`} />
       <WorkHeader bg={cover}>
-        <Header color={color} />
+        <Header color={color} shadow={!noTitleShadow} />
         <Info color={color}>
           <Title noShadow={noTitleShadow}>{title}</Title>
           <TagsSection
@@ -133,19 +133,20 @@ const WorkTemplate = ({ data, pathContext, ...other }) => {
       <Section>
         <TextPostBody htmlAst={post.htmlAst} />
       </Section>
-        <Navigation>
-          {prev ?
-            <Link className="link prev" to={`/${prev.fields.slug}`}>
-          &laquo; {prev.frontmatter.title}
-            </Link>
-            : <div />
-          }
-          {next && (
-            <Link className="link next" to={`/${next.fields.slug}`}>
-              {next.frontmatter.title} &raquo;
-            </Link>
-          )}
-        </Navigation>
+      <Navigation>
+        {prev ? (
+          <Link className="link prev" to={`/${prev.fields.slug}`}>
+            &laquo; {prev.frontmatter.title}
+          </Link>
+        ) : (
+          <div />
+        )}
+        {next && (
+          <Link className="link next" to={`/${next.fields.slug}`}>
+            {next.frontmatter.title} &raquo;
+          </Link>
+        )}
+      </Navigation>
     </article>
   );
 };

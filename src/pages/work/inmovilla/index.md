@@ -3,7 +3,7 @@ title: "Iconos Inmovilla"
 date: "2018-03-07"
 thumbnail: "/images/proyecto-iconos-inmovilla.jpg"
 cover: "/images/cover-inmovilla.jpg"
-color: "#f3f4f0"
+noTitleShadow: true
 tags:
     - Ilustración
 ---
