@@ -34,15 +34,21 @@ class Contact extends Component {
           >
             <div className="form-group">
               <label htmlFor="name">Nombre:</label>
-              <input name="name" type="text" />
+              <input name="name" type="text" required />
             </div>
             <div className="form-group">
               <label htmlFor="email">Email:</label>
-              <input name="email" type="email" />
+              <input name="email" type="email" required />
             </div>
             <div className="form-group">
               <label htmlFor="message">Mensaje:</label>
-              <textarea name="message" id="message" cols="30" rows="10" />
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+                required
+              />
             </div>
             <input type="submit" value="Enviar" />
           </form>
