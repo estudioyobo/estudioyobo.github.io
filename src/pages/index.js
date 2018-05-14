@@ -22,9 +22,9 @@ const IndexPage = ({ data }) => {
           <p>
             Estudio de diseño gráfico y desarrollo ubicado en Elche
             especializado en identidad corporativa, comunicación gráfica e
-            ilustración y desarrollo de aplicaciones web y móvil.{" "}
-            <b>¿Tienes una idea?</b> coméntanosla y le daremos forma para
-            ayudarte a conseguir tus objetivos.
+            ilustración y desarrollo de aplicaciones web y móvil. ¿Tienes una
+            idea? coméntanosla y le daremos forma para ayudarte a conseguir tus
+            objetivos.
           </p>
           <Button>
             <Link
