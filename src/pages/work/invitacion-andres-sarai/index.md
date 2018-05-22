@@ -4,10 +4,12 @@ date: "2018-03-08"
 thumbnail: "/images/proyecto-invitacion-boda.jpg"
 cover: "/images/cover-invitacion-boda.jpg"
 color: "#79ab70"
-hide: true
+hide: false
 tags:
     - Comunicación
     - Ilustración
+
+
 ---
 
 Invitación de boda de Andrés & Sarai.
