@@ -1,5 +1,6 @@
 ---
 title: "Yownes"
+description: "Naming e imagotipo para un servicio online de creación de tiendas móviles"
 date: "2018-03-06"
 thumbnail: "/images/proyecto-yownes.jpg"
 cover: "/images/cover-yownes.jpg"

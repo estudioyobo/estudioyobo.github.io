@@ -1,5 +1,6 @@
 ---
 title: "MDC"
+description: "Ilustración de la portada de Gorillaz"
 date: "2018-03-05"
 thumbnail: "/images/proyecto-mdc.jpg"
 cover: "/images/cover-mdc.jpg"
