@@ -6,6 +6,7 @@ import Helmet from "react-helmet";
 import "./work-page.css";
 import Header from "../components/Header";
 import TextPostBody from "../components/TextPostBody";
+import SEO from "../components/SEO";
 
 const WorkHeader = styled.section`
   position: relative;
@@ -107,9 +108,11 @@ const WorkTemplate = ({ data, pathContext, ...other }) => {
   const post = data.markdownRemark;
   const { next, prev } = pathContext;
   const { title, cover, color, noTitleShadow, tags } = post.frontmatter;
+
   return (
     <article>
       <Helmet title={`Work | ${title}`} />
+      <SEO postImage={cover} postData={post} isWork />
       <WorkHeader bg={cover}>
         <Header color={color} shadow={!noTitleShadow} />
         <Info color={color}>
@@ -160,6 +163,7 @@ export const query = graphql`
       }
       frontmatter {
         title
+        description
         tags
         cover
         color

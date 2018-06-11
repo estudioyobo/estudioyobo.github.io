@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 const Divide = styled.div`
   display: flex;
@@ -7,9 +7,22 @@ const Divide = styled.div`
   p {
     padding-left: 20px;
   }
-  img {
+  img,
+  p {
     width: 50%;
   }
+  ${css`
+    @media (max-width: 590px) {
+      flex-direction: column;
+      p,
+      img {
+        width: 100%;
+      }
+      p {
+        padding: 10px 0;
+      }
+    }
+  `};
 `;
 
 export default Divide;

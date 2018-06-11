@@ -1,5 +1,6 @@
 ---
 title: "Reason.Build"
+description: "Imagotipo para una consultoría online de EEUU"
 date: "2018-03-01"
 thumbnail: "/images/proyecto-reason.jpg"
 cover: "/images/cover-reason.jpg"

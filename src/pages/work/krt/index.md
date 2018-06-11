@@ -1,5 +1,6 @@
 ---
 title: "KRT"
+description: "Diseño del logo para el grupo de motor KRT de Elche"
 date: "2018-03-03"
 thumbnail: "/images/proyecto-krt.jpg"
 cover: "/images/cover-krt.jpg"

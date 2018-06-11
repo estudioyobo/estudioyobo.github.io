@@ -1,5 +1,6 @@
 ---
 title: "Usui Reiki Ryoho"
+description: "Diseño de la identidad corporativa para una asociación de Reiki"
 date: "2018-03-02"
 thumbnail: "/images/proyecto-reyki.jpg"
 cover: "/images/cover-reiki.jpg"

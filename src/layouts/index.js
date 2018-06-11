@@ -12,8 +12,10 @@ const TemplateWrapper = ({ children, data }) => (
     <Helmet
       title={data.site.siteMetadata.title}
       meta={[
-        { name: "description", content: "Sample" },
-        { name: "keywords", content: "sample, something" }
+        { name: "description", content: info.description },
+        { name: "keywords", content: info.keywords.concat() },
+        { name: "og:type", content: "webpage" },
+        { name: "og:site_name", content: "Estudio Yobo" }
       ]}
     />
     <Header />

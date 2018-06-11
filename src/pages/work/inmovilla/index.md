@@ -1,5 +1,6 @@
 ---
 title: "Iconos Inmovilla"
+description: "Iconos diseñados para una inmobiliaria de Elche"
 date: "2018-03-07"
 thumbnail: "/images/proyecto-iconos-inmovilla.jpg"
 cover: "/images/cover-inmovilla.jpg"
