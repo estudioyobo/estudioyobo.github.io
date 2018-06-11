@@ -16,3 +16,8 @@ Usamos el circulo, ya que se le atribuye el significado de lo sagrado, la perfec
 <img src="reiki.png" />
 </hidden>
 <zoom-image src="reiki.png" zoomSrc='reiki.png' atl='Nombre'></zoom-image>
+
+<hidden>
+<img src="Img _2 _Usui Reiki.jpg" />
+</hidden>
+<zoom-image src="Img _2 _Usui Reiki.jpg" zoomSrc='reiki.png' atl='Nombre'></zoom-image>
