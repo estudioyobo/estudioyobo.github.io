@@ -1,7 +1,7 @@
 ---
 title: "MDC"
 date: "2018-03-05"
-thumbnail: "/images/proyecto-mdc.jpg"
+thumbnail: "/images/proyecto-MDC.jpg"
 cover: "/images/cover-mdc.jpg"
 color: "#f3f4f0"
 tags:

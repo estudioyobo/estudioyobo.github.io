@@ -45,7 +45,7 @@ const IndexPage = ({ data }) => {
             image={node.frontmatter.thumbnail}
             category={node.frontmatter.tags}
             link={node.fields.slug}
-            data-aos="fade-up"
+            
             wrapClass="home-grid--img"
           />
         ))}
