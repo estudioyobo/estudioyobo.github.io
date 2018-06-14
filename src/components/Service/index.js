@@ -6,7 +6,7 @@ import "./service.css";
 const Service = ({ title, description, list, image, color }) => (
   <div className="service">
     <div className="service--content">
-      <h2 className="service--title">{title}</h2>
+      <h3 className="service--title">{title}</h3>
       <p className="service--description">{description}</p>
       <ul className="service--list">
         {list.map((item, i) => <li key={i}>{item}</li>)}
