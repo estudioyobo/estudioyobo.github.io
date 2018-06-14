@@ -2,7 +2,7 @@
 title: "MDC"
 description: "Ilustración de la portada de Gorillaz"
 date: "2018-03-05"
-thumbnail: "/images/proyecto-MDC.jpg"
+thumbnail: "/images/proyecto-mdc.jpg"
 cover: "/images/cover-mdc.jpg"
 color: "#f3f4f0"
 tags:
