@@ -1,13 +1,7 @@
-import React from "react";
-import Service from "../components/Service";
+import React, { Component } from "react";
 
-import services from "../config/services";
+import "./services.css";
 
-const Services = () => (
-  <div>
-    <h1>SERVICIOS</h1>
-    {services.map((service, i) => <Service {...service} key={i} />)}
-  </div>
-);
+const Services = () => <div className="services__background" />;
 
 export default Services;
