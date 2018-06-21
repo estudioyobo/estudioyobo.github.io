@@ -36,11 +36,6 @@ export default {
       name: "Instagram",
       icon: "/icons/ig.svg",
       link: "https://www.instagram.com/estudioyobo/"
-    },
-    {
-      name: "Behance",
-      icon: "/icons/bh.svg",
-      link: "http://behance.net/AntoniBoix"
     }
   ],
   mail: "info@estudioyobo.com",

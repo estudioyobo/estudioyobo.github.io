@@ -5,7 +5,7 @@ export const categories = {
   comunicacion: "Comunicación gráfica",
   packaging: "Packaging",
   social: "Social media",
-  motion: "Stop motions",
+  motion: "Motions Graphics",
   apps: "Apps Móviles",
   api: "APIs",
   web: "Apps Web",
