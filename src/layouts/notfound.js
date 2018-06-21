@@ -19,13 +19,8 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Header />
-    <div
-      style={{
-        height: "90vh"
-      }}
-    >
-      {children()}
-    </div>
+
+    {children()}
     <Footer {...info} />
   </div>
 );
