@@ -11,7 +11,7 @@ tags:
     - Ilustración
 ---
 
-Invitación de boda de Andrés & Sarai.
+Invitación de boda personalizada para Andrés y Sarai. Buscamos algo sencillo y que transmitiera un toque mediterráneo, por eso pensamos en las ramas del olivo, un árbol muy presente en nuestro ecosistema. Además de encajar a la perfección con el lugar de la ceremonia, el Huerto del Cura, en Elche. 
 
 <hidden>
 <img src="invitacion.jpg" />
