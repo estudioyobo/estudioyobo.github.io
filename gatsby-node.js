@@ -126,6 +126,10 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
 
       // Update the page.
       createPage(page);
+    } else if (page.path.match(/^\/404*/)) {
+      page.layout = "notfound";
+
+      createPage(page);
     }
 
     resolve();
