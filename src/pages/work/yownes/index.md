@@ -8,7 +8,6 @@ color: "#fff"
 noTitleShadow: true
 tags:
     - Identidad Corporativa
-    - Branding
 ---
 
 Yownes es un proyecto de creación de naming e imagotipo para una empresa propietaria de un servicio online que se dedica a facilitar la creación de una tienda móvil, en formato app, gracias a su plataforma.
