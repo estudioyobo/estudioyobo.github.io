@@ -4,8 +4,9 @@ description: "Invitación de boda diseñada por Estudio Yobo"
 date: "2018-03-08"
 thumbnail: "/images/proyecto-design-invitacion-boda.jpg"
 cover: "/images/cover-design-invitacion-boda.jpg"
-color: "#79ab70"
+color: "#333333"
 hide: false
+noTitleShadow: true
 tags:
     - Comunicación Gráfica
     - Ilustración
