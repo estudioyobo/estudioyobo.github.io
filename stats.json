@@ -45,8 +45,8 @@
       "path---work-bot-telegram-goldgyms-bot-e287d0e1f44eabf9bbb7.js.map"
     ],
     "path---index": [
-      "path---index-cb84d498b7659bcccd9d.js",
-      "path---index-cb84d498b7659bcccd9d.js.map"
+      "path---index-ca6b958eff87922be211.js",
+      "path---index-ca6b958eff87922be211.js.map"
     ],
     "component---src-pages-services-design-js": [
       "component---src-pages-services-design-js-64e72098389f25b371e7.js",
@@ -95,9 +95,9 @@
       "path---work-reason-build-dbb069a3f311f205ed57.js.map"
     ],
     "app": [
-      "app-3ee66b65a3f7b6cfb303.js",
+      "app-68d3a6f2ee905362363f.js",
       "build-js-styles.css",
-      "app-3ee66b65a3f7b6cfb303.js.map",
+      "app-68d3a6f2ee905362363f.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-template-work-page-js": [
@@ -115,6 +115,10 @@
     "path---services-design": [
       "path---services-design-a0e39f21c11f6a62c5ab.js",
       "path---services-design-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---work-invitacion-andres-sarai": [
+      "path---work-invitacion-andres-sarai-662e92790a051680ded9.js",
+      "path---work-invitacion-andres-sarai-662e92790a051680ded9.js.map"
     ],
     "path---services": [
       "path---services-a0e39f21c11f6a62c5ab.js",
