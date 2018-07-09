@@ -2,7 +2,7 @@
 title: "Invitación Andrés & Sarai"
 description: "Invitación de boda diseñada por Estudio Yobo"
 date: "2018-03-08"
-thumbnail: "/images/proyecto-desgin-invitacion-boda.jpg"
+thumbnail: "/images/proyecto-design-invitacion-boda.jpg"
 cover: "/images/cover-design-invitacion-boda.jpg"
 color: "#79ab70"
 hide: false
