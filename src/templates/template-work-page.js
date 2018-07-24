@@ -95,7 +95,7 @@ const TagsSection = ({ slugs, tagNames, noShadow }) => {
       const divider = i < slugs.length - 1 && <span>{`, `}</span>;
       return (
         <Tag key={tag} noShadow={noShadow}>
-          <Link to={tag}>{tagNames[i]}</Link>
+          <a href="#">{tagNames[i]}</a>
           {divider}
         </Tag>
       );
