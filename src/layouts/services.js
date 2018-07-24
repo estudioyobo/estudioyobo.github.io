@@ -50,7 +50,7 @@ class TemplateWrapper extends Component {
                   : " service__section--dark"
               }
               style={{
-                textDecoration: isDesign ? "underline double" : "none"
+                textDecoration: isDesign ? "underline" : "none"
               }}
               url="/services/design"
               enableItems={!condensedNav}
@@ -66,7 +66,7 @@ class TemplateWrapper extends Component {
                     : " service__section--light"
               }
               style={{
-                textDecoration: isDevelop ? "underline double" : "none"
+                textDecoration: isDevelop ? "underline" : "none"
               }}
               url="/services/develop"
               enableItems={!condensedNav}
