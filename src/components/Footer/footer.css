@@ -1,4 +1,5 @@
 footer {
+  position: relative;
   background-color: #333;
   color: #f3f4f0;
   font-weight: 200;
@@ -38,6 +39,23 @@ footer {
   text-decoration: none;
 }
 
+.footer__up {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__up--text {
+  font-size: 14px;
+}
+.footer__up--arrow {
+  font-size: 30px;
+  line-height: 22px;
+}
+
 /*
 * Media Queries
 */
@@ -45,5 +63,12 @@ footer {
 @media (max-width: 400px) {
   .footer-phone span {
     display: block;
+  }
+  .footer__up {
+    top: 15px;
+    right: 15px;
+  }
+  .footer__up--text {
+    display: none;
   }
 }
