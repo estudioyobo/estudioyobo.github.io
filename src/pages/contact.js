@@ -24,7 +24,14 @@ class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <div
+        style={{
+          margin: "70px auto 100px",
+          maxWidth: 960,
+          padding: "0px 1.0875rem 1.45rem",
+          paddingTop: 0
+        }}
+      >
         <h1>CONTACTO</h1>
         <div className="container">
           <form
