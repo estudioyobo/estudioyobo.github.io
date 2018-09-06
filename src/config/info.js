@@ -1,7 +1,7 @@
 export default {
   title: "Estudio Yobo",
   description:
-    "Estudio de diseño gráfico y desarrollo ubicado en Elche especializado en identidad corporativa, comunicación gráfica e ilustración y desarrollo de aplicaciones web y móvil. ¿Tienes una idea? coméntanosla y le daremos forma para ayudarte a conseguir tus objetivos.",
+    "Diseño gráfico y Desarrollo en Elche, Alicante. Logotipos - Carteles - Publicidad - Marketing online - Páginas web - Aplicaciones - Tarjetas - Folletos",
   keywords: [
     "diseño",
     "design",

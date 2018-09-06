@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "Estudio Yobo"
+    title: "Estudio Yobo | Diseño gráfico y desarrollo"
   },
   plugins: [
     "gatsby-plugin-react-helmet",

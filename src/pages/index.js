@@ -50,6 +50,15 @@ const IndexPage = ({ data }) => {
           />
         ))}
       </div>
+      <div className="hero--description">
+          <p>
+            Estudio de diseño gráfico y desarrollo ubicado en Elche
+            especializado en identidad corporativa, comunicación gráfica,
+            ilustración, desarrollo de aplicaciones web y móvil. ¿Tienes una
+            idea? coméntanosla y le daremos forma para ayudarte a conseguir tus
+            objetivos.
+          </p>
+        </div>
     </div>
   );
 };
