@@ -20,11 +20,13 @@ const IndexPage = ({ data }) => {
         <h1>Estudio de diseño y desarrollo</h1>
         <div className="hero--description">
           <p>
-            Estudio de diseño gráfico y desarrollo ubicado en Elche
-            especializado en identidad corporativa, comunicación gráfica,
-            ilustración, desarrollo de aplicaciones web y móvil. ¿Tienes una
-            idea? coméntanosla y le daremos forma para ayudarte a conseguir tus
-            objetivos.
+           Bienvenido a nuestro estudio ¡Pasa y siéntate!
+          </p>
+          <p>
+            ¿Buscas un diseñador gráfico para crear esa campaña de publicidad que tanto deseas? ¿Tal vez necesitas un nuevo diseño web o un programador para desarrollar una aplicación?
+          </p>
+          <p>
+            Estás en el sitio adecuado, el diseño y el desarrollo es lo nuestro. Juntando estas dos disciplinas hacemos que el curso de las cosas mejore. Creamos desde tarjetas de visita hasta aplicaciones móviles. Ofrecemos un amplio abanico de servicios con los que quedarás satisfecho, tanto si eres empresa como un particular.
           </p>
           <Button>
             <Link
@@ -50,15 +52,18 @@ const IndexPage = ({ data }) => {
           />
         ))}
       </div>
+      <div className="hero">
       <div className="hero--description">
           <p>
-            Estudio de diseño gráfico y desarrollo ubicado en Elche
-            especializado en identidad corporativa, comunicación gráfica,
-            ilustración, desarrollo de aplicaciones web y móvil. ¿Tienes una
-            idea? coméntanosla y le daremos forma para ayudarte a conseguir tus
-            objetivos.
+          Te ayudamos:<br/>
+
+Con la publicidad de tu negocio, folletos, carteles, dossieres, todo necesita una buena imágen gráfica para atraer a nuevos clientes. 
+
+A mantenerte cerca de tus clientes a través de una página web o una app. Todo con un buen desarrollo interno
+
           </p>
         </div>
+      </div>
     </div>
   );
 };
