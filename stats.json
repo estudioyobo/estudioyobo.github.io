@@ -40,13 +40,17 @@
       "component---src-layouts-index-js-e81d656a7b339081d209.js",
       "component---src-layouts-index-js-e81d656a7b339081d209.js.map"
     ],
+    "path---work-goyos-garage": [
+      "path---work-goyos-garage-3dd8919e74ed3b6fc034.js",
+      "path---work-goyos-garage-3dd8919e74ed3b6fc034.js.map"
+    ],
     "path---work-bot-telegram-goldgyms-bot": [
       "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js",
       "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js.map"
     ],
     "path---index": [
-      "path---index-8ab236ecd4f0c6d65c40.js",
-      "path---index-8ab236ecd4f0c6d65c40.js.map"
+      "path---index-6de68156f91623088cbc.js",
+      "path---index-6de68156f91623088cbc.js.map"
     ],
     "component---src-pages-services-design-js": [
       "component---src-pages-services-design-js-64e72098389f25b371e7.js",
@@ -95,9 +99,9 @@
       "path---work-reason-build-dbb069a3f311f205ed57.js.map"
     ],
     "app": [
-      "app-0a98401c003d6ba3a5dc.js",
+      "app-f87ce8dab61015c05cb2.js",
       "build-js-styles.css",
-      "app-0a98401c003d6ba3a5dc.js.map",
+      "app-f87ce8dab61015c05cb2.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-template-work-page-js": [
