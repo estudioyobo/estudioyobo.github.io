@@ -49,8 +49,8 @@
       "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js.map"
     ],
     "path---index": [
-      "path---index-6de68156f91623088cbc.js",
-      "path---index-6de68156f91623088cbc.js.map"
+      "path---index-c325c07f66060372afa8.js",
+      "path---index-c325c07f66060372afa8.js.map"
     ],
     "component---src-pages-services-design-js": [
       "component---src-pages-services-design-js-64e72098389f25b371e7.js",
@@ -94,14 +94,18 @@
       "path---work-krt-f34b70456a9e7f5738f4.js",
       "path---work-krt-f34b70456a9e7f5738f4.js.map"
     ],
+    "path---work-green-lion": [
+      "path---work-green-lion-e5b6c984d1b20d72fb66.js",
+      "path---work-green-lion-e5b6c984d1b20d72fb66.js.map"
+    ],
     "path---work-reason-build": [
       "path---work-reason-build-dbb069a3f311f205ed57.js",
       "path---work-reason-build-dbb069a3f311f205ed57.js.map"
     ],
     "app": [
-      "app-f87ce8dab61015c05cb2.js",
+      "app-03d42ad38622356e240e.js",
       "build-js-styles.css",
-      "app-f87ce8dab61015c05cb2.js.map",
+      "app-03d42ad38622356e240e.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-template-work-page-js": [
