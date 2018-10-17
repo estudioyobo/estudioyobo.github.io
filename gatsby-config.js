@@ -15,15 +15,14 @@ module.exports = {
         // Setting this parameter is optional
         anonymize: true,
         // Setting this parameter is also optional
-        respectDNT: true,
+        respectDNT: true
         // Avoids sending pageview hits from custom paths
-        
       }
     },
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Montserrat:200,500,700"]
+        fonts: ["Montserrat:200,400,500,,600,800"]
       }
     },
     {
