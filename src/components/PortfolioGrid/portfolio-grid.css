@@ -1,3 +1,7 @@
+section {
+  padding: 100px 0;
+}
+
 .portfolio-section {
   display: grid;
   /* justify-content: space-between;
