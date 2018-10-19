@@ -1,16 +1,16 @@
 import React from "react";
 
-import PortfolioItem from "../PortfolioItem";
+import PortfolioItem from "../../components/PortfolioItem";
+import SectionHeader from "../../components/SectionHeader";
 
 import "./portfolio-grid.css";
-import SectionHeader from "../SectionHeader/index";
 
 const PortfolioGrid = ({ posts }) => (
   <section>
     <SectionHeader
       title="portfolio"
       subtitle="nuestros trabajos"
-      color="#ffdd3b"
+      color="#EECA46"
     />
     <div className="portfolio-section">
       <h2>Project</h2>

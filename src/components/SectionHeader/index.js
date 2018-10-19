@@ -24,7 +24,7 @@ const fadeIn = keyframes`
 `;
 
 const Divider = styled.div`
-  width: 100px;
+  width: 240px;
   height: 2px;
   background: #333;
   opacity: 0;
@@ -41,13 +41,15 @@ const Title = styled.h1`
   animation: ${fadeIn} 0.5s ease-in 0.6s forwards;
   transform-origin: bottom;
   opacity: 0;
-  font-weight: 800;
+  font-weight: 500;
   text-transform: lowercase;
   margin-bottom: -14px;
-  font-size: 35px;
+  font-size: 70px;
+  line-height: 60px;
 `;
 const Subtitle = styled.h2`
-  font-size: 14px;
+  font-size: 20px;
+  font-weight: bold;
   display: inline-block;
   animation: ${fadeIn} 0.5s ease-in 0.6s forwards;
   transform-origin: bottom;
@@ -56,7 +58,7 @@ const Subtitle = styled.h2`
 `;
 
 const SectionHeader = ({ title, subtitle, color }) => (
-  <div>
+  <div style={{ marginBottom: 50 }}>
     <Title color={color}>{title}</Title>
     <Divider />
     <Subtitle>{subtitle}</Subtitle>

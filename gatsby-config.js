@@ -22,7 +22,7 @@ module.exports = {
     {
       resolve: "gatsby-plugin-google-fonts",
       options: {
-        fonts: ["Montserrat:200,400,500,,600,800"]
+        fonts: ["Montserrat:200,400,500,600,800", "Crimson Text:400i,600i"]
       }
     },
     {

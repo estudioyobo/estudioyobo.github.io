@@ -68,10 +68,10 @@ section {
 .portfolio-section h2:nth-child(2) {
   grid-area: t2;
   align-self: center;
-  color: #ffdd3b;
+  color: #eeca46;
 }
 
-.portfolio-section h3 {
+.portfolio-section > h3 {
   grid-area: more;
   align-self: end;
 }

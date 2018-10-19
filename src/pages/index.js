@@ -3,6 +3,7 @@ import Link from "gatsby-link";
 import Button from "../components/Button";
 
 import "./index.css";
+import heroIMG from "./hero.png";
 
 if (typeof window !== "undefined") {
   var AOS = require("aos/dist/aos.js");
@@ -10,14 +11,15 @@ if (typeof window !== "undefined") {
 }
 
 import "aos/dist/aos.css";
-import PortfolioGrid from "../components/PortfolioGrid/index";
+import Portfolio from "../landing-sections/Portfolio";
+import ServicesSection from "../landing-sections/Services";
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
     <div className="home">
       <section className="hero">
-        <div className="hero--caroussel" />
+        <img src={heroIMG} className="hero--caroussel" />
         <h1>
           Diseño gráfico <br /> & desarrollo
         </h1>
@@ -41,41 +43,8 @@ const IndexPage = ({ data }) => {
           Contacto
         </a>
       </section>
-      <PortfolioGrid posts={posts} />
-      <section className="home-services">
-        <h2>Te ayudamos</h2>
-        <div className="home-services--columns">
-          <div>
-            <img src="/icons/design-services.svg" alt="" />
-            <div>
-              Con la publicidad de tu negocio, folletos, carteles, dossieres,
-              todo necesita una buena imágen gráfica para atraer a nuevos
-              clientes.
-            </div>
-          </div>
-          <div>
-            <img src="/icons/develop-services.svg" alt="" />
-            <div>
-              A mantenerte cerca de tus clientes a través de una página web o
-              una app. Todo con un buen desarrollo interno
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="home-map">
-        <iframe
-          width="100%"
-          height="100%"
-          frameBorder="0"
-          allowfullscreen
-          src="https://umap.openstreetmap.fr/es/map/mapa-sin-titulo_246982?scaleControl=false&miniMap=true&scrollWheelZoom=true&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=undefined&captionBar=false"
-        />
-        <div>
-          Ubicado en Elche, Alicante, Estudio Yobo nace con un propósito, ser la
-          agencia de referencia en la zona para los trabajos de diseño y
-          desarrollo.
-        </div>
-      </section>
+      <ServicesSection />
+      <Portfolio posts={posts} />
       <section className="home-contact">
         <form
           className="form"
