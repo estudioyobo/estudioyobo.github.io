@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "gatsby-link";
 import Button from "../components/Button";
+import LandingMenu from "../components/LandingMenu";
 import companiesInfo from "../config/companies";
 import Portfolio from "../landing-sections/Portfolio";
 import ServicesSection from "../landing-sections/Services";
@@ -16,11 +17,35 @@ if (typeof window !== "undefined") {
   AOS.init();
 }
 
+const sections = [
+  {
+    id: "services",
+    name: "Servicios"
+  },
+  {
+    id: "portfolio",
+    name: "Portfolio"
+  },
+  {
+    id: "companies",
+    name: "Empresas"
+  },
+  {
+    id: "team",
+    name: "Equipo"
+  },
+  {
+    id: "contact",
+    name: "Contacto"
+  }
+];
+
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
     <div className="home">
       <section className="hero">
+        <LandingMenu sections={sections} />
         <img src={heroIMG} className="hero--caroussel" />
         <h1>
           Diseño gráfico <br /> & desarrollo
@@ -49,7 +74,7 @@ const IndexPage = ({ data }) => {
       <Portfolio posts={posts} />
       <Companies companies={companiesInfo} />
       <TeamWork />
-      <section className="home-contact">
+      <section id="contact" className="home-contact">
         <form
           className="form"
           action="https://formspree.io/info@estudioyobo.com"

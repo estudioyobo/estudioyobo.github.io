@@ -28,7 +28,7 @@ const TeamworkHero = styled.div`
 `;
 
 const TeamWork = () => (
-  <section>
+  <section id="team">
     <TeamworkHero>
       <h1>Trabajo en equipo</h1>
     </TeamworkHero>

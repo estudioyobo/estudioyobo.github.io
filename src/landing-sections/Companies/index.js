@@ -16,7 +16,7 @@ const CompaniesWrapper = styled.div`
 `;
 
 const Companies = ({ companies }) => (
-  <SectionWrapper>
+  <SectionWrapper id="companies">
     <h1>Hemos trabajado para...</h1>
     <CompaniesWrapper>
       {companies.map(company => <Company {...company} />)}
