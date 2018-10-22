@@ -71,6 +71,7 @@ h1 {
   align-self: center;
   margin: 2rem;
   z-index: 30;
+  min-width: 100px;
 }
 
 .home-description p {
