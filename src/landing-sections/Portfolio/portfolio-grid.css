@@ -70,6 +70,8 @@
 .portfolio-section > h3 {
   grid-area: more;
   align-self: end;
+  font-family: "Crimson Text";
+  font-size: 2rem;
 }
 
 .portfolio-section--desc {
