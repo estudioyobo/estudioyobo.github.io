@@ -18,7 +18,7 @@ import pencilIMG from "./pencil.png";
 import keyboardIMG from "./keyboard.png";
 
 const ServicesSection = () => (
-  <section>
+  <section className="padding">
     <SectionHeader title="Servicios" subtitle="¿Qué hacemos?" color="#FD5F65" />
     <div className="section-design">
       <Grid>

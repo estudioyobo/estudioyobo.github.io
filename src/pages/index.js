@@ -4,7 +4,8 @@ import Button from "../components/Button";
 import companiesInfo from "../config/companies";
 import Portfolio from "../landing-sections/Portfolio";
 import ServicesSection from "../landing-sections/Services";
-import Companies from "../landing-sections/Companies/index";
+import Companies from "../landing-sections/Companies";
+import TeamWork from "../landing-sections/Teamwork";
 
 import "./index.css";
 import "aos/dist/aos.css";
@@ -47,6 +48,7 @@ const IndexPage = ({ data }) => {
       <ServicesSection />
       <Portfolio posts={posts} />
       <Companies companies={companiesInfo} />
+      <TeamWork />
       <section className="home-contact">
         <form
           className="form"

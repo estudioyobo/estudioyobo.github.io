@@ -6,7 +6,7 @@ import SectionHeader from "../../components/SectionHeader";
 import "./portfolio-grid.css";
 
 const PortfolioGrid = ({ posts }) => (
-  <section>
+  <section className="padding">
     <SectionHeader
       title="portfolio"
       subtitle="nuestros trabajos"
