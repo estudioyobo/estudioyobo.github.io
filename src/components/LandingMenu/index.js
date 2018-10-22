@@ -40,7 +40,7 @@ const LandingMenu = ({ sections }) => (
   >
     {sections.map((section, i) => (
       <Item key={section} href={`#${section.id}`}>
-        <span>{i + 1}</span>
+        <span>{i}</span>
         <Emph>.-</Emph>
         <Name>{section.name}</Name>
       </Item>

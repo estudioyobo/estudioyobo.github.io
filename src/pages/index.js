@@ -20,16 +20,16 @@ if (typeof window !== "undefined") {
 
 const sections = [
   {
+    id: "start",
+    name: "Inicio"
+  },
+  {
     id: "services",
     name: "Servicios"
   },
   {
     id: "portfolio",
     name: "Portfolio"
-  },
-  {
-    id: "companies",
-    name: "Empresas"
   },
   {
     id: "team",
@@ -46,7 +46,7 @@ const IndexPage = ({ data }) => {
   return (
     <div className="home">
       <Top />
-      <section className="hero">
+      <section id="start" className="hero">
         <LandingMenu sections={sections} />
         <img src={heroIMG} className="hero--caroussel" />
         <h1>
