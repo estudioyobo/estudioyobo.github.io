@@ -1,18 +1,19 @@
 import React from "react";
 import Link from "gatsby-link";
 import Button from "../components/Button";
+import companiesInfo from "../config/companies";
+import Portfolio from "../landing-sections/Portfolio";
+import ServicesSection from "../landing-sections/Services";
+import Companies from "../landing-sections/Companies/index";
 
 import "./index.css";
+import "aos/dist/aos.css";
 import heroIMG from "./hero.png";
 
 if (typeof window !== "undefined") {
   var AOS = require("aos/dist/aos.js");
   AOS.init();
 }
-
-import "aos/dist/aos.css";
-import Portfolio from "../landing-sections/Portfolio";
-import ServicesSection from "../landing-sections/Services";
 
 const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
@@ -45,6 +46,7 @@ const IndexPage = ({ data }) => {
       </section>
       <ServicesSection />
       <Portfolio posts={posts} />
+      <Companies companies={companiesInfo} />
       <section className="home-contact">
         <form
           className="form"
