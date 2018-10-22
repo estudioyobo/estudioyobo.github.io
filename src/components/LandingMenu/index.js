@@ -12,7 +12,7 @@ const Emph = styled.span`
 
 const Item = styled.a`
   margin-bottom: 1rem;
-  color: #333;
+  color: black;
   text-decoration: none;
   display: block;
   mix-blend-mode: multiply;

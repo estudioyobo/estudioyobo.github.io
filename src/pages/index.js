@@ -2,6 +2,7 @@ import React from "react";
 import Link from "gatsby-link";
 import Button from "../components/Button";
 import LandingMenu from "../components/LandingMenu";
+import Top from "../components/Top";
 import companiesInfo from "../config/companies";
 import Portfolio from "../landing-sections/Portfolio";
 import ServicesSection from "../landing-sections/Services";
@@ -44,6 +45,7 @@ const IndexPage = ({ data }) => {
   const posts = data.allMarkdownRemark.edges;
   return (
     <div className="home">
+      <Top />
       <section className="hero">
         <LandingMenu sections={sections} />
         <img src={heroIMG} className="hero--caroussel" />
