@@ -1,5 +1,6 @@
-import React from "react";
+import React, { Component } from "react";
 import styled, { keyframes } from "styled-components";
+import isInViewport from "../../utils/inViewport";
 
 const widthAnim = keyframes`
 	0% {
@@ -29,7 +30,6 @@ const Divider = styled.div`
   background: #333;
   opacity: 0;
   display: block;
-  animation: ${widthAnim} 0.6s ease-in-out 0.1s forwards;
   transform-origin: left;
   display: inline-block;
   margin-right: 10px;
@@ -38,7 +38,6 @@ const Divider = styled.div`
 const Title = styled.h1`
   display: block;
   color: ${({ color }) => color};
-  animation: ${fadeIn} 0.5s ease-in 0.6s forwards;
   transform-origin: bottom;
   opacity: 0;
   font-weight: 500;
@@ -51,18 +50,57 @@ const Subtitle = styled.h2`
   font-size: 20px;
   font-weight: bold;
   display: inline-block;
-  animation: ${fadeIn} 0.5s ease-in 0.6s forwards;
+
   transform-origin: bottom;
   opacity: 0;
   text-transform: uppercase;
 `;
 
-const SectionHeader = ({ title, subtitle, color }) => (
-  <div style={{ marginBottom: 50 }}>
-    <Title color={color}>{title}</Title>
-    <Divider />
-    <Subtitle>{subtitle}</Subtitle>
-  </div>
-);
+const Wrapper = styled.div`
+  margin-bottom: 50px;
+  &.animated {
+    ${Divider} {
+      animation: ${widthAnim} 0.6s ease-in-out 0s forwards;
+    }
+    ${Title} {
+      animation: ${fadeIn} 0.5s ease-in 0.6s forwards;
+    }
+    ${Subtitle} {
+      animation: ${fadeIn} 0.5s ease-in 0.6s forwards;
+    }
+  }
+`;
+
+class SectionHeader extends Component {
+  state = {
+    animated: false
+  };
+  componentDidMount() {
+    window.addEventListener("scroll", this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("scroll", this.handleScroll);
+  }
+  handleScroll = () => {
+    console.log(this.elem, isInViewport(this.elem));
+    if (isInViewport(this.elem, { tolerance: 0.1 })) {
+      this.setState({ animated: true });
+      window.removeEventListener("scroll", this.handleScroll);
+    }
+  };
+  render() {
+    const { title, subtitle, color } = this.props;
+    return (
+      <Wrapper
+        innerRef={ref => (this.elem = ref)}
+        className={this.state.animated ? "animated" : ""}
+      >
+        <Title color={color}>{title}</Title>
+        <Divider />
+        <Subtitle>{subtitle}</Subtitle>
+      </Wrapper>
+    );
+  }
+}
 
 export default SectionHeader;
