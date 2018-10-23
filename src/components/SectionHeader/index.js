@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled, { keyframes } from "styled-components";
-import isInViewport from "../../utils/inViewport";
+import ScrollMagic from "scrollmagic";
 
 const widthAnim = keyframes`
 	0% {
@@ -72,28 +72,22 @@ const Wrapper = styled.div`
 `;
 
 class SectionHeader extends Component {
-  state = {
-    animated: false
-  };
+  constructor(props) {
+    super(props);
+    this.controller = new ScrollMagic.Controller();
+  }
   componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
+    new ScrollMagic.Scene({
+      triggerElement: this.elem,
+      triggerHook: "onEnter"
+    })
+      .setClassToggle(this.elem, "animated")
+      .addTo(this.controller);
   }
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-  handleScroll = () => {
-    if (isInViewport(this.elem, { tolerance: 0.1 })) {
-      this.setState({ animated: true });
-      window.removeEventListener("scroll", this.handleScroll);
-    }
-  };
   render() {
     const { title, subtitle, color } = this.props;
     return (
-      <Wrapper
-        innerRef={ref => (this.elem = ref)}
-        className={this.state.animated ? "animated" : ""}
-      >
+      <Wrapper innerRef={ref => (this.elem = ref)}>
         <Title color={color}>{title}</Title>
         <Divider />
         <Subtitle>{subtitle}</Subtitle>
