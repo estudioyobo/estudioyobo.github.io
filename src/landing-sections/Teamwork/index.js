@@ -174,6 +174,15 @@ const Degree = ({ title, university }) => (
   </DegreeWrapper>
 );
 
+const Magic = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 50px;
+  height: "100vh";
+  background: #f3f4f0;
+`;
+
 class TeamWork extends Component {
   constructor(props) {
     super(props);
@@ -185,9 +194,15 @@ class TeamWork extends Component {
   }
 
   componentDidMount() {
+    // Hero scene
+    new ScrollMagic.Scene({
+      triggerElement: "#teamwork-hero"
+    })
+      .setPin("#teamwork-hero")
+      .addTo(this.controller);
+    // Team scenes
     new ScrollMagic.Scene({
       duration: 1200,
-      offset: -50,
       triggerElement: "#us-magic"
     })
       .setPin("#us-magic")
@@ -219,10 +234,10 @@ class TeamWork extends Component {
   render() {
     return (
       <section id="team">
-        <TeamworkHero>
+        <TeamworkHero id="teamwork-hero">
           <h1>Trabajo en equipo</h1>
         </TeamworkHero>
-        <div style={{ height: "100vh" }} id="us-magic">
+        <Magic id="us-magic">
           <SectionHeader title="Nosotros" subtitle="Equipo" color="#56ef98" />
           <Us>
             <People>
@@ -296,7 +311,7 @@ class TeamWork extends Component {
               </p>
             </Description>
           </Us>
-        </div>
+        </Magic>
       </section>
     );
   }
