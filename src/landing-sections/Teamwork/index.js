@@ -33,7 +33,7 @@ const TeamworkHero = styled.div`
 `;
 
 const Us = styled.div`
-  height: 70vh;
+  height: 81vh;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: auto 50px auto;
@@ -49,7 +49,7 @@ const BasePerson = styled.div`
   grid-template-columns: 6fr 4fr;
   &.active {
     transform: scale(1.3);
-    transform-origin: bottom;
+    transform-origin: bottom left;
     z-index: 2;
     & div,
     span {
@@ -97,18 +97,25 @@ const PersonTitle = styled.h3`
   grid-row: 2 / 3;
   text-align: center;
   text-transform: uppercase;
+  display: none;
+  &.active {
+    display: block;
+  }
 `;
 const Description = styled.div`
   background: #333;
   color: #f3f4f0;
   grid-column: 9 / 15;
   grid-row: 3 / 4;
-  display: grid;
+  display: none;
   grid-template-columns: repeat(6, 1fr);
   padding: 2rem;
   & > p {
     grid-column: 3 / 6;
     text-align: right;
+  }
+  &.active {
+    display: grid;
   }
 `;
 
@@ -126,6 +133,10 @@ const Order = styled.div`
   color: #56ef98;
   grid-column: 12 / 15;
   grid-row: 1 / 2;
+  display: none;
+  &.active {
+    display: block;
+  }
 `;
 
 const Person = ({ className, Wrapper, image, name, surname }) => {
@@ -175,46 +186,34 @@ class TeamWork extends Component {
 
   componentDidMount() {
     new ScrollMagic.Scene({
-      duration: 900,
+      duration: 1200,
       offset: -50,
       triggerElement: "#us-magic"
     })
       .setPin("#us-magic")
-      .addTo(this.controller)
-      .on("progress", event => {
-        console.log("1- ", event);
-      });
+      .addTo(this.controller);
 
     new ScrollMagic.Scene({
       triggerElement: "#us-magic",
-      duration: 300
+      duration: 400
     })
       .setClassToggle(".p1", "active")
-      .addTo(this.controller)
-      .on("progress", event => {
-        console.log("2- ", event);
-      });
+      .addTo(this.controller);
 
     new ScrollMagic.Scene({
       triggerElement: "#us-magic",
-      duration: 300,
-      offset: 300
+      duration: 400,
+      offset: 400
     })
       .setClassToggle(".p2", "active")
-      .addTo(this.controller)
-      .on("progress", event => {
-        console.log("3- ", event);
-      });
+      .addTo(this.controller);
     new ScrollMagic.Scene({
       triggerElement: "#us-magic",
-      duration: 300,
-      offset: 600
+      duration: 400,
+      offset: 800
     })
       .setClassToggle(".p3", "active")
-      .addTo(this.controller)
-      .on("progress", event => {
-        console.log("4- ", event);
-      });
+      .addTo(this.controller);
   }
 
   render() {
@@ -249,15 +248,45 @@ class TeamWork extends Component {
                 surname="Almira"
               />
             </People>
-            <Order>01</Order>
-            <PersonTitle>Ingeniero Informático</PersonTitle>
-            <Description>
+            <Order className="p1">01</Order>
+            <PersonTitle className="p1">Ingeniero Informático</PersonTitle>
+            <Description className="p1">
               <Degree
                 title="Grado en Ingeniería Informática"
                 university="Universidad de Alicante"
               />
               <Degree
                 title="Máster en Desarrollo de Software para Dispositivos Móviles"
+                university="Universidad de Alicante"
+              />
+              <p>
+                Esta es una pequeña descripción sobre nosotros, algo cercano,
+                nada cñasico, rollo me gustan los videojuegos y cosas así, para
+                que quede más majete todo
+              </p>
+            </Description>
+            <Order className="p2">02</Order>
+            <PersonTitle className="p2">Diseñador gráfico</PersonTitle>
+            <Description className="p2">
+              <Degree
+                title="Grado en Diseño Gráfico"
+                university="Escuela de Arte y Superior de Diseño de Alicante"
+              />
+              <p>
+                Esta es una pequeña descripción sobre nosotros, algo cercano,
+                nada cñasico, rollo me gustan los videojuegos y cosas así, para
+                que quede más majete todo
+              </p>
+            </Description>
+            <Order className="p3">03</Order>
+            <PersonTitle className="p3">Ingeniero Informático</PersonTitle>
+            <Description className="p3">
+              <Degree
+                title="Grado en Ingeniería Informática"
+                university="Universidad de Alicante"
+              />
+              <Degree
+                title="Máster en Automática y Robótica"
                 university="Universidad de Alicante"
               />
               <p>
