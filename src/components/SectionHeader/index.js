@@ -82,7 +82,6 @@ class SectionHeader extends Component {
     window.removeEventListener("scroll", this.handleScroll);
   }
   handleScroll = () => {
-    console.log(this.elem, isInViewport(this.elem));
     if (isInViewport(this.elem, { tolerance: 0.1 })) {
       this.setState({ animated: true });
       window.removeEventListener("scroll", this.handleScroll);
