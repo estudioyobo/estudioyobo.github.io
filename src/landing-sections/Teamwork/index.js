@@ -44,24 +44,41 @@ const BasePerson = styled.div`
   transition: all 0.3s ease-in-out;
   align-self: end;
   position: relative;
-  & :hover {
+  display: grid;
+  grid-template-rows: 1fr 9fr;
+  grid-template-columns: 6fr 4fr;
+  &.active {
     transform: scale(1.3);
     transform-origin: bottom;
     z-index: 2;
-    & div {
+    & div,
+    span {
       display: block;
     }
   }
 
   & div {
     background: #56ef98;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 60%;
-    height: 90%;
-    z-index: -1;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
     display: none;
+  }
+  & span {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    display: none;
+    z-index: 3;
+    color: white;
+    font-size: 69px;
+    font-weight: 600;
+    line-height: 60px;
+    writing-mode: sideways-lr;
+    place-self: end;
+  }
+  & img {
+    grid-row: 1 / 3;
+    grid-column: 1 / 3;
+    z-index: 2;
   }
 `;
 
@@ -111,12 +128,16 @@ const Order = styled.div`
   grid-row: 1 / 2;
 `;
 
-const Person = ({ Wrapper, image, name }) => {
+const Person = ({ className, Wrapper, image, name, surname }) => {
   return (
-    <Wrapper>
+    <Wrapper className={className}>
       <img src={image} alt="name" />
       <div />
-      <span>{name}</span>
+      <span>
+        {name}
+        <br />
+        {surname}
+      </span>
     </Wrapper>
   );
 };
@@ -145,10 +166,56 @@ const Degree = ({ title, university }) => (
 class TeamWork extends Component {
   constructor(props) {
     super(props);
-    this.controller = new ScrollMagic.Controller();
+    this.controller = new ScrollMagic.Controller({
+      globalSceneOptions: {
+        triggerHook: "onLeave"
+      }
+    });
   }
 
-  componentDidMount() {}
+  componentDidMount() {
+    new ScrollMagic.Scene({
+      duration: 900,
+      offset: -50,
+      triggerElement: "#us-magic"
+    })
+      .setPin("#us-magic")
+      .addTo(this.controller)
+      .on("progress", event => {
+        console.log("1- ", event);
+      });
+
+    new ScrollMagic.Scene({
+      triggerElement: "#us-magic",
+      duration: 300
+    })
+      .setClassToggle(".p1", "active")
+      .addTo(this.controller)
+      .on("progress", event => {
+        console.log("2- ", event);
+      });
+
+    new ScrollMagic.Scene({
+      triggerElement: "#us-magic",
+      duration: 300,
+      offset: 300
+    })
+      .setClassToggle(".p2", "active")
+      .addTo(this.controller)
+      .on("progress", event => {
+        console.log("3- ", event);
+      });
+    new ScrollMagic.Scene({
+      triggerElement: "#us-magic",
+      duration: 300,
+      offset: 600
+    })
+      .setClassToggle(".p3", "active")
+      .addTo(this.controller)
+      .on("progress", event => {
+        console.log("4- ", event);
+      });
+  }
 
   render() {
     return (
@@ -156,31 +223,51 @@ class TeamWork extends Component {
         <TeamworkHero>
           <h1>Trabajo en equipo</h1>
         </TeamworkHero>
-        <SectionHeader title="Nosotros" subtitle="Equipo" color="#56ef98" />
-        <Us id="us-magic">
-          <People>
-            <Person Wrapper={Person1} image={jesusIMG} name="Jesús Gallego" />
-            <Person Wrapper={Person2} image={antoniIMG} name="Antoni Boix" />
-            <Person Wrapper={Person3} image={alexIMG} name="Alejandro Almira" />
-          </People>
-          <Order>01</Order>
-          <PersonTitle>Ingeniero Informático</PersonTitle>
-          <Description>
-            <Degree
-              title="Grado en Ingeniería Informática"
-              university="Universidad de Alicante"
-            />
-            <Degree
-              title="Máster en Desarrollo de Software para Dispositivos Móviles"
-              university="Universidad de Alicante"
-            />
-            <p>
-              Esta es una pequeña descripción sobre nosotros, algo cercano, nada
-              cñasico, rollo me gustan los videojuegos y cosas así, para que
-              quede más majete todo
-            </p>
-          </Description>
-        </Us>
+        <div style={{ height: "100vh" }} id="us-magic">
+          <SectionHeader title="Nosotros" subtitle="Equipo" color="#56ef98" />
+          <Us>
+            <People>
+              <Person
+                className="p1"
+                Wrapper={Person1}
+                image={jesusIMG}
+                name="Jesús"
+                surname="Gallego"
+              />
+              <Person
+                className="p2"
+                Wrapper={Person2}
+                image={antoniIMG}
+                name="Antoni"
+                surname="Boix"
+              />
+              <Person
+                className="p3"
+                Wrapper={Person3}
+                image={alexIMG}
+                name="Alejandro"
+                surname="Almira"
+              />
+            </People>
+            <Order>01</Order>
+            <PersonTitle>Ingeniero Informático</PersonTitle>
+            <Description>
+              <Degree
+                title="Grado en Ingeniería Informática"
+                university="Universidad de Alicante"
+              />
+              <Degree
+                title="Máster en Desarrollo de Software para Dispositivos Móviles"
+                university="Universidad de Alicante"
+              />
+              <p>
+                Esta es una pequeña descripción sobre nosotros, algo cercano,
+                nada cñasico, rollo me gustan los videojuegos y cosas así, para
+                que quede más majete todo
+              </p>
+            </Description>
+          </Us>
+        </div>
       </section>
     );
   }
