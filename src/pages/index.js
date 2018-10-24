@@ -12,6 +12,7 @@ import TeamWork from "../landing-sections/Teamwork";
 import "./index.css";
 import "aos/dist/aos.css";
 import heroIMG from "./hero.png";
+import Contact from "../landing-sections/Contact/index";
 
 if (typeof window !== "undefined") {
   var AOS = require("aos/dist/aos.js");
@@ -76,37 +77,7 @@ const IndexPage = ({ data }) => {
       <Portfolio posts={posts} />
       <Companies companies={companiesInfo} />
       <TeamWork />
-      <section id="contact" className="home-contact">
-        <form
-          className="form"
-          action="https://formspree.io/info@estudioyobo.com"
-          method="POST"
-        >
-          <div className="form-group">
-            <label htmlFor="name">Nombre:</label>
-            <input name="name" type="text" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input name="email" type="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="budget">Presupuesto:</label>
-            <input name="budget" type="text" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="message">Mensaje:</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              required
-            />
-          </div>
-          <input type="submit" value="Enviar" />
-        </form>
-      </section>
+      <Contact />
     </div>
   );
 };
