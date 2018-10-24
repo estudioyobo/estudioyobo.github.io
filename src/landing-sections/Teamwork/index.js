@@ -140,7 +140,7 @@ class TeamWork extends Component {
           <h1>Trabajo en equipo</h1>
         </TeamworkHero>
         <Magic id="us-magic">
-          <SectionHeader title="Nosotros" subtitle="Equipo" color="#56ef98" />
+          <SectionHeader title="Equipo" subtitle="Nosotros" color="#56ef98" />
           <Us>
             <People>
               <Person

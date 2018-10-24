@@ -3,6 +3,7 @@ import styled from "styled-components";
 import SectionHeader from "../../components/SectionHeader";
 
 import telephoneThunder from "./telephone-thunder.svg";
+import AnimatedInput from "../../components/AnimatedInput";
 
 const ContactWrapper = styled.section`
   background: #f3f4f0;
@@ -36,6 +37,7 @@ const Grid = styled.div`
   & .direction {
     grid-column: 5 / 8;
     grid-row: 5 / 6;
+    margin-top: 20px;
   }
   & img {
     grid-column: 5 / 8;
@@ -63,41 +65,20 @@ const Contact = () => (
         method="POST"
       >
         <div>
-          <div className="form-group">
-            <label htmlFor="name">Nombre:</label>
-            <input name="name" type="text" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="email">Email:</label>
-            <input name="email" type="email" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="telephone">Teléfono: (opcional)</label>
-            <input name="telephone" type="telephone" required />
-          </div>
-          <div className="form-group">
-            <label htmlFor="budget">Presupuesto: </label>
-            <input name="budget" type="text" required />
-          </div>
+          <AnimatedInput name="name" required />
+          <AnimatedInput name="email" required />
+          <AnimatedInput name="telephone" />
+          <AnimatedInput name="presupuesto" required />
         </div>
         <div>
-          <div className="form-group">
-            <label htmlFor="message">Mensaje:</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-              required
-            />
-          </div>
+          <AnimatedInput isTextarea name="message" required />
           <input type="submit" value="Enviar" />
         </div>
       </form>
       <div className="direction">
-        <p>Elche - Alicante</p>
-        <p>c/ Reina Victoria, 39. Planta 3</p>
-        <p>966 578 597</p>
+        Elche - Alicante<br />
+        C/ Reina Victoria, 39. Planta 3<br />
+        966 578 597<br />
       </div>
     </Grid>
   </ContactWrapper>
