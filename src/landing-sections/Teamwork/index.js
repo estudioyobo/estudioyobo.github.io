@@ -2,35 +2,13 @@ import React, { Component, Fragment } from "react";
 import styled from "styled-components";
 import ScrollMagic from "scrollmagic";
 import SectionHeader from "../../components/SectionHeader/index";
+import Person, { Person1, Person2, Person3 } from "./Person";
+import TeamworkHero from "./Hero";
+import Degree from "./Degree";
 
 import jesusIMG from "./jesus.png";
 import alexIMG from "./alex.png";
 import antoniIMG from "./antoni.png";
-
-const TeamworkHero = styled.div`
-  height: 100vh;
-  color: #56ef98;
-  padding: 10rem;
-  text-align: center;
-  position: relative;
-  margin-bottom: 50px;
-
-  & ::before {
-    content: "";
-    background-size: cover;
-    background-image: url("http://img2.rtve.es/v/4668478?w=1600&preview=1531953977002.jpg");
-    filter: grayscale(100%);
-    left: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
-  & h1 {
-    font-size: 6rem;
-  }
-`;
 
 const Us = styled.div`
   height: 81vh;
@@ -39,69 +17,6 @@ const Us = styled.div`
   grid-template-rows: auto 50px auto;
 `;
 
-const BasePerson = styled.div`
-  grid-row: 2 / 4;
-  transition: all 0.3s ease-in-out;
-  align-self: end;
-  position: relative;
-  display: grid;
-  grid-template-rows: 1fr 9fr;
-  grid-template-columns: 6fr 4fr;
-  &.active {
-    transform: scale(1.3);
-    transform-origin: bottom left;
-    z-index: 2;
-    & div,
-    span {
-      display: block;
-    }
-  }
-
-  & div {
-    background: #56ef98;
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    display: none;
-  }
-  & span {
-    grid-row: 2 / 3;
-    grid-column: 1 / 2;
-    display: none;
-    z-index: 3;
-    color: white;
-    font-size: 69px;
-    font-weight: 600;
-    line-height: 60px;
-    writing-mode: sideways-lr;
-    place-self: end;
-  }
-  & img {
-    grid-row: 1 / 3;
-    grid-column: 1 / 3;
-    z-index: 2;
-  }
-`;
-
-const Person1 = styled(BasePerson)`
-  grid-column: 1 / 4;
-`;
-const Person2 = styled(BasePerson)`
-  grid-column: 3 / 6;
-`;
-const Person3 = styled(BasePerson)`
-  grid-column: 5 / 8;
-`;
-
-const PersonTitle = styled.h3`
-  grid-column: 9 / 15;
-  grid-row: 2 / 3;
-  text-align: center;
-  text-transform: uppercase;
-  display: none;
-  &.active {
-    display: block;
-  }
-`;
 const Description = styled.div`
   background: #333;
   color: #f3f4f0;
@@ -126,6 +41,17 @@ const People = styled.div`
   grid-template-columns: repeat(7, 1fr);
 `;
 
+const PersonTitle = styled.h3`
+  grid-column: 9 / 15;
+  grid-row: 2 / 3;
+  text-align: center;
+  text-transform: uppercase;
+  display: none;
+  &.active {
+    display: block;
+  }
+`;
+
 const Order = styled.div`
   font-size: 200px;
   text-align: right;
@@ -138,41 +64,6 @@ const Order = styled.div`
     display: block;
   }
 `;
-
-const Person = ({ className, Wrapper, image, name, surname }) => {
-  return (
-    <Wrapper className={className}>
-      <img src={image} alt="name" />
-      <div />
-      <span>
-        {name}
-        <br />
-        {surname}
-      </span>
-    </Wrapper>
-  );
-};
-
-const DegreeWrapper = styled.div`
-  grid-column: 2 / 6;
-  margin: 2rem 0;
-`;
-
-const DegreeUniversity = styled.div`
-  color: #56ef98;
-  text-transform: uppercase;
-`;
-
-const DegreeTitle = styled.div`
-  font-family: "Crimson Text";
-`;
-
-const Degree = ({ title, university }) => (
-  <DegreeWrapper>
-    <DegreeTitle>{title}</DegreeTitle>
-    <DegreeUniversity>{university}</DegreeUniversity>
-  </DegreeWrapper>
-);
 
 const Magic = styled.div`
   display: flex;
