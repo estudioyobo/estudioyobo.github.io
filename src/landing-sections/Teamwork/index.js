@@ -86,11 +86,22 @@ class TeamWork extends Component {
 
   componentDidMount() {
     // Hero scene
-    new ScrollMagic.Scene({
+    const heroScene = new ScrollMagic.Scene({
       triggerElement: "#teamwork-hero"
     })
       .setPin("#teamwork-hero")
       .addTo(this.controller);
+    new ScrollMagic.Scene({
+      triggerElement: "#us-magic"
+    })
+      .on("enter", () => {
+        heroScene.removePin(true);
+      })
+      .on("leave", () => {
+        heroScene.setPin("#teamwork-hero");
+      })
+      .addTo(this.controller);
+
     // Team scenes
     new ScrollMagic.Scene({
       duration: 1200,
