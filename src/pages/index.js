@@ -78,6 +78,15 @@ const IndexPage = ({ data }) => {
       <Companies companies={companiesInfo} />
       <TeamWork />
       <Contact />
+      <div className="home-map">
+        <iframe
+          width="100%"
+          height="100%"
+          frameBorder="0"
+          allowfullscreen
+          src="https://umap.openstreetmap.fr/es/map/mapa-sin-titulo_246982?scaleControl=false&miniMap=true&scrollWheelZoom=false&zoomControl=false&allowEdit=false&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=null&onLoadPanel=undefined&captionBar=false"
+        />
+      </div>
     </div>
   );
 };

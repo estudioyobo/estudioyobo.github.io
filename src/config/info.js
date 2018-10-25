@@ -36,6 +36,16 @@ export default {
       name: "Instagram",
       icon: "/icons/ig.svg",
       link: "https://www.instagram.com/estudioyobo/"
+    },
+    {
+      name: "LinkedIn",
+      icon: "/icons/in.svg",
+      link: "https://es.linkedin.com/company/estudioyobo"
+    },
+    {
+      name: "GitHub",
+      icon: "/icons/gh.svg",
+      link: "https://github.com/estudioyobo"
     }
   ],
   mail: "info@estudioyobo.com",
