@@ -49,6 +49,7 @@ footer {
 
 .footer-logo {
   text-align: right;
+  align-self: center;
 }
 
 footer a {
