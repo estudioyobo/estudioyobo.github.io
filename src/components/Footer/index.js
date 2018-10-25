@@ -17,13 +17,19 @@ const Footer = ({ social, mail, phone }) => {
       <div className="row margin equal">
         <ul className="footer-links">
           <li>
-            <a href="">Política de privacidad</a>
+            <a href="">
+              <span>Política de privacidad</span>
+            </a>
           </li>
           <li>
-            <a href="">Política de cookies</a>
+            <a href="">
+              <span>Política de cookies</span>
+            </a>
           </li>
           <li>
-            <a href="/404">Error 404</a>
+            <a href="/404">
+              <span>Error 404</span>
+            </a>
           </li>
         </ul>
         <div className="footer-contact">
@@ -31,10 +37,16 @@ const Footer = ({ social, mail, phone }) => {
             {social.map((e, i) => <Social key={i} {...e} />)}
           </div>
           <div className="footer-contact--mail">
-            <a href={`mailto:${mail}`}>{mail}</a>
+            <a href={`mailto:${mail}`}>
+              <span>{mail}</span>
+            </a>
           </div>
           <div className="footer-phone">
-            {phone.map((p, i) => <span key={i}>{p}</span>)}
+            {phone.map(p => (
+              <a href={`tel:${p}`} key={p}>
+                <span>{p}</span>
+              </a>
+            ))}
           </div>
         </div>
         <div className="footer-logo">
@@ -42,7 +54,7 @@ const Footer = ({ social, mail, phone }) => {
         </div>
       </div>
       <div className="row">
-        <div>Made with &#x2764; by Estudio Yobo</div>
+        <div className="made">Made with &#x2764; by Estudio Yobo</div>
       </div>
       <div className="row">
         <div className="copyright">Copyright &copy; 2018. Estudio Yobo</div>
