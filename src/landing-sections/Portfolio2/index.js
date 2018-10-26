@@ -47,22 +47,22 @@ class Portfolio extends Component {
                 </div>
                 <div className="portfolio-prev  grid__item grid__item--nav-prev">
                   <img src={posts[prev].node.frontmatter.thumbnail} alt="" />
+                  <h4
+                    className="portfolio-prev--title  grid__item grid__item--text"
+                    data-direction="btt"
+                  >
+                    {posts[prev].node.frontmatter.title}
+                  </h4>
                 </div>
-                <h4
-                  className="portfolio-prev--title  grid__item grid__item--text"
-                  data-direction="btt"
-                >
-                  {posts[prev].node.frontmatter.title}
-                </h4>
                 <div className="portfolio-next  grid__item grid__item--nav-next">
+                  <h4
+                    className="portfolio-next--title  grid__item grid__item--text"
+                    data-direction="ttb"
+                  >
+                    {posts[next].node.frontmatter.title}
+                  </h4>
                   <img src={posts[next].node.frontmatter.thumbnail} alt="" />
                 </div>
-                <h4
-                  className="portfolio-next--title  grid__item grid__item--text"
-                  data-direction="ttb"
-                >
-                  {posts[next].node.frontmatter.title}
-                </h4>
                 <div className="portfolio-post--image  grid__item">
                   <img src={node.frontmatter.thumbnail} />
                 </div>
