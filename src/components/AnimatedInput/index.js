@@ -16,7 +16,6 @@ class AnimatedInput extends Component {
 
   componentDidMount() {
     // Divide label into chars
-    console.log("label", this.label);
     charming(this.label);
     const labelLetters = Array.from(this.label.querySelectorAll("span"));
     charming(this.placeholder);

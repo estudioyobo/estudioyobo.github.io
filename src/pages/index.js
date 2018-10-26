@@ -75,7 +75,7 @@ const IndexPage = ({ data }) => {
         </a>
       </section>
       <ServicesSection />
-      <Portfolio posts={posts} />
+      {/* <Portfolio posts={posts} /> */}
       <Portfolio2 posts={posts} />
       <Companies companies={companiesInfo} />
       <TeamWork />
