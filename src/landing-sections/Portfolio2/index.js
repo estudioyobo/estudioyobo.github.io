@@ -17,7 +17,7 @@ class Portfolio extends Component {
   render() {
     const { posts } = this.props;
     return (
-      <section id="portfolio2">
+      <section id="portfolio">
         <SectionHeader
           title="portfolio"
           subtitle="nuestros trabajos"
