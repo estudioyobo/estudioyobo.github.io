@@ -11,7 +11,7 @@ export const Title = styled.h4`
   font-family: "Crimson Text";
   font-weight: 400;
   font-style: italic;
-  font-size: 55px;
+  font-size: 3vw;
   line-height: 60px;
   margin: 0;
   grid-column: ${({ right }) => (right ? "10 / 13" : "3 / 6")};

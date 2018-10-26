@@ -11,7 +11,7 @@
 .hero h1 {
   grid-area: title;
   align-self: end;
-  font-size: 100px;
+  font-size: 5vw;
 
   font-weight: 800;
 

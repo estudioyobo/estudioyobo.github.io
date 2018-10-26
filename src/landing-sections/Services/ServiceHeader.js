@@ -11,7 +11,7 @@ const Line = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 100px;
+  font-size: 5vw;
   margin-bottom: -30px;
   text-transform: uppercase;
   font-weight: 800;

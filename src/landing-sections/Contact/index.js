@@ -21,7 +21,7 @@ const Grid = styled.div`
     grid-column: 8 / 14;
     grid-row: 1 / 2;
     text-align: right;
-    font-size: 100px;
+    font-size: 5vw;
   }
   & form {
     background: lightgray;

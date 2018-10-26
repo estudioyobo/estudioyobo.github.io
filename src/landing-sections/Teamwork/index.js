@@ -11,7 +11,6 @@ import alexIMG from "./alex.png";
 import antoniIMG from "./antoni.png";
 
 const Us = styled.div`
-  height: 81vh;
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: auto 50px auto;
@@ -70,7 +69,7 @@ const Magic = styled.div`
   flex-direction: column;
   justify-content: space-between;
   padding-top: 50px;
-  height: "100vh";
+  height: 100vh;
   background: #f3f4f0;
 `;
 
