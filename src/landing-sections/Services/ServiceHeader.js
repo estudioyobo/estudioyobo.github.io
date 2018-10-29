@@ -21,7 +21,11 @@ const Wrapper = styled.div`
   display: inline-block;
   grid-column: ${({ left }) => (left ? "7 / 14" : "2 / 6")};
   justify-self: ${({ left }) => (left ? "end" : "start")};
-  margin: 50px 0;
+  margin: 2.5vw 0;
+
+  @media (max-width: 800px) {
+    margin: 5vw;
+  }
 `;
 
 const Header = ({ title, left }) => (

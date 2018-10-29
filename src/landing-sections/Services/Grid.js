@@ -12,15 +12,25 @@ export const Title = styled.h4`
   font-weight: 400;
   font-style: italic;
   font-size: 3vw;
-  line-height: 60px;
+  line-height: 3vw;
   margin: 0;
   grid-column: ${({ right }) => (right ? "10 / 13" : "3 / 6")};
   color: ${({ color }) => color};
+  @media (max-width: 800px) {
+    grid-column: ${({ right }) => (right ? "2 / 8" : "5 / 11")};
+    line-height: 6vw;
+    font-size: 6vw;
+  }
 `;
 
 export const Description = styled.p`
   grid-row: 3;
   grid-column: ${({ right }) => (right ? "10 / 13" : "3 / 6")};
+
+  @media (max-width: 800px) {
+    grid-column: ${({ right }) => (right ? "2 / 11" : "5 / 14")};
+    grid-row: 3 / 5;
+  }
 `;
 
 export const Services = styled.ul`
@@ -32,6 +42,12 @@ export const Services = styled.ul`
   grid-template-columns: repeat(8, 1fr);
   padding: 80px 0 40px;
   margin: 0;
+
+  @media (max-width: 800px) {
+    grid-column: 1 / 15;
+    grid-row: 7;
+    padding: 40px 0 0;
+  }
 `;
 
 export const ServiceCol1 = styled.div`
@@ -54,6 +70,10 @@ export const Image = styled.img`
   grid-row: 5 / 8;
   grid-column: ${({ right }) => (right ? "7 / 15" : "1 / 7")};
   align-self: end;
+  @media (max-width: 800px) {
+    grid-row: 4 / 7;
+    grid-column: ${({ right }) => (right ? "7 / 15" : "1 / 8")};
+  }
 `;
 export const Space = styled.div`
   height: ${({ height }) => height}px;
@@ -65,4 +85,10 @@ export const Fill = styled.div`
   grid-column: ${({ right }) => (right ? "6 / 10" : "2 / 7")};
   background: lightgray;
   height: 200px;
+
+  @media (max-width: 800px) {
+    grid-row: ${({ right }) => (right ? "6 / 7" : "5 / 6")};
+    grid-column: ${({ right }) => (right ? "6 / 13" : "1 / 8")};
+    height: 70px;
+  }
 `;
