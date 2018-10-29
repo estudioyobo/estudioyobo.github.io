@@ -25,7 +25,7 @@ const fadeIn = keyframes`
 `;
 
 const Divider = styled.div`
-  width: 240px;
+  width: 15%;
   height: 2px;
   background: #333;
   opacity: 0;
@@ -43,8 +43,13 @@ const Title = styled.h1`
   font-weight: 500;
   text-transform: lowercase;
   margin-bottom: -14px;
-  font-size: 70px;
-  line-height: 60px;
+  font-size: 4.7vw;
+  line-height: 4.2vw;
+
+  @media (max-width: 800px) {
+    font-size: 8.7vw;
+    line-height: 8.2vw;
+  }
 `;
 const Subtitle = styled.h2`
   font-size: 20px;
@@ -54,6 +59,9 @@ const Subtitle = styled.h2`
   transform-origin: bottom;
   opacity: 0;
   text-transform: uppercase;
+  @media (max-width: 500px) {
+    font-size: 16px;
+  }
 `;
 
 const Wrapper = styled.div`
