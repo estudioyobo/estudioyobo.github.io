@@ -14,7 +14,7 @@ const Social = ({ name, icon, link }) => (
 const Footer = ({ social, mail, phone }) => {
   return (
     <footer>
-      <div className="row margin equal">
+      <div className="row margin equal elements">
         <ul className="footer-links">
           <li>
             <a href="">

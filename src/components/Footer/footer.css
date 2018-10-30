@@ -102,18 +102,26 @@ footer a:hover span::before {
 }
 
 /*
-* Media Queries
-*/
+ *
+ * Media Queries
+ *
+ */
 
-@media (max-width: 400px) {
-  .footer-phone span {
-    display: block;
+@media (max-width: 800px) {
+  footer {
+    padding: 40px;
   }
-  .footer__up {
-    top: 15px;
-    right: 15px;
+  .equal > * {
+    width: 100%;
   }
-  .footer__up--text {
-    display: none;
+  .elements {
+    flex-direction: column;
+  }
+  .footer-logo {
+    text-align: center;
+    margin-top: 60px;
+  }
+  .row.margin {
+    margin-bottom: 60px;
   }
 }
