@@ -17,11 +17,25 @@ const Grid = styled.div`
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: 1fr 200px auto auto auto;
   height: 100%;
+
+  @media (max-width: 800px) {
+    background: linear-gradient(
+        rgba(255, 255, 255, 0.5),
+        rgba(255, 255, 255, 0.5)
+      ),
+      url("images/contact-telephone.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
   & h1 {
     grid-column: 8 / 14;
     grid-row: 1 / 2;
     text-align: right;
     font-size: 5vw;
+    @media (max-width: 800px) {
+      grid-column: 1 / 14;
+      font-size: 10vw;
+    }
   }
   & form {
     background: lightgray;
@@ -33,17 +47,29 @@ const Grid = styled.div`
     padding: 30px 0;
     margin: 0;
     color: #a856ef;
+    @media (max-width: 800px) {
+      grid-column: 1 / 15;
+      grid-row: 2 / 4;
+      flex-direction: column;
+      padding: 0 1rem;
+    }
   }
   & .direction {
     grid-column: 5 / 8;
     grid-row: 5 / 6;
     margin-top: 20px;
+    @media (max-width: 800px) {
+      grid-column: 2 / 8;
+    }
   }
   & img {
     grid-column: 5 / 8;
     grid-row: 1 / 2;
     width: 100%;
     align-self: end;
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 `;
 
