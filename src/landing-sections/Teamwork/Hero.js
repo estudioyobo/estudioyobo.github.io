@@ -8,6 +8,9 @@ const TeamworkHero = styled.div`
   position: relative;
   margin-bottom: 50px;
 
+  @media (max-width: 800px) {
+    padding: 10rem 0;
+  }
   & ::before {
     content: "";
     background-size: cover;
@@ -22,6 +25,9 @@ const TeamworkHero = styled.div`
   }
   & h1 {
     font-size: 6rem;
+    @media (max-width: 800px) {
+      font-size: 18vw;
+    }
   }
 `;
 

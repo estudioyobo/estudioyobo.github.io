@@ -14,6 +14,10 @@ const Us = styled.div`
   display: grid;
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: auto 50px auto;
+  overflow: hidden;
+  @media (max-width: 800px) {
+    margin-top: -70px;
+  }
 `;
 
 const Description = styled.div`
@@ -27,9 +31,18 @@ const Description = styled.div`
   & > p {
     grid-column: 3 / 6;
     text-align: right;
+    @media (max-width: 800px) {
+      grid-column: 2 / 6;
+      font-size: 0.8rem;
+    }
   }
   &.active {
     display: grid;
+  }
+  @media (max-width: 800px) {
+    grid-column: 1 / 15;
+    grid-row: 3 / 4;
+    padding: 0;
   }
 `;
 
@@ -38,6 +51,10 @@ const People = styled.div`
   grid-row: 2 / 4;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
+  @media (max-width: 800px) {
+    grid-column: 2 / 14;
+    grid-row: 1 / 2;
+  }
 `;
 
 const PersonTitle = styled.h3`
@@ -48,6 +65,10 @@ const PersonTitle = styled.h3`
   display: none;
   &.active {
     display: block;
+  }
+  @media (max-width: 800px) {
+    grid-column: 1 / 15;
+    grid-row: 2 / 3;
   }
 `;
 
@@ -61,6 +82,11 @@ const Order = styled.div`
   display: none;
   &.active {
     display: block;
+  }
+  @media (max-width: 800px) {
+    grid-column: 11 / 15;
+    grid-row: 1 / 2;
+    font-size: 100px;
   }
 `;
 

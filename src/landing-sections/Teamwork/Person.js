@@ -17,6 +17,10 @@ const BasePerson = styled.div`
     span {
       display: block;
     }
+    @media (max-width: 800px) {
+      transform: scale(1);
+      opacity: 1;
+    }
   }
 
   & div {
@@ -36,22 +40,38 @@ const BasePerson = styled.div`
     line-height: 60px;
     writing-mode: sideways-lr;
     place-self: end;
+    @media (max-width: 800px) {
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
   & img {
     grid-row: 1 / 3;
     grid-column: 1 / 3;
     z-index: 2;
   }
+  @media (max-width: 800px) {
+    opacity: 0;
+  }
 `;
 
 export const Person1 = styled(BasePerson)`
   grid-column: 1 / 4;
+  @media (max-width: 800px) {
+    grid-column: 2 / 14;
+  }
 `;
 export const Person2 = styled(BasePerson)`
   grid-column: 3 / 6;
+  @media (max-width: 800px) {
+    grid-column: 2 / 14;
+  }
 `;
 export const Person3 = styled(BasePerson)`
   grid-column: 5 / 8;
+  @media (max-width: 800px) {
+    grid-column: 2 / 14;
+  }
 `;
 
 const Person = ({ className, Wrapper, image, name, surname }) => {
