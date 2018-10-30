@@ -1,3 +1,6 @@
+.grid-wrapper {
+  height: 90vh;
+}
 .grid {
   height: 90vh;
   display: grid;
@@ -126,4 +129,56 @@
   color: #333;
   text-decoration: none;
   font-size: 30px;
+}
+
+/*
+ *
+ * Media Queries
+ *
+ */
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-rows: auto 25px 50px auto 50px 25px auto;
+  }
+  .grid-wrapper {
+    height: 100vh;
+  }
+  .portfolio-post--title {
+    grid-column: 8 / 15;
+    grid-row: 1 / 2;
+  }
+  .portfolio-post--image {
+    grid-column: 2 / 14;
+    grid-row: 3 / 6;
+  }
+  .portfolio-post--title h2 {
+    line-height: 5vw;
+    font-size: 5vw;
+  }
+  .portfolio-post--title h3 {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .portfolio-more {
+    grid-column: 1 / 11;
+    grid-row: 7 / 8;
+    font-size: 0.8rem;
+    width: 100%;
+  }
+  .portfolio-next {
+    grid-column: 14 / 15;
+    grid-row: 4 / 5;
+  }
+  .portfolio-prev {
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+  }
+  .portfolio-services {
+    display: none;
+  }
+  .portfolio-next--title,
+  .portfolio-prev--title {
+    opacity: 0;
+  }
 }

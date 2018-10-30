@@ -23,7 +23,7 @@ class Portfolio extends Component {
           subtitle="nuestros trabajos"
           color="#EECA46"
         />
-        <div style={{ height: "90vh" }}>
+        <div className="grid-wrapper">
           {posts.map(({ node }, i) => {
             const prev = i > 0 ? i - 1 : posts.length - 1;
             const next = i < posts.length - 1 ? i + 1 : 0;
