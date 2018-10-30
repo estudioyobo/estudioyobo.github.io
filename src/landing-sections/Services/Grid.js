@@ -52,9 +52,15 @@ export const Services = styled.ul`
 
 export const ServiceCol1 = styled.div`
   grid-column: ${({ right }) => (right ? "3 / 5" : "2 / 4")};
+  @media (max-width: 800px) {
+    grid-column: ${({ right }) => (right ? "2 / 4" : "2 / 4")};
+  }
 `;
 export const ServiceCol2 = styled.div`
   grid-column: ${({ right }) => (right ? "6 / 8" : "5 / 7")};
+  @media (max-width: 800px) {
+    grid-column: 5 / 7;
+  }
 `;
 export const ServiceItem = styled.li`
   margin-bottom: 40px;
