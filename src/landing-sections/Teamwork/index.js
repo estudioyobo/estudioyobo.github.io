@@ -100,10 +100,6 @@ const Magic = styled.div`
 `;
 
 class TeamWork extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   componentDidMount() {
     this.controller = new ScrollMagic.Controller({
       globalSceneOptions: {

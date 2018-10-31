@@ -80,9 +80,6 @@ const Wrapper = styled.div`
 `;
 
 class SectionHeader extends Component {
-  constructor(props) {
-    super(props);
-  }
   componentDidMount() {
     this.controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
