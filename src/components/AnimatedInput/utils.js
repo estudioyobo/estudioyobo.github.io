@@ -28,7 +28,7 @@ const distancePoints = (x1, y1, x2, y2) =>
 const getMousePos = e => {
   var posx = 0,
     posy = 0;
-  if (!e) var e = window.event;
+  if (!e) e = window.event;
   if (e.pageX || e.pageY) {
     posx = e.pageX;
     posy = e.pageY;

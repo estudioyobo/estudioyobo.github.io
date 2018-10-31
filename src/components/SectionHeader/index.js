@@ -82,9 +82,9 @@ const Wrapper = styled.div`
 class SectionHeader extends Component {
   constructor(props) {
     super(props);
-    this.controller = new ScrollMagic.Controller();
   }
   componentDidMount() {
+    this.controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({
       triggerElement: this.elem,
       triggerHook: "onEnter"

@@ -5,7 +5,7 @@ import Logo from "../Logo";
 
 const Social = ({ name, icon, link }) => (
   <div className="social">
-    <a href={link} target="_blank">
+    <a href={link} target="_blank" rel="noopener noreferrer">
       <img src={icon} alt={`${name} icon`} className="social--icon" />
     </a>
   </div>
@@ -17,12 +17,12 @@ const Footer = ({ social, mail, phone }) => {
       <div className="row margin equal elements">
         <ul className="footer-links">
           <li>
-            <a href="">
+            <a href="#">
               <span>Política de privacidad</span>
             </a>
           </li>
           <li>
-            <a href="">
+            <a href="#">
               <span>Política de cookies</span>
             </a>
           </li>

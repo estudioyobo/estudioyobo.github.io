@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import charming from "charming";
 import { Placeholder, Group, Label, Input, Textarea } from "./styles";
 import { Nearby, shuffleArray, lineEq } from "./utils";
-import TweenMax from "./TweenMax";
+import { TweenMax } from "gsap/TweenMax";
 
 class AnimatedInput extends Component {
   constructor(props) {
@@ -40,7 +39,7 @@ class AnimatedInput extends Component {
           distance
         );
         const visible = Math.max(0, Math.min(lettersTotal, Math.floor(point)));
-        if (currentVisible != visible) {
+        if (currentVisible !== visible) {
           // hide placeholder and show label.
           if (visible < currentVisible) {
             for (
@@ -49,7 +48,7 @@ class AnimatedInput extends Component {
               ++i
             ) {
               const letter = placeholderLetters[lettersPosArr[i]];
-              if (letter.dataset.state != "hidden") {
+              if (letter.dataset.state !== "hidden") {
                 letter.dataset.state = "hidden";
                 TweenMax.to(letter, 0.5, {
                   //ease: 'Back.easeIn',
@@ -90,7 +89,6 @@ class AnimatedInput extends Component {
                 TweenMax.to(labelLetters[lettersPosArr[i]], 1, {
                   ease: "Circ.easeOut",
                   y: "200%",
-                  //overwrite: 'all',
                   opacity: 0
                 });
               }
