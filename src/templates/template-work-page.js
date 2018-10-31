@@ -2,11 +2,13 @@ import React from "react";
 import Link from "gatsby-link";
 import styled from "styled-components";
 import Helmet from "react-helmet";
+import { graphql } from "gatsby";
 
 import "./work-page.css";
 import Header from "../components/Header";
 import TextPostBody from "../components/TextPostBody";
 import SEO from "../components/SEO";
+import WithFooter from "../components/Layout/WithFooter";
 
 const WorkHeader = styled.section`
   position: relative;
@@ -110,47 +112,49 @@ const WorkTemplate = ({ data, pathContext, ...other }) => {
   const { title, cover, color, noTitleShadow, tags } = post.frontmatter;
 
   return (
-    <article>
-      <Helmet title={`Work | ${title}`} />
-      <SEO postImage={cover} postData={post} isWork />
-      <WorkHeader bg={cover}>
-        <Header color={color} shadow={!noTitleShadow} />
-        <Info color={color}>
-          <Title noShadow={noTitleShadow}>{title}</Title>
-          <TagsSection
-            noShadow={noTitleShadow}
-            slugs={post.fields.tagSlugs}
-            tagNames={tags}
-          />
-          <Chevron
-            version="1.1"
-            id="chevron"
-            x="0px"
-            y="0px"
-            viewBox="0 0 404.257 404.257"
-          >
-            <polygon points="386.257,114.331 202.128,252.427 18,114.331 0,138.331 202.128,289.927 404.257,138.331" />
-          </Chevron>
-        </Info>
-      </WorkHeader>
-      <Section>
-        <TextPostBody htmlAst={post.htmlAst} />
-      </Section>
-      <Navigation>
-        {prev ? (
-          <Link className="link prev" to={`/${prev.fields.slug}`}>
-            &laquo; {prev.frontmatter.title}
-          </Link>
-        ) : (
-          <div />
-        )}
-        {next && (
-          <Link className="link next" to={`/${next.fields.slug}`}>
-            {next.frontmatter.title} &raquo;
-          </Link>
-        )}
-      </Navigation>
-    </article>
+    <WithFooter>
+      <article>
+        <Helmet title={`Work | ${title}`} />
+        <SEO postImage={cover} postData={post} isWork />
+        <WorkHeader bg={cover}>
+          <Header color={color} shadow={!noTitleShadow} />
+          <Info color={color}>
+            <Title noShadow={noTitleShadow}>{title}</Title>
+            <TagsSection
+              noShadow={noTitleShadow}
+              slugs={post.fields.tagSlugs}
+              tagNames={tags}
+            />
+            <Chevron
+              version="1.1"
+              id="chevron"
+              x="0px"
+              y="0px"
+              viewBox="0 0 404.257 404.257"
+            >
+              <polygon points="386.257,114.331 202.128,252.427 18,114.331 0,138.331 202.128,289.927 404.257,138.331" />
+            </Chevron>
+          </Info>
+        </WorkHeader>
+        <Section>
+          <TextPostBody htmlAst={post.htmlAst} />
+        </Section>
+        <Navigation>
+          {prev ? (
+            <Link className="link prev" to={`/${prev.fields.slug}`}>
+              &laquo; {prev.frontmatter.title}
+            </Link>
+          ) : (
+            <div />
+          )}
+          {next && (
+            <Link className="link next" to={`/${next.fields.slug}`}>
+              {next.frontmatter.title} &raquo;
+            </Link>
+          )}
+        </Navigation>
+      </article>
+    </WithFooter>
   );
 };
 

@@ -4,7 +4,9 @@ import services from "../../config/services";
 
 const Develop = () => (
   <div>
-    {services.develop.map((service, i) => <Service {...service} key={i} />)}
+    {services.develop.map((service, i) => (
+      <Service {...service} key={i} />
+    ))}
   </div>
 );
 

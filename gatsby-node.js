@@ -9,8 +9,8 @@ const path = require("path");
 const slash = require("slash");
 const _ = require("lodash");
 
-exports.createPages = ({ graphql, boundActionCreators }) => {
-  const { createPage } = boundActionCreators;
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions;
 
   return new Promise((resolve, reject) => {
     const blogPostTemplate = path.resolve(
@@ -50,8 +50,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
       );
 
       posts.forEach(({ node }, index) => {
-        const prev = index === 0 ? false : posts[index - 1].node;
-        const next = index === posts.length - 1 ? false : posts[index + 1].node;
+        const prev = index === 0 ? null : posts[index - 1].node;
+        const next = index === posts.length - 1 ? null : posts[index + 1].node;
         createPage({
           path: node.fields.slug, // required
           component: slash(blogPostTemplate),
@@ -61,8 +61,7 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
             shadow: node.frontmatter.shadow,
             prev,
             next
-          },
-          layout: "work"
+          }
         });
       });
 
@@ -90,8 +89,8 @@ exports.createPages = ({ graphql, boundActionCreators }) => {
   });
 };
 
-exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
-  const { createNodeField } = boundActionCreators;
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions;
   if (node.internal.type === `File`) {
     const parsedFilePath = path.parse(node.absolutePath);
     const slug = `work/${node.relativeDirectory}`;
@@ -134,4 +133,19 @@ exports.onCreatePage = async ({ page, boundActionCreators }) => {
 
     resolve();
   });
+};
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+  if (stage === "build-html") {
+    actions.setWebpackConfig({
+      module: {
+        rules: [
+          {
+            test: /scrollmagic/,
+            use: loaders.null()
+          }
+        ]
+      }
+    });
+  }
 };

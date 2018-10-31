@@ -102,9 +102,11 @@ const Contact = () => (
         </div>
       </form>
       <div className="direction">
-        Elche - Alicante<br />
+        Elche - Alicante
+        <br />
         C/ Reina Victoria, 39. Planta 3<br />
-        966 578 597<br />
+        966 578 597
+        <br />
       </div>
     </Grid>
   </ContactWrapper>

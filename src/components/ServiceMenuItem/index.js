@@ -40,8 +40,8 @@ class ServiceMenuItem extends Component {
         >
           {title}
         </Link>
-        { enableItems &&
-          this.state.showItems &&(
+        {enableItems &&
+          this.state.showItems && (
             <div className="service__items">
               <Anime
                 duration={500}
@@ -49,13 +49,13 @@ class ServiceMenuItem extends Component {
                 translateY={(t, i, c) =>
                   Math.round(
                     animejs.random(110, 160) *
-                      Math.sin(2 * (i + 1) * Math.PI / c)
+                      Math.sin((2 * (i + 1) * Math.PI) / c)
                   ) + "px"
                 }
                 translateX={(t, i, c) =>
                   Math.round(
                     animejs.random(130, 180) *
-                      Math.cos(2 * (i + 1) * Math.PI / c)
+                      Math.cos((2 * (i + 1) * Math.PI) / c)
                   ) + "px"
                 }
                 delay={(e, i) => i * 100}

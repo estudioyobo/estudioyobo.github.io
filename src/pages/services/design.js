@@ -4,7 +4,9 @@ import services from "../../config/services";
 
 const Design = () => (
   <div>
-    {services.design.map((service, i) => <Service {...service} key={i} />)}
+    {services.design.map((service, i) => (
+      <Service {...service} key={i} />
+    ))}
   </div>
 );
 

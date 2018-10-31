@@ -56,8 +56,28 @@ const distance = (x1, x2, y1, y2) => {
   return Math.sqrt(a * a + b * b);
 };
 
-let win = { width: window.innerWidth, height: window.innerHeight };
-let center = { x: win.width / 2, y: win.height / 2 };
+// let win = { width: window.innerWidth, height: window.innerHeight };
+// let center = { x: win.width / 2, y: win.height / 2 };
+
+let Sizes = {
+  _singleton: null,
+  get: function() {
+    if (!this._singleton) {
+      const win = { width: window.innerWidth, height: window.innerHeight };
+      this._singleton = {
+        win,
+        center: { x: win.width / 2, y: win.height / 2 }
+      };
+    }
+    return this._singleton;
+  },
+  set: function(win, center) {
+    this._singleton = {
+      win,
+      center
+    };
+  }
+};
 
 export class GridItem {
   constructor(el, options) {
@@ -116,6 +136,7 @@ export class GridItem {
     });
   }
   setTransform(transform) {
+    const { center, win } = Sizes.get();
     const dist = distance(
       this.itemCenter.x,
       this.itemCenter.y,
@@ -272,6 +293,7 @@ export class Slideshow {
   }
   onmousemove(ev) {
     requestAnimationFrame(() => {
+      const { win } = Sizes.get();
       const mousepos = getMousePos(ev);
       const transX =
         2 * this.CONFIG.tilt.maxTranslationX / win.width * mousepos.x -
@@ -283,8 +305,9 @@ export class Slideshow {
     });
   }
   onresize(ev) {
-    win = { width: window.innerWidth, height: window.innerHeight };
-    center = { x: win.width / 2, y: win.height / 2 };
+    const win = { width: window.innerWidth, height: window.innerHeight };
+    const center = { x: win.width / 2, y: win.height / 2 };
+    Sizes.set(win, center);
   }
   navigate(ev, direction) {
     if (this.isAnimating) {

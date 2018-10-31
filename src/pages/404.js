@@ -14,7 +14,7 @@ const Lost = () => <div className="not-found__svg" />;
 
 const NotFoundPage = () => (
   <div className="not-found__wrapper">
-    {new Date().getSeconds() % 2 == 0 ? <Video /> : <Lost />}
+    {new Date().getSeconds() % 2 === 0 ? <Video /> : <Lost />}
   </div>
 );
 

@@ -19,7 +19,9 @@ const Companies = ({ companies }) => (
   <SectionWrapper id="companies">
     <h1>Hemos trabajado para...</h1>
     <CompaniesWrapper>
-      {companies.map(company => <Company key={company.name} {...company} />)}
+      {companies.map(company => (
+        <Company key={company.name} {...company} />
+      ))}
     </CompaniesWrapper>
   </SectionWrapper>
 );

@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import styled from "styled-components";
 import ScrollMagic from "scrollmagic";
 import SectionHeader from "../../components/SectionHeader/index";
@@ -102,14 +102,14 @@ const Magic = styled.div`
 class TeamWork extends Component {
   constructor(props) {
     super(props);
+  }
+
+  componentDidMount() {
     this.controller = new ScrollMagic.Controller({
       globalSceneOptions: {
         triggerHook: "onLeave"
       }
     });
-  }
-
-  componentDidMount() {
     // Hero scene
     const heroScene = new ScrollMagic.Scene({
       triggerElement: "#teamwork-hero"
