@@ -1,10 +1,11 @@
 import React, { Component } from "react";
+import Link from "gatsby-link";
 
 import SectionHeader from "../../components/SectionHeader";
+import { Slideshow } from "./reveal";
 
 import "./portfolio.css";
 import "./revealer.css";
-import { Slideshow } from "./reveal";
 
 class Portfolio extends Component {
   constructor(props) {
@@ -47,25 +48,22 @@ class Portfolio extends Component {
                 </div>
                 <div className="portfolio-prev  grid__item grid__item--nav-prev">
                   <img src={posts[prev].node.frontmatter.thumbnail} alt="" />
-                  <h4
-                    className="portfolio-prev--title  grid__item grid__item--text"
-                    data-direction="btt"
-                  >
+                  <h4 className="portfolio-prev--title" data-direction="btt">
                     {posts[prev].node.frontmatter.title}
                   </h4>
                 </div>
                 <div className="portfolio-next  grid__item grid__item--nav-next">
-                  <h4
-                    className="portfolio-next--title  grid__item grid__item--text"
-                    data-direction="ttb"
-                  >
+                  <h4 className="portfolio-next--title" data-direction="ttb">
                     {posts[next].node.frontmatter.title}
                   </h4>
                   <img src={posts[next].node.frontmatter.thumbnail} alt="" />
                 </div>
-                <div className="portfolio-post--image  grid__item">
+                <Link
+                  to={node.fields.slug}
+                  className="portfolio-post--image  grid__item"
+                >
                   <img src={node.frontmatter.thumbnail} />
-                </div>
+                </Link>
                 <div className="portfolio-post--title  grid__item">
                   <h2>{node.frontmatter.title}</h2>
                   <h3>2017 - {node.frontmatter.tags}</h3>
@@ -75,7 +73,7 @@ class Portfolio extends Component {
                     Esta una selección de algunos de nuestros proyectos, puedes
                     ver más accediendo a la galería a través del enlace de abajo
                   </div>
-                  <a href="">Ver más</a>
+                  <Link to={node.fields.slug}>Ver más</Link>
                 </div>
               </div>
             );

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "gatsby-link";
 import Layout from "../components/Layout";
 import LandingMenu from "../components/LandingMenu";
 import Top from "../components/Top";
