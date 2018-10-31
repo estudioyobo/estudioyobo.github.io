@@ -1,38 +1,89 @@
-import React from "react";
+import React, { Component } from "react";
 
-import PortfolioItem from "../../components/PortfolioItem";
 import SectionHeader from "../../components/SectionHeader";
 
-import "./portfolio-grid.css";
+import "./portfolio.css";
+import "./revealer.css";
+import { Slideshow } from "./reveal";
 
-const PortfolioGrid = ({ posts }) => (
-  <section id="portfolio" className="padding">
-    <SectionHeader
-      title="portfolio"
-      subtitle="nuestros trabajos"
-      color="#EECA46"
-    />
-    <div className="portfolio-section">
-      <h2>Project</h2>
-      <h2>Spoiler</h2>
-      <h3>Ver más</h3>
-      <div className="portfolio">
-        {posts.map(({ node }, i) => (
-          <PortfolioItem
-            key={i}
-            title={node.frontmatter.title}
-            image={node.frontmatter.thumbnail}
-            category={node.frontmatter.tags}
-            link={node.fields.slug}
-          />
-        ))}
-      </div>
-      <p className="portfolio-section--desc">
-        Esta una selección de algunos de nuestros proyectos, puedes ver más
-        accediendo a la galería a travñes del enlace de arriba
-      </p>
-    </div>
-  </section>
-);
+class Portfolio extends Component {
+  constructor(props) {
+    super(props);
+    this.gridElems = [];
+  }
+  componentDidMount() {
+    new Slideshow(this.gridElems, { filledColor: "#EECA46" });
+  }
+  render() {
+    const { posts } = this.props;
+    return (
+      <section id="portfolio">
+        <SectionHeader
+          title="portfolio"
+          subtitle="nuestros trabajos"
+          color="#EECA46"
+        />
+        <div className="grid-wrapper">
+          {posts.map(({ node }, i) => {
+            const prev = i > 0 ? i - 1 : posts.length - 1;
+            const next = i < posts.length - 1 ? i + 1 : 0;
+            return (
+              <div
+                key={node.frontmatter.title}
+                className={`grid ${i === 0 ? "grid--current" : ""}`}
+                ref={ref => this.gridElems.push(ref)}
+              >
+                <div className="portfolio-services">
+                  <span>Identidad Corporativa</span>
+                  <span>Video</span>
+                  <span>Packaging</span>
+                  <span>Comunicación Gráfica</span>
+                  <span>Social Media</span>
+                  <span>Apps Móviles</span>
+                  <span>Web</span>
+                  <span>Tiendas</span>
+                  <span>Bots</span>
+                  <span>APIs</span>
+                </div>
+                <div className="portfolio-prev  grid__item grid__item--nav-prev">
+                  <img src={posts[prev].node.frontmatter.thumbnail} alt="" />
+                  <h4
+                    className="portfolio-prev--title  grid__item grid__item--text"
+                    data-direction="btt"
+                  >
+                    {posts[prev].node.frontmatter.title}
+                  </h4>
+                </div>
+                <div className="portfolio-next  grid__item grid__item--nav-next">
+                  <h4
+                    className="portfolio-next--title  grid__item grid__item--text"
+                    data-direction="ttb"
+                  >
+                    {posts[next].node.frontmatter.title}
+                  </h4>
+                  <img src={posts[next].node.frontmatter.thumbnail} alt="" />
+                </div>
+                <div className="portfolio-post--image  grid__item">
+                  <img src={node.frontmatter.thumbnail} />
+                </div>
+                <div className="portfolio-post--title  grid__item">
+                  <h2>{node.frontmatter.title}</h2>
+                  <h3>2017 - {node.frontmatter.tags}</h3>
+                </div>
+                <div className="portfolio-more">
+                  <div>
+                    Esta una selección de algunos de nuestros proyectos, puedes
+                    ver más accediendo a la galería a través del enlace de abajo
+                  </div>
+                  <a href="">Ver más</a>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      </section>
+    );
+  }
+}
 
-export default PortfolioGrid;
+export default Portfolio;

@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 import LandingMenu from "../components/LandingMenu";
 import Top from "../components/Top";
 import companiesInfo from "../config/companies";
-import Portfolio from "../landing-sections/Portfolio2";
+import Portfolio from "../landing-sections/Portfolio";
 import ServicesSection from "../landing-sections/Services";
 import Companies from "../landing-sections/Companies";
 import TeamWork from "../landing-sections/Teamwork";
