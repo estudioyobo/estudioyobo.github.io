@@ -26,6 +26,7 @@ const Grid = styled.div`
       url("images/contact-telephone.png");
     background-size: contain;
     background-repeat: no-repeat;
+    mix-blend-mode: multiply;
   }
   & h1 {
     grid-column: 8 / 14;
