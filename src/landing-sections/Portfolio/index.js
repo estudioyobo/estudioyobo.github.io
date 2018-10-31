@@ -10,13 +10,42 @@ import "./revealer.css";
 class Portfolio extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      selected: this.props.tags.map(({ fieldValue }) => fieldValue)
+    };
     this.gridElems = [];
   }
   componentDidMount() {
-    new Slideshow(this.gridElems, { filledColor: "#EECA46" });
+    if (true)
+      new Slideshow(this.gridElems, {
+        filledColor: "#EECA46"
+      });
   }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.selected !== this.state.selected) {
+      new Slideshow(this.gridElems.filter(grid => grid !== null), {
+        filledColor: "#EECA46"
+      });
+    }
+  }
+  containsTag = (postTags, tag) => {
+    return postTags.includes(tag);
+  };
+  enableFilter = tag => {
+    this.gridElems = [];
+    if (this.state.selected.includes(tag)) {
+      this.setState(state => ({
+        selected: state.selected.filter(s => s !== tag)
+      }));
+    } else {
+      this.setState(state => {
+        state.selected.push(tag);
+        return { selected: state.selected };
+      });
+    }
+  };
   render() {
-    const { posts } = this.props;
+    const { posts, tags: allTags } = this.props;
     return (
       <section id="portfolio">
         <SectionHeader
@@ -28,6 +57,7 @@ class Portfolio extends Component {
           {posts.map(({ node }, i) => {
             const prev = i > 0 ? i - 1 : posts.length - 1;
             const next = i < posts.length - 1 ? i + 1 : 0;
+            const { tags } = node.frontmatter;
             return (
               <div
                 key={node.frontmatter.title}
@@ -35,16 +65,18 @@ class Portfolio extends Component {
                 ref={ref => this.gridElems.push(ref)}
               >
                 <div className="portfolio-services">
-                  <span>Identidad Corporativa</span>
-                  <span>Video</span>
-                  <span>Packaging</span>
-                  <span>Comunicación Gráfica</span>
-                  <span>Social Media</span>
-                  <span>Apps Móviles</span>
-                  <span>Web</span>
-                  <span>Tiendas</span>
-                  <span>Bots</span>
-                  <span>APIs</span>
+                  {allTags.map(({ fieldValue }) => (
+                    <span
+                      key={fieldValue}
+                      style={{
+                        color: this.containsTag(tags, fieldValue)
+                          ? "#333"
+                          : "lightgray"
+                      }}
+                    >
+                      {fieldValue}
+                    </span>
+                  ))}
                 </div>
                 <div className="portfolio-prev  grid__item grid__item--nav-prev">
                   <img src={posts[prev].node.frontmatter.thumbnail} alt="" />
@@ -66,7 +98,7 @@ class Portfolio extends Component {
                 </Link>
                 <div className="portfolio-post--title  grid__item">
                   <h2>{node.frontmatter.title}</h2>
-                  <h3>2017 - {node.frontmatter.tags}</h3>
+                  <h3>2017</h3>
                 </div>
                 <div className="portfolio-more">
                   <div>

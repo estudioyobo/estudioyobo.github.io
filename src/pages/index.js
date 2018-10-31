@@ -42,7 +42,7 @@ const sections = [
 ];
 
 const IndexPage = ({ data }) => {
-  const posts = data.allMarkdownRemark.edges;
+  const { posts, tags } = data.allMarkdownRemark;
   return (
     <Layout>
       <div className="home">
@@ -78,7 +78,7 @@ const IndexPage = ({ data }) => {
           </a>
         </section>
         <ServicesSection />
-        <Portfolio posts={posts} />
+        <Portfolio posts={posts} tags={tags} />
         <Companies companies={companiesInfo} />
         <TeamWork />
         <Contact />
@@ -105,7 +105,10 @@ export const query = graphql`
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { hide: { ne: true } } }
     ) {
-      edges {
+      tags: group(field: frontmatter___tags) {
+        fieldValue
+      }
+      posts: edges {
         node {
           fields {
             slug
