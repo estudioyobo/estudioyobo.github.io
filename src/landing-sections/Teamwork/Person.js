@@ -38,11 +38,17 @@ const BasePerson = styled.div`
     font-size: 69px;
     font-weight: 600;
     line-height: 60px;
-    writing-mode: sideways-lr;
     place-self: end;
     @media (max-width: 800px) {
       font-size: 40px;
       line-height: 40px;
+    }
+    @supports (writing-mode: sideways-lr) {
+      writing-mode: sideways-lr;
+    }
+    @supports not (writing-mode: sideways-lr) {
+      writing-mode: vertical-lr;
+      transform: rotate(180deg);
     }
   }
   & img {
