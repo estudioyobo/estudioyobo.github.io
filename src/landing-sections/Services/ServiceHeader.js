@@ -15,6 +15,8 @@ const Title = styled.h3`
   margin-bottom: -30px;
   text-transform: uppercase;
   font-weight: 800;
+  position: relative;
+  z-index: 2;
 `;
 
 const Wrapper = styled.div`

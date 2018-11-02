@@ -23,7 +23,6 @@ const Header = ({ color }) => (
           <a
             href="#services"
             className="header-nav--element"
-            exact
             activeClassName="header-nave--element__active"
             style={{ color }}
           >
