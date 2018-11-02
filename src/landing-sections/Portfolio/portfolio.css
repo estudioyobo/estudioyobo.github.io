@@ -56,7 +56,7 @@
 }
 .portfolio-next {
   grid-column: 13 / 15;
-  justify-content: end;
+  justify-content: flex-end;
 }
 .portfolio-next img {
   width: 60%;

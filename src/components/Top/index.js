@@ -13,6 +13,7 @@ const Wrapper = styled.div`
   bottom: 40px;
   right: -20px;
   color: black;
+  z-index: 800;
   cursor: pointer;
   & :hover {
     div {
