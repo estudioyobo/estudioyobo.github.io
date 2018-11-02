@@ -191,4 +191,7 @@
   .portfolio-prev--title {
     opacity: 0;
   }
+  .portfolio-post--image img {
+    height: auto;
+  }
 }
