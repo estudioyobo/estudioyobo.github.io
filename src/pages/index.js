@@ -10,7 +10,7 @@ import TeamWork from "../landing-sections/Teamwork";
 
 import "./index.css";
 import "aos/dist/aos.css";
-import heroIMG from "./hero-us.jpg";
+import heroIMG from "./hero-us.png";
 import Contact from "../landing-sections/Contact/index";
 
 if (typeof window !== "undefined") {
