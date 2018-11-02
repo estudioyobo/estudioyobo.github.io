@@ -85,7 +85,6 @@ const Contact = () => (
         <br />
         Talk?
       </h1>
-      <img src={telephoneThunder} alt="" />
       <form
         className="form"
         action="https://formspree.io/info@estudioyobo.com"

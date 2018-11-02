@@ -74,11 +74,19 @@ export const ServiceItem = styled.li`
 
 export const Image = styled.img`
   grid-row: 5 / 8;
-  grid-column: ${({ right }) => (right ? "7 / 15" : "1 / 7")};
+  grid-column: 1 / 7;
   align-self: end;
   @media (max-width: 800px) {
     grid-row: 4 / 7;
-    grid-column: ${({ right }) => (right ? "7 / 15" : "1 / 8")};
+    grid-column: 1 / 8;
+  }
+`;
+export const Picture = styled.picture`
+  grid-row: 5 / 8;
+  grid-column: 7 / 15;
+  align-self: end;
+  @media (max-width: 800px) {
+    grid-row: 4 / 7;
   }
 `;
 export const Space = styled.div`

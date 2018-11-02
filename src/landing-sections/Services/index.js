@@ -11,11 +11,13 @@ import {
   ServiceItem,
   Fill,
   Image,
+  Picture,
   Space
 } from "./Grid";
 
 import pencilIMG from "./pencil.png";
 import keyboardIMG from "./keyboard.png";
+import keyboardIMG_small from "./keyboard-s.png";
 
 const ServicesSection = () => (
   <section id="services" className="padding">
@@ -70,7 +72,7 @@ const ServicesSection = () => (
               Social Media
               <ul>
                 <li>Publicaciones en redes sociales</li>
-                <li>Campañas en resdes sociales</li>
+                <li>Campañas en redes sociales</li>
               </ul>
             </ServiceItem>
           </ServiceCol2>
@@ -133,7 +135,11 @@ const ServicesSection = () => (
         </Services>
         <Space rowStart={6} rowEnd={7} height={100} />
         <Fill right />
-        <Image src={keyboardIMG} right />
+        <Picture>
+          <source media="(max-width: 800px)" srcSet={keyboardIMG_small} />
+          <source media="(min-width: 801px)" srcSet={keyboardIMG} />
+          <img src={keyboardIMG} />
+        </Picture>
       </Grid>
     </div>
   </section>
