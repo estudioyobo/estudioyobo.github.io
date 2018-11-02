@@ -15,6 +15,8 @@ const Us = styled.div`
   grid-template-columns: repeat(14, 1fr);
   grid-template-rows: auto 50px auto;
   overflow: hidden;
+  position: absolute;
+  bottom: 0;
   @media (max-width: 800px) {
     margin-top: -70px;
   }
