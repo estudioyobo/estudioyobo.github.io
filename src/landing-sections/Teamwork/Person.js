@@ -55,6 +55,7 @@ const BasePerson = styled.div`
     grid-row: 1 / 3;
     grid-column: 1 / 3;
     z-index: 2;
+    margin: 0;
   }
   @media (max-width: 800px) {
     opacity: 0;
