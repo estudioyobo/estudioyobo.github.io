@@ -20,31 +20,39 @@ const Header = ({ color }) => (
       <div className="header-menu--hamburger">
         <input type="checkbox" />
         <div className="header-menu">
-          <Link
-            to="/"
+          <a
+            href="#services"
             className="header-nav--element"
             exact
             activeClassName="header-nave--element__active"
             style={{ color }}
           >
-            HOME
-          </Link>
-          <Link
-            to="/services"
+            SERVICIOS
+          </a>
+          <a
+            href="#portfolio"
             className="header-nav--element"
             activeClassName="header-nave--element__active"
             style={{ color }}
           >
-            SERVICIOS
-          </Link>
-          <Link
-            to="/contact"
+            PORTFOLIO
+          </a>
+          <a
+            href="#team"
+            className="header-nav--element"
+            activeClassName="header-nave--element__active"
+            style={{ color }}
+          >
+            EQUIPO
+          </a>
+          <a
+            href="#contact"
             className="header-nav--element"
             activeClassName="header-nave--element__active"
             style={{ color }}
           >
             CONTACTO
-          </Link>
+          </a>
         </div>
 
         <div className="hamburger">

@@ -27,7 +27,7 @@
 }
 
 .header-menu--hamburger input {
-  display: block;
+  display: none;
   width: 28px;
   height: 32px;
   position: absolute;
@@ -99,10 +99,7 @@
 
 .header-menu a {
   display: inline-block;
-  opacity: 0;
-  visibility: hidden;
   transition: transform 0.3s ease-in-out, opacity 0.2s ease-in;
-  transform: translateX(100px);
 }
 
 .header-menu--hamburger input:checked ~ .header-menu a {
@@ -129,6 +126,7 @@
   position: absolute;
   right: 0;
   top: 0;
+  display: none;
 }
 
 /* 
@@ -144,5 +142,19 @@
 @media (max-width: 440px) {
   .header-nav--element {
     display: block !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+  .header-menu--hamburger input {
+    display: block;
+  }
+  .header-menu a {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(100px);
   }
 }
