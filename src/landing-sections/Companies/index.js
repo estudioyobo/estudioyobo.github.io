@@ -1,28 +1,41 @@
 import React from "react";
 import styled from "styled-components";
+import Slider from "react-slick";
 import Company from "./company";
 
+import "slick-carousel/slick/slick.css";
+
 const SectionWrapper = styled.section`
-  background: white;
+  background: #333;
   color: #eeca46;
-  padding: 50px 100px 125px;
+  padding: 50px 100px;
   text-align: center;
+  @media (max-width: 800px) {
+    padding: 50px;
+  }
 `;
 
-const CompaniesWrapper = styled.div`
+const CompaniesWrapper = styled(Slider)`
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
+  flex-wrap: wrap;
 `;
 
 const Companies = ({ companies }) => (
   <SectionWrapper id="companies">
     <h1>Hemos trabajado para...</h1>
-    <CompaniesWrapper>
-      {companies.map(company => (
-        <Company key={company.name} {...company} />
-      ))}
-    </CompaniesWrapper>
+    <Slider
+      dots={false}
+      infinite
+      autoplay
+      autoplaySpeed={2300}
+      centerMode
+      slidesToShow={3}
+      arrows={false}
+    >
+      {companies.map(company => <Company key={company.name} {...company} />)}
+    </Slider>
   </SectionWrapper>
 );
 
