@@ -47,7 +47,7 @@ const BasePerson = styled.div`
       writing-mode: sideways-lr;
     }
     @supports not (writing-mode: sideways-lr) {
-      writing-mode: vertical-lr;
+      writing-mode: vertical-rl;
       transform: rotate(180deg);
     }
   }
