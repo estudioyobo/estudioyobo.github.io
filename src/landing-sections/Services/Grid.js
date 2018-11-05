@@ -26,6 +26,7 @@ export const Title = styled.h4`
 export const Description = styled.p`
   grid-row: 3;
   grid-column: ${({ right }) => (right ? "10 / 13" : "3 / 6")};
+  margin-top: 10px;
 
   @media (max-width: 800px) {
     grid-column: ${({ right }) => (right ? "2 / 11" : "5 / 14")};

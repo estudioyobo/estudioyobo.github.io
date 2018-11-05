@@ -8,12 +8,18 @@ const CompanyWrapper = styled.div`
 `;
 
 const Img = styled.img`
-  max-height: 5rem;
+  max-height: 10rem;
 `;
 
-const Company = ({ name, logo }) => (
+const Company = ({ name, logo, link }) => (
   <CompanyWrapper>
-    <Img src={logo} />
+    {link ? (
+      <a href={link}>
+        <Img src={logo} />
+      </a>
+    ) : (
+      <Img src={logo} />
+    )}
   </CompanyWrapper>
 );
 
