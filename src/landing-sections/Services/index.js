@@ -94,7 +94,7 @@ const ServicesSection = () => (
           </ServiceCol2>
         </Services>
         <Fill />
-        <Image src={pencilIMG} />
+        <Image src={pencilIMG} alt="A pencil" />
       </Grid>
     </div>
     <div className="section-develop">
@@ -167,7 +167,7 @@ const ServicesSection = () => (
         <Picture>
           <source media="(max-width: 800px)" srcSet={keyboardIMG_small} />
           <source media="(min-width: 801px)" srcSet={keyboardIMG} />
-          <img src={keyboardIMG} />
+          <img src={keyboardIMG} alt="A keyboard" />
         </Picture>
       </Grid>
     </div>

@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import SectionHeader from "../../components/SectionHeader";
 
-import telephoneThunder from "./telephone-thunder.svg";
 import AnimatedInput from "../../components/AnimatedInput";
 
 const ContactWrapper = styled.section`

@@ -21,35 +21,23 @@ const Header = ({ color }) => (
         <input type="checkbox" />
         <div className="header-menu">
           <a
-            href="#services"
+            href="/#services"
             className="header-nav--element"
-            activeClassName="header-nave--element__active"
             style={{ color }}
           >
             SERVICIOS
           </a>
           <a
-            href="#portfolio"
+            href="/#portfolio"
             className="header-nav--element"
-            activeClassName="header-nave--element__active"
             style={{ color }}
           >
             PORTFOLIO
           </a>
-          <a
-            href="#team"
-            className="header-nav--element"
-            activeClassName="header-nave--element__active"
-            style={{ color }}
-          >
+          <a href="/#team" className="header-nav--element" style={{ color }}>
             EQUIPO
           </a>
-          <a
-            href="#contact"
-            className="header-nav--element"
-            activeClassName="header-nave--element__active"
-            style={{ color }}
-          >
+          <a href="/#contact" className="header-nav--element" style={{ color }}>
             CONTACTO
           </a>
         </div>

@@ -15,13 +15,6 @@ const SectionWrapper = styled.section`
   }
 `;
 
-const CompaniesWrapper = styled(Slider)`
-  display: flex;
-  justify-content: space-around;
-  margin-top: 50px;
-  flex-wrap: wrap;
-`;
-
 const Companies = ({ companies }) => (
   <SectionWrapper id="companies">
     <h1>Hemos trabajado para...</h1>

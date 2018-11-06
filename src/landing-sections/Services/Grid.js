@@ -23,7 +23,7 @@ export const Title = styled.h4`
   }
 `;
 
-export const Description = styled.p`
+export const Description = styled.div`
   grid-row: 3;
   grid-column: ${({ right }) => (right ? "10 / 13" : "3 / 6")};
   margin-top: 10px;

@@ -79,7 +79,12 @@ class Portfolio extends Component {
                   ))}
                 </div>
                 <div className="portfolio-prev  grid__item grid__item--nav-prev">
-                  <img src={posts[prev].node.frontmatter.thumbnail} alt="" />
+                  <img
+                    src={posts[prev].node.frontmatter.thumbnail}
+                    alt={`previous project: ${
+                      posts[prev].node.frontmatter.description
+                    }`}
+                  />
                   <h4 className="portfolio-prev--title" data-direction="btt">
                     {posts[prev].node.frontmatter.title}
                   </h4>
@@ -88,13 +93,21 @@ class Portfolio extends Component {
                   <h4 className="portfolio-next--title" data-direction="ttb">
                     {posts[next].node.frontmatter.title}
                   </h4>
-                  <img src={posts[next].node.frontmatter.thumbnail} alt="" />
+                  <img
+                    src={posts[next].node.frontmatter.thumbnail}
+                    alt={`next project: ${
+                      posts[next].node.frontmatter.description
+                    }`}
+                  />
                 </div>
                 <Link
                   to={node.fields.slug}
                   className="portfolio-post--image  grid__item"
                 >
-                  <img src={node.frontmatter.thumbnail} />
+                  <img
+                    src={node.frontmatter.thumbnail}
+                    alt={node.frontmatter.description}
+                  />
                 </Link>
                 <div className="portfolio-post--title  grid__item">
                   <h2>{node.frontmatter.title}</h2>
