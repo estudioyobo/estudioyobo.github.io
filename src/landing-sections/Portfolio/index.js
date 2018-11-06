@@ -100,11 +100,8 @@ class Portfolio extends Component {
                   <h2>{node.frontmatter.title}</h2>
                   <h3>2017</h3>
                 </div>
-                <div className="portfolio-more">
-                  <div>
-                    Esta una selección de algunos de nuestros proyectos, puedes
-                    ver más accediendo a la galería a través del enlace de abajo
-                  </div>
+                <div className="portfolio-more grid__item">
+                  <div>{node.frontmatter.description}</div>
                   <Link to={node.fields.slug}>Ver más</Link>
                 </div>
               </div>

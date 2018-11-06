@@ -1,4 +1,5 @@
 import React from "react";
+import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import LandingMenu from "../components/LandingMenu";
 import Top from "../components/Top";
@@ -9,14 +10,8 @@ import Companies from "../landing-sections/Companies";
 import TeamWork from "../landing-sections/Teamwork";
 
 import "./index.css";
-import "aos/dist/aos.css";
 import heroIMG from "./hero-us.png";
 import Contact from "../landing-sections/Contact/index";
-
-if (typeof window !== "undefined") {
-  var AOS = require("aos/dist/aos.js");
-  AOS.init();
-}
 
 const sections = [
   {
@@ -59,21 +54,26 @@ const IndexPage = ({ data }) => {
           </h1>
           <div className="hero--description">
             <p>
-              ¿Tal vez necesitas un nuevo diseño web o un programador para
-              desarrollar una aplicación?
+              ¿Buscas un diseñador gráfico para crear esa marca que tanto deseas
+              con su correspondiente branding? ¿Tal vez necesitas un nuevo
+              diseño web o un programador para desarrollar una aplicación?
             </p>
             <p>
               Estás en el sitio adecuado, el <strong>diseño</strong> y el{" "}
               <strong>desarrollo</strong> es lo nuestro. Juntando estas dos
-              disciplinas hacemos que el curso de las cosas mejore.
+              disciplinas hacemos que el curso de las cosas mejore. Creamos
+              desde tarjetas de visita hasta aplicaciones móviles. Ofrecemos un
+              amplio abanico de servicios con los que quedarás satisfecho, tanto
+              si eres empresa como un particular.
             </p>
-            <p>Creamos desde tarjetas de visita hasta aplicaciones móviles.</p>
             <p>
-              Ofrecemos un amplio abanico de servicios con los que quedarás
-              satisfecho, tanto si eres empresa como un particular.
+              En estudio Yobo nos gusta el trato personal, saber realmente qué
+              es lo que necesita nuestro cliente, por eso para llegar a la idea
+              realizamos un estudio previo, este nos ayuda a organizarnos y
+              saber por dónde y cómo actuar.
             </p>
           </div>
-          <a href="/contact" className="hero--contact">
+          <a href="#contact" className="hero--contact">
             Contacto
           </a>
         </section>
@@ -117,6 +117,7 @@ export const query = graphql`
             title
             thumbnail
             tags
+            description
           }
         }
       }

@@ -200,9 +200,9 @@ class TeamWork extends Component {
                 university="Universidad de Alicante"
               />
               <p>
-                Esta es una pequeña descripción sobre nosotros, algo cercano,
-                nada cñasico, rollo me gustan los videojuegos y cosas así, para
-                que quede más majete todo
+                Especializado en Software, con interés en el desarrollo Móvil y
+                Web, que cuenta con experiencia en tecnologías emergentes como
+                React y GraphQL.
               </p>
             </Description>
             <Order className="p2">02</Order>
@@ -213,9 +213,9 @@ class TeamWork extends Component {
                 university="Escuela de Arte y Superior de Diseño de Alicante"
               />
               <p>
-                Esta es una pequeña descripción sobre nosotros, algo cercano,
-                nada cñasico, rollo me gustan los videojuegos y cosas así, para
-                que quede más majete todo
+                Creativo de naturaleza, especializado en branding e
+                ilustraciones vectoriales. Capaz de encontrar el alma de la idea
+                y explotarla al máximo.
               </p>
             </Description>
             <Order className="p3">03</Order>
@@ -230,9 +230,9 @@ class TeamWork extends Component {
                 university="Universidad de Alicante"
               />
               <p>
-                Esta es una pequeña descripción sobre nosotros, algo cercano,
-                nada cñasico, rollo me gustan los videojuegos y cosas así, para
-                que quede más majete todo
+                Devorador de conocimiento. Especializado en automática y
+                robótica, apasionado por el software libre, la automatización de
+                tareas y todo lo que sea mejorar el mundo tecnológicamente.
               </p>
             </Description>
           </Us>

@@ -27,8 +27,24 @@ const ServicesSection = () => (
         <ServiceHeader title="Diseño" />
         <Title color="#FD5F65">¿Dónde vas sin un buen diseño?</Title>
         <Description>
-          A mantenerte cerca de tus clientes a través de una página web o una
-          app. Todo con un buen desarrollo interno
+          <p>
+            Si quieres transmitir de una manera correcta tu identidad de marca,
+            una idea, un concepto has de echar mano del diseño. Es una
+            necesidad, hay que destacar por encima de tus competidores, no seas
+            una copia barata, diferénciate y ofrece algo que de verdad llegue al
+            público.
+          </p>
+          <p>
+            Los logotipos, carteles, campañas publicitarias, todo, absolutamente
+            todo tiene un por qué, aquí hay ciencia, esto no es homeopatía, no
+            son cosas hechas al azar.
+          </p>
+          <p>
+            No hay nada peor que tener una marca y que realmente no represente
+            tus valores. En Estudio Yobo te podemos ayudar con nuestras
+            soluciones creativas, ven y te asesoraremos en nuestra agencia de la
+            mejor manera.
+          </p>
         </Description>
         <Services>
           <ServiceCol1>
@@ -88,8 +104,21 @@ const ServicesSection = () => (
           ¿Dónde vas sin un buen desarrollo?
         </Title>
         <Description right>
-          A mantenerte cerca de tus clientes a través de una página web o una
-          app. Todo con un buen desarrollo interno
+          <p>
+            ¿Quieres crear una aplicación y no sabes con cómo? ¿Tal vez una web
+            que te ayude a encontrar y fidelizar nuevos clientes? Nuestro equipo
+            de desarrollo te sacará de <i>"appuros"</i>.
+          </p>
+          <p>
+            Mitad código mitad humanos son capaces de desarrollar una idea con
+            gran precisión. Aplicaciones actuales con un gran soporte, webs que
+            dejarán a cualquiera boquiabierto, bots de Telegram para cualquier
+            cosa...
+          </p>
+          <p>
+            En conclusión, todo lo que imaginas se puede crear gracias a
+            nosotros.
+          </p>
         </Description>
         <Services right>
           <ServiceCol1 right>

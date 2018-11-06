@@ -1,5 +1,6 @@
 ---
 title: "Ho-Oh Bot (@goldgyms_bot)"
+description: "Bot de telegram para gestionar un ránking de Pokemon GO"
 date: "2018-06-11"
 thumbnail: "/images/proyecto-bot_telegram.jpg"
 cover: "/images/cover-bot_telegram.jpg"
