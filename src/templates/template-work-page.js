@@ -106,9 +106,9 @@ const TagsSection = ({ slugs, tagNames, noShadow }) => {
   return <span style={{ fontStyle: "normal", textAlign: `left` }}>{tags}</span>;
 };
 
-const WorkTemplate = ({ data, pathContext, ...other }) => {
+const WorkTemplate = ({ data, pageContext, ...other }) => {
   const post = data.markdownRemark;
-  const { next, prev } = pathContext;
+  const { next, prev } = pageContext;
   const { title, cover, color, noTitleShadow, tags } = post.frontmatter;
 
   return (
