@@ -1,7 +1,4 @@
-import React from "react";
 import styled from "styled-components";
-
-// import "./button.css";
 
 const Button = styled.button`
   background: #333;
@@ -14,9 +11,5 @@ const Button = styled.button`
     background: #676767;
   }
 `;
-
-// const Button = ({ children }) => {
-//   return <span className="button">{children}</span>;
-// };
 
 export default Button;

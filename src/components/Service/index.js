@@ -9,7 +9,9 @@ const Service = ({ title, description, list, image, color }) => (
       <h3 className="service--title">{title}</h3>
       <p className="service--description">{description}</p>
       <ul className="service--list">
-        {list.map((item, i) => <li key={i}>{item}</li>)}
+        {list.map((item, i) => (
+          <li key={i}>{item}</li>
+        ))}
       </ul>
     </div>
     {image && (

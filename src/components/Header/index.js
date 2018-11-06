@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "gatsby-link";
-import styled from "styled-components";
 
 import "./header.css";
 import Logo from "../Logo";
@@ -21,31 +20,26 @@ const Header = ({ color }) => (
       <div className="header-menu--hamburger">
         <input type="checkbox" />
         <div className="header-menu">
-          <Link
-            to="/"
+          <a
+            href="/#services"
             className="header-nav--element"
-            exact
-            activeClassName="header-nave--element__active"
-            style={{ color }}
-          >
-            HOME
-          </Link>
-          <Link
-            to="/services"
-            className="header-nav--element"
-            activeClassName="header-nave--element__active"
             style={{ color }}
           >
             SERVICIOS
-          </Link>
-          <Link
-            to="/contact"
+          </a>
+          <a
+            href="/#portfolio"
             className="header-nav--element"
-            activeClassName="header-nave--element__active"
             style={{ color }}
           >
+            PORTFOLIO
+          </a>
+          <a href="/#team" className="header-nav--element" style={{ color }}>
+            EQUIPO
+          </a>
+          <a href="/#contact" className="header-nav--element" style={{ color }}>
             CONTACTO
-          </Link>
+          </a>
         </div>
 
         <div className="hamburger">
