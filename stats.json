@@ -5,20 +5,20 @@
       "path---work-deyork-9ccf85bd4e9e39e67e04.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-92bfb590b72f0da7cf1c.js",
-      "component---src-pages-index-js-92bfb590b72f0da7cf1c.js.map"
+      "component---src-pages-index-js-9f9cacab5499d1dc2607.js",
+      "component---src-pages-index-js-9f9cacab5499d1dc2607.js.map"
     ],
     "path---work-mandos": [
       "path---work-mandos-9776f6608fd0cdf3be73.js",
       "path---work-mandos-9776f6608fd0cdf3be73.js.map"
     ],
     "component---src-layouts-work-js": [
-      "component---src-layouts-work-js-acd0d922500405d9bc66.js",
-      "component---src-layouts-work-js-acd0d922500405d9bc66.js.map"
+      "component---src-layouts-work-js-4bc743e4b7799f1e442f.js",
+      "component---src-layouts-work-js-4bc743e4b7799f1e442f.js.map"
     ],
     "path---": [
-      "path----7ad6a6d2e146e6e0b882.js",
-      "path----7ad6a6d2e146e6e0b882.js.map"
+      "path----bc2d0f56edf2ece068d6.js",
+      "path----bc2d0f56edf2ece068d6.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-4ab184144705bebe1e7a.js",
@@ -37,20 +37,16 @@
       "path---work-yownes-25b28ebdb3bc41406cad.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e81d656a7b339081d209.js",
-      "component---src-layouts-index-js-e81d656a7b339081d209.js.map"
-    ],
-    "path---work-goyos-garage": [
-      "path---work-goyos-garage-0af7877ff67ba55fe4f3.js",
-      "path---work-goyos-garage-0af7877ff67ba55fe4f3.js.map"
+      "component---src-layouts-index-js-26b3a613b7b0177f2426.js",
+      "component---src-layouts-index-js-26b3a613b7b0177f2426.js.map"
     ],
     "path---work-bot-telegram-goldgyms-bot": [
       "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js",
       "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js.map"
     ],
     "path---index": [
-      "path---index-c325c07f66060372afa8.js",
-      "path---index-c325c07f66060372afa8.js.map"
+      "path---index-8ab236ecd4f0c6d65c40.js",
+      "path---index-8ab236ecd4f0c6d65c40.js.map"
     ],
     "component---src-pages-services-design-js": [
       "component---src-pages-services-design-js-64e72098389f25b371e7.js",
@@ -65,9 +61,9 @@
       "component---src-pages-services-develop-js-91e38c23b2d1e877a0be.js.map"
     ],
     "commons": [
-      "commons-3d895750bb250fa60e57.js",
+      "commons-1bbf7ce32243ad693b8e.js",
       "build-js-styles.css",
-      "commons-3d895750bb250fa60e57.js.map",
+      "commons-1bbf7ce32243ad693b8e.js.map",
       "build-js-styles.css.map"
     ],
     "path---work-reyki": [
@@ -83,34 +79,30 @@
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-notfound-js": [
-      "component---src-layouts-notfound-js-654f6196b8e046c92a16.js",
-      "component---src-layouts-notfound-js-654f6196b8e046c92a16.js.map"
+      "component---src-layouts-notfound-js-fe1c2e1b4cc0fe09a992.js",
+      "component---src-layouts-notfound-js-fe1c2e1b4cc0fe09a992.js.map"
     ],
     "component---src-layouts-services-js": [
-      "component---src-layouts-services-js-571fa5fb084dd651f0cf.js",
-      "component---src-layouts-services-js-571fa5fb084dd651f0cf.js.map"
+      "component---src-layouts-services-js-d67d553b036db4149445.js",
+      "component---src-layouts-services-js-d67d553b036db4149445.js.map"
     ],
     "path---work-krt": [
       "path---work-krt-f34b70456a9e7f5738f4.js",
       "path---work-krt-f34b70456a9e7f5738f4.js.map"
-    ],
-    "path---work-green-lion": [
-      "path---work-green-lion-e5b6c984d1b20d72fb66.js",
-      "path---work-green-lion-e5b6c984d1b20d72fb66.js.map"
     ],
     "path---work-reason-build": [
       "path---work-reason-build-dbb069a3f311f205ed57.js",
       "path---work-reason-build-dbb069a3f311f205ed57.js.map"
     ],
     "app": [
-      "app-03d42ad38622356e240e.js",
+      "app-d8def565129f6921a5b9.js",
       "build-js-styles.css",
-      "app-03d42ad38622356e240e.js.map",
+      "app-d8def565129f6921a5b9.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-template-work-page-js": [
-      "component---src-templates-template-work-page-js-b38cda1f55af9d206cc7.js",
-      "component---src-templates-template-work-page-js-b38cda1f55af9d206cc7.js.map"
+      "component---src-templates-template-work-page-js-5042f8dba1ad8ea81729.js",
+      "component---src-templates-template-work-page-js-5042f8dba1ad8ea81729.js.map"
     ],
     "path---work-inmovilla": [
       "path---work-inmovilla-d9cc27e666872bd6623b.js",
