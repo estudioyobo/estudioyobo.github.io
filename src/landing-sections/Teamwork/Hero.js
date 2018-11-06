@@ -14,7 +14,7 @@ const TeamworkHero = styled.div`
   & ::before {
     content: "";
     background-size: cover;
-    background-image: url("http://img2.rtve.es/v/4668478?w=1600&preview=1531953977002.jpg");
+    background-image: url("/images/teamwork-us.jpg");
     filter: grayscale(100%);
     left: 0;
     top: 0;
