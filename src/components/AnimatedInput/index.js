@@ -109,7 +109,7 @@ class AnimatedInput extends Component {
     const { name, required, isTextarea, type = "text" } = this.props;
     const Comp = isTextarea ? Textarea : Input;
     return (
-      <Group>
+      <Group fullHeight={isTextarea}>
         <Label htmlFor={name} innerRef={ref => (this.label = ref)}>
           {name}:
         </Label>
