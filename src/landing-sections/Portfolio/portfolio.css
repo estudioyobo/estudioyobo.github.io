@@ -102,14 +102,19 @@
   background: #333;
   color: #f3f4f0;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .portfolio-post--title h2 {
   line-height: 2vw;
   font-size: 2vw;
   text-transform: uppercase;
+  margin: 0;
 }
 .portfolio-post--title h3 {
   font-family: "Crimson Text";
+  margin: 0;
 }
 .portfolio-post--image {
   grid-column: 5 / 11;
