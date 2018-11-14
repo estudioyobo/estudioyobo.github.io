@@ -9,6 +9,7 @@
   position: absolute;
   opacity: 0;
   pointer-events: none;
+  overflow: hidden;
 }
 
 .grid--current {
@@ -50,6 +51,7 @@
   flex-direction: row;
   overflow: hidden;
   grid-row: 5 / 9;
+  cursor: pointer;
 }
 .portfolio-prev {
   grid-column: 1 / 3;

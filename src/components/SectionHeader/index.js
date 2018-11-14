@@ -16,11 +16,11 @@ const widthAnim = keyframes`
 const fadeIn = keyframes`
   0% {
     opacity: 0.1;
-    transform: scaleY(0);
+    transform: translateY(4.2vw);
   }
   100% {
     opacity: 1;
-    transform: scaleY(1);
+    transform: translateY(0);
   }
 `;
 
@@ -42,7 +42,7 @@ const Title = styled.h1`
   opacity: 0;
   font-weight: 500;
   text-transform: lowercase;
-  margin-bottom: -14px;
+  margin-bottom: -20px;
   font-size: 4.7vw;
   line-height: 4.2vw;
 

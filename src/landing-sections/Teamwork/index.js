@@ -64,6 +64,7 @@ const PersonTitle = styled.h3`
   grid-row: 2 / 3;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.4rem;
   display: none;
   &.active {
     display: block;

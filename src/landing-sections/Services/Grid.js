@@ -78,7 +78,7 @@ export const Image = styled.img`
   grid-column: 1 / 7;
   align-self: end;
   @media (max-width: 800px) {
-    grid-row: 4 / 7;
+    grid-row: 5 / 7;
     grid-column: 1 / 8;
   }
 `;
@@ -87,7 +87,7 @@ export const Picture = styled.picture`
   grid-column: 7 / 15;
   align-self: end;
   @media (max-width: 800px) {
-    grid-row: 4 / 7;
+    grid-row: 5 / 7;
   }
 `;
 export const Space = styled.div`
