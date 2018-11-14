@@ -10,9 +10,6 @@ import "./revealer.css";
 class Portfolio extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      selected: this.props.tags.map(({ fieldValue }) => fieldValue)
-    };
     this.gridElems = [];
   }
   componentDidMount() {
@@ -28,24 +25,8 @@ class Portfolio extends Component {
       });
     }
   }
-  containsTag = (postTags, tag) => {
-    return postTags.includes(tag);
-  };
-  enableFilter = tag => {
-    this.gridElems = [];
-    if (this.state.selected.includes(tag)) {
-      this.setState(state => ({
-        selected: state.selected.filter(s => s !== tag)
-      }));
-    } else {
-      this.setState(state => {
-        state.selected.push(tag);
-        return { selected: state.selected };
-      });
-    }
-  };
   render() {
-    const { posts, tags: allTags } = this.props;
+    const { posts } = this.props;
     return (
       <section id="portfolio">
         <SectionHeader
@@ -64,20 +45,6 @@ class Portfolio extends Component {
                 className={`grid ${i === 0 ? "grid--current" : ""}`}
                 ref={ref => this.gridElems.push(ref)}
               >
-                <div className="portfolio-services">
-                  {allTags.map(({ fieldValue }) => (
-                    <span
-                      key={fieldValue}
-                      style={{
-                        color: this.containsTag(tags, fieldValue)
-                          ? "#333"
-                          : "lightgray"
-                      }}
-                    >
-                      {fieldValue}
-                    </span>
-                  ))}
-                </div>
                 <div className="portfolio-prev  grid__item grid__item--nav-prev">
                   <img
                     src={posts[prev].node.frontmatter.thumbnail}
@@ -111,7 +78,7 @@ class Portfolio extends Component {
                 </Link>
                 <div className="portfolio-post--title  grid__item">
                   <h2>{node.frontmatter.title}</h2>
-                  <h3>2017</h3>
+                  <h3>2017 - {node.frontmatter.tags.join(", ")}</h3>
                 </div>
                 <div className="portfolio-more grid__item">
                   <div>{node.frontmatter.description}</div>
