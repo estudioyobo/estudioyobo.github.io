@@ -53,12 +53,11 @@
 }
 
 .nav {
-  grid-area: nav;
   position: fixed;
-  align-self: center;
-  margin: 2rem;
+  margin: 0 2rem;
   z-index: 30;
   min-width: 100px;
+  top: 40%;
 }
 
 .home-map {
@@ -69,6 +68,12 @@
 
 .home-map iframe {
   clip-path: ellipse(82% 65% at 49% 65%);
+}
+
+.social-side {
+  position: fixed;
+  right: 10px;
+  top: 40%;
 }
 
 /**
@@ -96,6 +101,9 @@
     padding: 0 10px;
   }
   .nav {
+    display: none;
+  }
+  .social-side {
     display: none;
   }
 }

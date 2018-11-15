@@ -3,14 +3,7 @@ import React from "react";
 import "./footer.css";
 import Logo from "../Logo";
 import AnimatedLink from "../AnimatedLink";
-
-const Social = ({ name, icon, link }) => (
-  <div className="social">
-    <a href={link} target="_blank" rel="noopener noreferrer">
-      <img src={icon} alt={`${name} icon`} className="social--icon" />
-    </a>
-  </div>
-);
+import Social from "../Social";
 
 const Footer = ({ social, mail, phone }) => {
   return (

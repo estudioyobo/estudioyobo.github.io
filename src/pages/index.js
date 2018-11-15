@@ -3,11 +3,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import LandingMenu from "../components/LandingMenu";
 import Top from "../components/Top";
+import Social from "../components/Social";
 import companiesInfo from "../config/companies";
 import Portfolio from "../landing-sections/Portfolio";
 import ServicesSection from "../landing-sections/Services";
 import Companies from "../landing-sections/Companies";
 import TeamWork from "../landing-sections/Teamwork";
+import info from "../config/info";
 
 import "./index.css";
 import heroIMG from "./hero-us.png";
@@ -42,8 +44,13 @@ const IndexPage = ({ data }) => {
     <Layout>
       <div className="home">
         <Top />
+        <div className="social-side">
+          {info.social.map((e, i) => (
+            <Social invert key={i} {...e} />
+          ))}
+        </div>
+        <LandingMenu sections={sections} />
         <section id="start" className="hero">
-          <LandingMenu sections={sections} />
           <img
             src={heroIMG}
             className="hero--caroussel"
