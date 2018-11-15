@@ -3,43 +3,50 @@ import Link from "gatsby-link";
 
 import "./header.css";
 import Logo from "../Logo";
+import AnimatedLink from "../AnimatedLink";
 
-const Header = ({ color }) => (
+const Header = ({ color = "#333333" }) => (
   <header className="header">
-    <Link
-      to="/"
-      style={{
-        color: "#333",
-        fontFamily: "Montserrat SemiBold",
-        textDecoration: "none"
-      }}
-    >
+    <Link to="/">
       <Logo color={color} />
     </Link>
     <nav className="header-nav">
       <div className="header-menu--hamburger">
         <input type="checkbox" />
         <div className="header-menu">
-          <a
+          <AnimatedLink
             href="/#services"
             className="header-nav--element"
-            style={{ color }}
+            color={color}
+            highlightColor="white"
           >
             SERVICIOS
-          </a>
-          <a
+          </AnimatedLink>
+          <AnimatedLink
             href="/#portfolio"
             className="header-nav--element"
-            style={{ color }}
+            color={color}
+            highlightColor="white"
           >
             PORTFOLIO
-          </a>
-          <a href="/#team" className="header-nav--element" style={{ color }}>
+          </AnimatedLink>
+          <AnimatedLink
+            href="/#team"
+            className="header-nav--element"
+            color={color}
+            highlightColor="white"
+            highlightColor="white"
+          >
             EQUIPO
-          </a>
-          <a href="/#contact" className="header-nav--element" style={{ color }}>
+          </AnimatedLink>
+          <AnimatedLink
+            href="/#contact"
+            className="header-nav--element"
+            color={color}
+            highlightColor="white"
+          >
             CONTACTO
-          </a>
+          </AnimatedLink>
         </div>
 
         <div className="hamburger">

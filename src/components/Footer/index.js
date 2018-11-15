@@ -2,6 +2,7 @@ import React from "react";
 
 import "./footer.css";
 import Logo from "../Logo";
+import AnimatedLink from "../AnimatedLink";
 
 const Social = ({ name, icon, link }) => (
   <div className="social">
@@ -17,40 +18,34 @@ const Footer = ({ social, mail, phone }) => {
       <div className="row margin equal elements">
         <ul className="footer-links">
           <li>
-            <a href="#">
-              <span>Política de privacidad</span>
-            </a>
+            <AnimatedLink href="#">Política de privacidad</AnimatedLink>
           </li>
           <li>
-            <a href="#">
-              <span>Política de cookies</span>
-            </a>
+            <AnimatedLink href="#">Política de cookies</AnimatedLink>
           </li>
           <li>
-            <a href="/404">
-              <span>Error 404</span>
-            </a>
+            <AnimatedLink href="/404">Error 404</AnimatedLink>
           </li>
         </ul>
         <div className="footer-contact">
           <div className="footer-contact--social">
-            {social.map((e, i) => <Social key={i} {...e} />)}
+            {social.map((e, i) => (
+              <Social key={i} {...e} />
+            ))}
           </div>
           <div className="footer-contact--mail">
-            <a href={`mailto:${mail}`}>
-              <span>{mail}</span>
-            </a>
+            <AnimatedLink href={`mailto:${mail}`}>{mail}</AnimatedLink>
           </div>
           <div className="footer-phone">
             {phone.map(p => (
-              <a href={`tel:${p}`} key={p}>
-                <span>{p}</span>
-              </a>
+              <AnimatedLink href={`tel:${p}`} key={p}>
+                {p}
+              </AnimatedLink>
             ))}
           </div>
         </div>
         <div className="footer-logo">
-          <Logo color="#F3F4F0" />
+          <Logo color="#F3F4F0" width="200px" />
         </div>
       </div>
       <div className="row">
