@@ -1,4 +1,5 @@
 import React from "react";
+import Layout from "../components/Layout";
 
 import "./404.css";
 
@@ -13,9 +14,11 @@ const Video = () => (
 const Lost = () => <div className="not-found__svg" />;
 
 const NotFoundPage = () => (
-  <div className="not-found__wrapper">
-    {new Date().getSeconds() % 2 === 0 ? <Video /> : <Lost />}
-  </div>
+  <Layout>
+    <div className="not-found__wrapper">
+      {new Date().getSeconds() % 2 === 0 ? <Video /> : <Lost />}
+    </div>
+  </Layout>
 );
 
 export default NotFoundPage;
