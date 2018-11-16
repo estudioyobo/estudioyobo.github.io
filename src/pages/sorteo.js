@@ -3,8 +3,8 @@ import styled from "styled-components";
 import Layout from "../components/Layout";
 
 const Wrapper = styled.div`
-max-width: 960px;
-margin: 0 auto 100px;
+  max-width: 960px;
+  margin: 0 auto 100px;
 `;
 
 const Sorteo = () => (
@@ -35,7 +35,8 @@ const Sorteo = () => (
           Seguir en Instagram a{" "}
           <a target="_blank" href="https://www.instagram.com/estudioyobo/">
             @estudioyobo
-          </a>.
+          </a>
+          .
         </li>
         <li>
           Compartir la historia destacada del sorteo de nuestro Instagram en tus
@@ -45,13 +46,14 @@ const Sorteo = () => (
           Darle Like a nuestra{" "}
           <a target="_blank" href="https://www.facebook.com/EstudioYobo/">
             página de Facebook
-          </a>.
+          </a>
+          .
         </li>
         <li>
           Compartir la publicación del sorteo en tu muro de Facebook de manera
           pública.
         </li>
-        <li>Hacer todo lo anterior antes del día xx/xx+1/2018.</li>
+        <li>Hacer todo lo anterior antes del día sábado, 24/11/2018.</li>
       </ul>
       <p>
         Para poder participar en este sorteo, el usuario tiene que ser FAN de la
@@ -73,7 +75,7 @@ const Sorteo = () => (
       <h2>Duración y Ámbito</h2>
       <p>La actividad se desarrollará en todo el territorio nacional.</p>{" "}
       <p>
-        La fecha será del xx/xx/2018 hasta el xx/xx/2018 incluido ultimo día
+        La fecha será del 16/11/2018 hasta el 23/11/2018 incluido ultimo día
         también para participar.
       </p>
       <h2>Requisitos para participar</h2>
