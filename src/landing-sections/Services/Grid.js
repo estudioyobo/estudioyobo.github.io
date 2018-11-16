@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Img from "gatsby-image";
 
 export const Grid = styled.div`
   display: grid;
@@ -73,7 +74,7 @@ export const ServiceItem = styled.li`
   }
 `;
 
-export const Image = styled.img`
+export const Image = styled(Img)`
   grid-row: 5 / 8;
   grid-column: 1 / 7;
   align-self: end;

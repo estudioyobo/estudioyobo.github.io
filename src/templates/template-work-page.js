@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 import styled from "styled-components";
 import Helmet from "react-helmet";
 import { graphql } from "gatsby";
@@ -116,7 +117,18 @@ const WorkTemplate = ({ data, pageContext, ...other }) => {
       <article>
         <Helmet title={`Work | ${title}`} />
         <SEO postImage={cover} postData={post} isWork />
-        <WorkHeader bg={cover}>
+        <WorkHeader>
+          <Img
+            fluid={cover.childImageSharp.fluid}
+            style={{
+              position: "absolute",
+              top: 0,
+              left: 0,
+              width: "100%",
+              height: "100%",
+              zIndex: 0
+            }}
+          />
           <Header color={color} shadow={!noTitleShadow} />
           <Info color={color}>
             <Title noShadow={noTitleShadow}>{title}</Title>
@@ -169,7 +181,13 @@ export const query = graphql`
         title
         description
         tags
-        cover
+        cover {
+          childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
         color
         noTitleShadow
       }

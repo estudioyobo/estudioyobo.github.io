@@ -2,23 +2,21 @@
 title: "De York"
 description: "Concepto de marca y su branding"
 date: "2018-07-02"
-thumbnail: "/images/proyecto-design-deyork.jpg"
-cover: "/images/cover-design-deyork.jpg"
+thumbnail: "./proyecto-design-deyork.jpg"
+cover: "./cover-design-deyork.jpg"
 noTitleShadow: true
 tags:
-    - Identidad Corporativa
+  - Identidad Corporativa
 ---
 
 De York es un concepto de branding para una charcutería. En él creamos el naming, logotipo,tarjetas, carteles y otras aplicaciones que podría tener la imagen gráfica de la marca.
 
 Nos ha motivado el pensar que cualquier negocio, por pequeño que sea, puede tener un buen diseño.
 
-
 <hidden>
 <img src="Img-1-deyork-logotipo.jpg" />
 </hidden>
 <zoom-image src="Img-1-deyork-logotipo.jpg" atl='Logotipo'></zoom-image>
-
 
 <divide>
 
@@ -52,5 +50,3 @@ Nos ha motivado el pensar que cualquier negocio, por pequeño que sea, puede ten
 <img src="Img-6-deyork-tarjetas.jpg" />
 </hidden>
 <zoom-image src="Img-6-deyork-tarjetas.jpg" atl='Tarjetas de visita'></zoom-image>
-
-

@@ -2,23 +2,19 @@
 title: "Green Lion Coffee Shop"
 description: "Concepto de marca y su branding"
 date: "2018-10-16"
-thumbnail: "/images/proyecto-design-green-lion.jpg"
-cover: "/images/cover-lion.jpg"
+thumbnail: "./proyecto-design-green-lion.jpg"
+cover: "./cover-lion.jpg"
 color: "#f3f4f0"
 noTitleShadow: true
 tags:
-    - Identidad Corporativa
+  - Identidad Corporativa
 ---
 
 Concept branding del canal de Youtube Goyo's Garage.
 
-Rediseñamos el imagotipo de Goyo basándonos en una tipografía caligráfica que recuerda a los freehand letterings que se hacían antiguamente en los coches. Potencia los  valores lo hecho a mano, y lo artesanal, cosas que podemos ver en el canal de Youtube, pero también le da un aire de modernidad que queremos asociar a la marca. La tipografía inferior, para la palabra “garage” es de palo seco, que transmite los valores de racionalidad y equilibrio asociados a la ingeniería y la mecánica.
+Rediseñamos el imagotipo de Goyo basándonos en una tipografía caligráfica que recuerda a los freehand letterings que se hacían antiguamente en los coches. Potencia los valores lo hecho a mano, y lo artesanal, cosas que podemos ver en el canal de Youtube, pero también le da un aire de modernidad que queremos asociar a la marca. La tipografía inferior, para la palabra “garage” es de palo seco, que transmite los valores de racionalidad y equilibrio asociados a la ingeniería y la mecánica.
 
 Se creó un manual de identidad para qué el usuario pudiese aplicar la marca correctamente en sus vídeos, también se diseñaron unas tarjetas de visita y unas imágenes como portadas para Youtube.
-
-
-
-
 
 <divide>
 
@@ -37,8 +33,6 @@ Se creó un manual de identidad para qué el usuario pudiese aplicar la marca co
 <img src="green-lion-senal.jpg" />
 </hidden>
 <zoom-image src="green-lion-senal.jpg" atl='Señal'></zoom-image>
-
-
 
 <divide>
 

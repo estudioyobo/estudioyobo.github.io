@@ -2,12 +2,12 @@
 title: "Colección de Mandos"
 descritpion: "Ilustraciones de mandos de Nintendo"
 date: "2018-03-04"
-thumbnail: "/images/proyecto-ilustraciones-mandos.jpg"
-cover: "/images/cover-mandos.jpg"
+thumbnail: "./proyecto-ilustraciones-mandos.jpg"
+cover: "./cover-mandos.jpg"
 color: "#f3f4f0"
 noTitleShadow: false
 tags:
-    - Ilustración
+  - Ilustración
 ---
 
 Colección de los mandos de Nintendo que marcaron nuestra infancia interpetados de diferentes maneras y estilos. Zombie, Pixel Art y Cyberpunk.

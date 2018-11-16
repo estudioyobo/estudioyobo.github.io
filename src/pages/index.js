@@ -1,5 +1,6 @@
 import React from "react";
 import { graphql } from "gatsby";
+import Img from "gatsby-image";
 import Layout from "../components/Layout";
 import LandingMenu from "../components/LandingMenu";
 import Top from "../components/Top";
@@ -12,7 +13,6 @@ import TeamWork from "../landing-sections/Teamwork";
 import info from "../config/info";
 
 import "./index.css";
-import heroIMG from "./hero-us.png";
 import Contact from "../landing-sections/Contact/index";
 
 const sections = [
@@ -51,8 +51,8 @@ const IndexPage = ({ data }) => {
         </div>
         <LandingMenu sections={sections} />
         <section id="start" className="hero">
-          <img
-            src={heroIMG}
+          <Img
+            fluid={data.heroIMG.fluid}
             className="hero--caroussel"
             alt="decorative landing"
           />
@@ -108,6 +108,11 @@ export default IndexPage;
 
 export const query = graphql`
   query IndexQuery {
+    heroIMG: imageSharp(fluid: { originalName: { eq: "hero-us.png" } }) {
+      fluid {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
     allMarkdownRemark(
       sort: { fields: [frontmatter___date], order: DESC }
       filter: { frontmatter: { hide: { ne: true } } }
@@ -119,7 +124,13 @@ export const query = graphql`
           }
           frontmatter {
             title
-            thumbnail
+            thumbnail {
+              childImageSharp {
+                fluid {
+                  ...GatsbyImageSharpFluid_withWebp
+                }
+              }
+            }
             tags
             description
           }

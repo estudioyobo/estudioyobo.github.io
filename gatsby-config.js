@@ -4,7 +4,6 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-react-helmet",
-    "gatsby-plugin-sharp",
     "gatsby-plugin-styled-components",
     {
       resolve: `gatsby-plugin-google-analytics`,
@@ -33,9 +32,25 @@ module.exports = {
       }
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "img",
+        path: `${__dirname}/static/images`
+      }
+    },
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          // {
+          //   resolve: "gatsby-remark-images",
+          //   options: {
+          //     quality: 100,
+          //     withWebp: true
+          //   }
+          // },
           {
             resolve: "gatsby-remark-component",
             options: { components: ["zoom-image", "hidden"] }
@@ -44,10 +59,6 @@ module.exports = {
             resolve: "gatsby-remark-copy-linked-files",
             options: { ignoreFileExtensions: [] }
           }
-          // {
-          //   resolve: "gatsby-remark-images",
-          //   options: {}
-          // }
         ]
       }
     }

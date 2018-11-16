@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Link from "gatsby-link";
+import Img from "gatsby-image";
 
 import SectionHeader from "../../components/SectionHeader";
 import { Slideshow } from "./reveal";
@@ -46,11 +47,15 @@ class Portfolio extends Component {
                 ref={ref => this.gridElems.push(ref)}
               >
                 <div className="portfolio-prev  grid__item grid__item--nav-prev">
-                  <img
-                    src={posts[prev].node.frontmatter.thumbnail}
+                  <Img
+                    fluid={
+                      posts[prev].node.frontmatter.thumbnail.childImageSharp
+                        .fluid
+                    }
                     alt={`previous project: ${
                       posts[prev].node.frontmatter.description
                     }`}
+                    className="img"
                   />
                   <h4 className="portfolio-prev--title" data-direction="btt">
                     {posts[prev].node.frontmatter.title}
@@ -60,20 +65,25 @@ class Portfolio extends Component {
                   <h4 className="portfolio-next--title" data-direction="ttb">
                     {posts[next].node.frontmatter.title}
                   </h4>
-                  <img
-                    src={posts[next].node.frontmatter.thumbnail}
+                  <Img
+                    fluid={
+                      posts[next].node.frontmatter.thumbnail.childImageSharp
+                        .fluid
+                    }
                     alt={`next project: ${
                       posts[next].node.frontmatter.description
                     }`}
+                    className="img"
                   />
                 </div>
                 <Link
                   to={node.fields.slug}
                   className="portfolio-post--image  grid__item"
                 >
-                  <img
-                    src={node.frontmatter.thumbnail}
+                  <Img
+                    fluid={node.frontmatter.thumbnail.childImageSharp.fluid}
                     alt={node.frontmatter.description}
+                    className="img"
                   />
                 </Link>
                 <div className="portfolio-post--title  grid__item">

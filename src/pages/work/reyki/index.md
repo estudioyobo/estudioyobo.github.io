@@ -2,11 +2,11 @@
 title: "Usui Reiki Ryoho"
 description: "Diseño de la identidad corporativa para una asociación de Reiki"
 date: "2018-03-02"
-thumbnail: "/images/proyecto-reyki.jpg"
-cover: "/images/cover-reiki.jpg"
+thumbnail: "./proyecto-reyki.jpg"
+cover: "./cover-reiki.jpg"
 color: "#fff"
 tags:
-    - Identidad Corporativa
+  - Identidad Corporativa
 ---
 
 Cuándo la asociación _Usui reiki ryoho_ del mediterráneo se puso en contaco con nosotros para crear su identidad corporativa, pensamos que deberíamos representar algo que nos transportara a oriente y nos transmitiera calma.

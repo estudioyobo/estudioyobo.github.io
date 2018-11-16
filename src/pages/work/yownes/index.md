@@ -2,12 +2,12 @@
 title: "Yownes"
 description: "Naming e imagotipo para un servicio online de creación de tiendas móviles"
 date: "2018-03-06"
-thumbnail: "/images/proyecto-yownes.jpg"
-cover: "/images/cover-yownes.jpg"
+thumbnail: "./proyecto-yownes.jpg"
+cover: "./cover-yownes.jpg"
 color: "#fff"
 noTitleShadow: true
 tags:
-    - Identidad Corporativa
+  - Identidad Corporativa
 ---
 
 Yownes es un proyecto de creación de naming e imagotipo para una empresa propietaria de un servicio online que se dedica a facilitar la creación de una tienda móvil, en formato app, gracias a su plataforma.

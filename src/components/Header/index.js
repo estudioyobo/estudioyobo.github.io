@@ -7,7 +7,7 @@ import AnimatedLink from "../AnimatedLink";
 
 const Header = ({ color = "#333333" }) => (
   <header className="header">
-    <Link to="/">
+    <Link to="/" style={{ zIndex: 0 }}>
       <Logo color={color} />
     </Link>
     <nav className="header-nav">
