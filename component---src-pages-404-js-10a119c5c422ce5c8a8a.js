@@ -1,2 +1,0 @@
-webpackJsonp([0x9427c64ab85d],{341:function(e,t){},246:function(e,t,o){"use strict";function u(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var a=o(1),n=u(a);o(341);var d=function(){return n.default.createElement("div",{className:"not-found"},n.default.createElement("video",{autoPlay:!0,muted:!0,loop:!0,className:"not-found__video"},n.default.createElement("source",{src:"/videos/error-404.mp4",type:"video/mp4"})))};t.default=d,e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-404-js-10a119c5c422ce5c8a8a.js.map

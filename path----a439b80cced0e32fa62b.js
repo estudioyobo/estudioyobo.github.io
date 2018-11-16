@@ -1,2 +1,0 @@
-webpackJsonp([60335399758886],{110:function(t,o){t.exports={data:{site:{siteMetadata:{title:"Estudio Yobo"}}},layoutContext:{}}},111:function(t,o){t.exports={layoutContext:{}}}});
-//# sourceMappingURL=path----a439b80cced0e32fa62b.js.map
