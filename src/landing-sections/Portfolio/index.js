@@ -19,13 +19,6 @@ class Portfolio extends Component {
         filledColor: "#EECA46"
       });
   }
-  componentDidUpdate(prevProps, prevState) {
-    if (prevState.selected !== this.state.selected) {
-      new Slideshow(this.gridElems.filter(grid => grid !== null), {
-        filledColor: "#EECA46"
-      });
-    }
-  }
   render() {
     const { posts } = this.props;
     return (
