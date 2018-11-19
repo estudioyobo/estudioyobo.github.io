@@ -1,0 +1,132 @@
+{
+  "assetsByChunkName": {
+    "path---work-deyork": [
+      "path---work-deyork-9ccf85bd4e9e39e67e04.js",
+      "path---work-deyork-9ccf85bd4e9e39e67e04.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-9f9cacab5499d1dc2607.js",
+      "component---src-pages-index-js-9f9cacab5499d1dc2607.js.map"
+    ],
+    "path---work-mandos": [
+      "path---work-mandos-9776f6608fd0cdf3be73.js",
+      "path---work-mandos-9776f6608fd0cdf3be73.js.map"
+    ],
+    "component---src-layouts-work-js": [
+      "component---src-layouts-work-js-4bc743e4b7799f1e442f.js",
+      "component---src-layouts-work-js-4bc743e4b7799f1e442f.js.map"
+    ],
+    "path---": [
+      "path----bc2d0f56edf2ece068d6.js",
+      "path----bc2d0f56edf2ece068d6.js.map"
+    ],
+    "component---src-pages-contact-js": [
+      "component---src-pages-contact-js-4ab184144705bebe1e7a.js",
+      "component---src-pages-contact-js-4ab184144705bebe1e7a.js.map"
+    ],
+    "path---services-develop": [
+      "path---services-develop-a0e39f21c11f6a62c5ab.js",
+      "path---services-develop-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---work-mdc": [
+      "path---work-mdc-b05ce2f8046c88b210b9.js",
+      "path---work-mdc-b05ce2f8046c88b210b9.js.map"
+    ],
+    "path---work-yownes": [
+      "path---work-yownes-25b28ebdb3bc41406cad.js",
+      "path---work-yownes-25b28ebdb3bc41406cad.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-26b3a613b7b0177f2426.js",
+      "component---src-layouts-index-js-26b3a613b7b0177f2426.js.map"
+    ],
+    "path---work-bot-telegram-goldgyms-bot": [
+      "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js",
+      "path---work-bot-telegram-goldgyms-bot-9018123edee521ade977.js.map"
+    ],
+    "path---index": [
+      "path---index-8ab236ecd4f0c6d65c40.js",
+      "path---index-8ab236ecd4f0c6d65c40.js.map"
+    ],
+    "component---src-pages-services-design-js": [
+      "component---src-pages-services-design-js-64e72098389f25b371e7.js",
+      "component---src-pages-services-design-js-64e72098389f25b371e7.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-8a7bea8787f1628be3bb.js",
+      "component---src-pages-404-js-8a7bea8787f1628be3bb.js.map"
+    ],
+    "component---src-pages-services-develop-js": [
+      "component---src-pages-services-develop-js-91e38c23b2d1e877a0be.js",
+      "component---src-pages-services-develop-js-91e38c23b2d1e877a0be.js.map"
+    ],
+    "commons": [
+      "commons-1bbf7ce32243ad693b8e.js",
+      "build-js-styles.css",
+      "commons-1bbf7ce32243ad693b8e.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---work-reyki": [
+      "path---work-reyki-e56ac7bf550acb751374.js",
+      "path---work-reyki-e56ac7bf550acb751374.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---contact": [
+      "path---contact-a0e39f21c11f6a62c5ab.js",
+      "path---contact-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-layouts-notfound-js": [
+      "component---src-layouts-notfound-js-fe1c2e1b4cc0fe09a992.js",
+      "component---src-layouts-notfound-js-fe1c2e1b4cc0fe09a992.js.map"
+    ],
+    "component---src-layouts-services-js": [
+      "component---src-layouts-services-js-d67d553b036db4149445.js",
+      "component---src-layouts-services-js-d67d553b036db4149445.js.map"
+    ],
+    "path---work-krt": [
+      "path---work-krt-f34b70456a9e7f5738f4.js",
+      "path---work-krt-f34b70456a9e7f5738f4.js.map"
+    ],
+    "path---work-reason-build": [
+      "path---work-reason-build-dbb069a3f311f205ed57.js",
+      "path---work-reason-build-dbb069a3f311f205ed57.js.map"
+    ],
+    "app": [
+      "app-d8def565129f6921a5b9.js",
+      "build-js-styles.css",
+      "app-d8def565129f6921a5b9.js.map",
+      "build-js-styles.css.map"
+    ],
+    "component---src-templates-template-work-page-js": [
+      "component---src-templates-template-work-page-js-5042f8dba1ad8ea81729.js",
+      "component---src-templates-template-work-page-js-5042f8dba1ad8ea81729.js.map"
+    ],
+    "path---work-inmovilla": [
+      "path---work-inmovilla-d9cc27e666872bd6623b.js",
+      "path---work-inmovilla-d9cc27e666872bd6623b.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---services-design": [
+      "path---services-design-a0e39f21c11f6a62c5ab.js",
+      "path---services-design-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---work-invitacion-andres-sarai": [
+      "path---work-invitacion-andres-sarai-8ccf4bcdd33b6d637eb6.js",
+      "path---work-invitacion-andres-sarai-8ccf4bcdd33b6d637eb6.js.map"
+    ],
+    "path---services": [
+      "path---services-a0e39f21c11f6a62c5ab.js",
+      "path---services-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-services-js": [
+      "component---src-pages-services-js-42c906dc9ba74e0415f1.js",
+      "component---src-pages-services-js-42c906dc9ba74e0415f1.js.map"
+    ]
+  }
+}
