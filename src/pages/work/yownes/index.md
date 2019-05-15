@@ -23,9 +23,9 @@ El nombre fue el resultado de jugar y combinar la frase en inglés “Your own e
 <divide>
 <hidden>
 ![](yownes2.jpg)
-<img src="yownes2.jpg" />
+<img src="yw-02.png" />
 </hidden>
-<zoom-image src="yownes2.jpg"  zoomSrc='yownes2.jpg' alt='Imagotipo'></zoom-image>
+<zoom-image src="yw-02.png"  zoomSrc='yw-02.png' alt='Imagotipo'></zoom-image>
 
 El imagotipo representa las tres fases del servicio: Vendedor, el punto de abajo; la plataforma de creación, el punto central; y los dos puntos superiores, los clientes nuevos a los que accede. Se jugó con esos puntos y se llegó a un resultado que interpretaba las dos letras iniciales del nombre de la empresa.
 

@@ -15,3 +15,8 @@ Este diseño fue creado para el grupo de amantes del motor KRT en Elche. Pensamo
 <img src="krt.png" />
 </hidden>
 <zoom-image src="krt.png"></zoom-image>
+
+<hidden>
+<img src="krt-02.jpg" />
+</hidden>
+<zoom-image src="krt-02.jpg"></zoom-image>

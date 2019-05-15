@@ -5,7 +5,7 @@ date: "2018-03-08"
 thumbnail: "./proyecto-design-invitacion-boda.jpg"
 cover: "./cover-design-invitacion-boda.jpg"
 color: "#333333"
-hide: false
+hide: true
 noTitleShadow: true
 tags:
   - Comunicación Gráfica

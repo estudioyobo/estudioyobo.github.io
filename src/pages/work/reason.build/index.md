@@ -4,6 +4,7 @@ description: "Imagotipo para una consultoría online de EEUU"
 date: "2018-03-01"
 thumbnail: "./proyecto-reason.jpg"
 cover: "./cover-reason.jpg"
+hide: true
 noTitleShadow: true
 tags:
   - Identidad Corporativa
